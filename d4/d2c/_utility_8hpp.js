@@ -17,5 +17,6 @@ var _utility_8hpp =
     ] ],
     [ "is_matching", "d4/d2c/_utility_8hpp.html#a68c1d279c259f2aef30a89cd5e0d7485", null ],
     [ "is_matching", "d4/d2c/_utility_8hpp.html#a4e2c65ccd4076c4ed7adac3dc1161b06", null ],
-    [ "is_same_source_location", "d4/d2c/_utility_8hpp.html#a572acd40fe6bf7c5ea72c9494c8caf56", null ]
+    [ "is_same_source_location", "d4/d2c/_utility_8hpp.html#a572acd40fe6bf7c5ea72c9494c8caf56", null ],
+    [ "to_underlying", "d4/d2c/_utility_8hpp.html#add9703907de32b233525df612144e00f", null ]
 ];

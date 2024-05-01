@@ -21,6 +21,7 @@ var annotated_dup =
         [ "Requirement", "d1/dde/classmimicpp_1_1expectation__policies_1_1_requirement.html", "d1/dde/classmimicpp_1_1expectation__policies_1_1_requirement" ],
         [ "ReturnsResultOf", "dd/d59/classmimicpp_1_1expectation__policies_1_1_returns_result_of.html", "dd/d59/classmimicpp_1_1expectation__policies_1_1_returns_result_of" ],
         [ "RuntimeTimes", "d9/dc4/classmimicpp_1_1expectation__policies_1_1_runtime_times.html", "d9/dc4/classmimicpp_1_1expectation__policies_1_1_runtime_times" ],
+        [ "Sequence", "db/d5e/classmimicpp_1_1expectation__policies_1_1_sequence.html", "db/d5e/classmimicpp_1_1expectation__policies_1_1_sequence" ],
         [ "SideEffectAction", "d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html", "d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action" ],
         [ "Throws", "d8/d34/classmimicpp_1_1expectation__policies_1_1_throws.html", "d8/d34/classmimicpp_1_1expectation__policies_1_1_throws" ],
         [ "Times", "d6/d30/classmimicpp_1_1expectation__policies_1_1_times.html", "d6/d30/classmimicpp_1_1expectation__policies_1_1_times" ]
@@ -47,6 +48,7 @@ var annotated_dup =
       [ "Mock< Return(Params...)>", "d4/dba/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_4.html", "d4/dba/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_4" ],
       [ "PredicateMatcher", "dc/d5e/classmimicpp_1_1_predicate_matcher.html", "dc/d5e/classmimicpp_1_1_predicate_matcher" ],
       [ "ScopedExpectation", "d6/dc0/classmimicpp_1_1_scoped_expectation.html", "d6/dc0/classmimicpp_1_1_scoped_expectation" ],
+      [ "Sequence", "d5/d54/classmimicpp_1_1_sequence.html", "d5/d54/classmimicpp_1_1_sequence" ],
       [ "signature_add_noexcept", "dd/db4/structmimicpp_1_1signature__add__noexcept.html", null ],
       [ "signature_add_noexcept< Return(Params...) noexcept >", "d0/dab/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01noexcept_01_4.html", "d0/dab/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01noexcept_01_4" ],
       [ "signature_add_noexcept< Return(Params...)>", "d7/d6d/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_4.html", "d7/d6d/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_4" ],

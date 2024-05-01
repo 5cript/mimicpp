@@ -59,6 +59,8 @@ var hierarchy =
     [ "mimicpp::expectation_policies::ReturnsResultOf< Action >", "dd/d59/classmimicpp_1_1expectation__policies_1_1_returns_result_of.html", null ],
     [ "mimicpp::expectation_policies::RuntimeTimes", "d9/dc4/classmimicpp_1_1expectation__policies_1_1_runtime_times.html", null ],
     [ "mimicpp::ScopedExpectation< Signature >", "d6/dc0/classmimicpp_1_1_scoped_expectation.html", null ],
+    [ "mimicpp::expectation_policies::Sequence", "db/d5e/classmimicpp_1_1expectation__policies_1_1_sequence.html", null ],
+    [ "mimicpp::Sequence", "d5/d54/classmimicpp_1_1_sequence.html", null ],
     [ "mimicpp::expectation_policies::SideEffectAction< Action >", "d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html", null ],
     [ "mimicpp::signature_add_noexcept< Signature >", "dd/db4/structmimicpp_1_1signature__add__noexcept.html", null ],
     [ "mimicpp::signature_add_noexcept< Return(Params...) noexcept >", "d0/dab/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01noexcept_01_4.html", null ],

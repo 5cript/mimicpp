@@ -8,6 +8,8 @@ var namespacemimicpp =
       [ "at_least", "d3/d18/namespacemimicpp_1_1expect.html#a9964d3a164d9e71593f0a46fcf6bda55", null ],
       [ "at_most", "d3/d18/namespacemimicpp_1_1expect.html#aef2fccfe1081363057ad642cd2810456", null ],
       [ "at_most", "d3/d18/namespacemimicpp_1_1expect.html#a374cd9c727009695c2979c8e448fc864", null ],
+      [ "in_sequence", "d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#ga86172142a200384577c82c2051c388a7", null ],
+      [ "in_sequences", "d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#gaff97698bf9ff2924055f59a948483f56", null ],
       [ "once", "d3/d18/namespacemimicpp_1_1expect.html#accf309c40ba8f24547c93ea3f17bb513", null ],
       [ "times", "d3/d18/namespacemimicpp_1_1expect.html#a9b497738d4a9362ce2d7c227f5fd4c3f", null ],
       [ "times", "d3/d18/namespacemimicpp_1_1expect.html#ae939c9fb932b3c1167385437e2df5c4a", null ],
@@ -53,6 +55,7 @@ var namespacemimicpp =
     [ "Mock< Return(Params...)>", "d4/dba/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_4.html", "d4/dba/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_4" ],
     [ "PredicateMatcher", "dc/d5e/classmimicpp_1_1_predicate_matcher.html", "dc/d5e/classmimicpp_1_1_predicate_matcher" ],
     [ "ScopedExpectation", "d6/dc0/classmimicpp_1_1_scoped_expectation.html", "d6/dc0/classmimicpp_1_1_scoped_expectation" ],
+    [ "Sequence", "d5/d54/classmimicpp_1_1_sequence.html", "d5/d54/classmimicpp_1_1_sequence" ],
     [ "signature_add_noexcept", "dd/db4/structmimicpp_1_1signature__add__noexcept.html", null ],
     [ "signature_add_noexcept< Return(Params...) noexcept >", "d0/dab/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01noexcept_01_4.html", "d0/dab/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_01noexcept_01_4" ],
     [ "signature_add_noexcept< Return(Params...)>", "d7/d6d/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_4.html", "d7/d6d/structmimicpp_1_1signature__add__noexcept_3_01_return_07_params_8_8_8_08_4" ],
@@ -117,6 +120,7 @@ var namespacemimicpp =
       [ "as_const", "d1/d11/namespacemimicpp.html#a96efa41dafaf424bc936fc152467feb1a7d8fbf6968b41f059fd98dfa87dc47c2", null ],
       [ "any", "d1/d11/namespacemimicpp.html#a96efa41dafaf424bc936fc152467feb1a100b8cad7cf2a56f6df78f171f97a1ec", null ]
     ] ],
+    [ "SequenceId", "d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#gabe345f064a02510e07321d78c59959e7", null ],
     [ "ValueCategory", "d1/d11/namespacemimicpp.html#a6076e747dc4e61ff337a809d19f4824a", [
       [ "lvalue", "d1/d11/namespacemimicpp.html#a6076e747dc4e61ff337a809d19f4824aa44f6155f13a820089c09cb5e9d7ccdef", null ],
       [ "rvalue", "d1/d11/namespacemimicpp.html#a6076e747dc4e61ff337a809d19f4824aab5528fe69322e9e7de4c701519197fcd", null ],
@@ -125,10 +129,12 @@ var namespacemimicpp =
     [ "is_matching", "d1/d11/namespacemimicpp.html#a68c1d279c259f2aef30a89cd5e0d7485", null ],
     [ "is_matching", "d1/d11/namespacemimicpp.html#a4e2c65ccd4076c4ed7adac3dc1161b06", null ],
     [ "is_same_source_location", "d1/d11/namespacemimicpp.html#a572acd40fe6bf7c5ea72c9494c8caf56", null ],
+    [ "report_error", "d1/d11/namespacemimicpp.html#ab2a5ffbcc3247a8749c62e9164b90236", null ],
     [ "report_fail", "d1/d11/namespacemimicpp.html#a0033e5ce71e859dde33cb5f82cabccdc", null ],
     [ "report_ok", "d1/d11/namespacemimicpp.html#a3e4e51ec494a4e3a6816753b17dd639c", null ],
     [ "report_unhandled_exception", "d1/d11/namespacemimicpp.html#acc67358990cac7b44b20bc18fe3bedbd", null ],
     [ "report_unsatisfied_expectation", "d1/d11/namespacemimicpp.html#a618300802c679a793daf3679f0a5793c", null ],
     [ "ScopedExpectation", "d1/d11/namespacemimicpp.html#aea86b50ccc10442e45ce7f18887d2ab7", null ],
+    [ "to_underlying", "d1/d11/namespacemimicpp.html#add9703907de32b233525df612144e00f", null ],
     [ "print", "d1/d11/namespacemimicpp.html#a67aaa7bdf2da1595ab1b25059119242c", null ]
 ];

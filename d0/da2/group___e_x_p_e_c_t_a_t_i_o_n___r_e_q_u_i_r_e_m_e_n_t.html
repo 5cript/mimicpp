@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Requirements determine, whether an expectation matches an incoming call. </p>
 <p>Requirements are the building blocks, which determine whether a call satisfies the expectation. If any of the specified requirements fail, there is no match. </p><dl class="section note"><dt>Note</dt><dd>An expectation without requirements matches any call.</dd></dl>
-<p>Requirements are checked during the <code>matches</code> step. If all requirements match, an additional <code>is_saturated</code> check is performed on all requirements. If this returns <code>true</code>, the expectation is treated as <code>exhausted</code> and will be skipped (but reported if no match was found). Otherwise, the call is matched. </p>
+<p>Requirements are checked during the <code>matches</code> step. If all requirements match, an additional <code>is_applicable</code> check is performed on the times requirements. If this returns <code>false</code>, the expectation is treated as <code>non-applicable</code> and will be skipped (but reported if no other match can be found). Otherwise, the call is matched. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga1abed045e8a61c27f72eb595b2dd5c61" name="ga1abed045e8a61c27f72eb595b2dd5c61"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1abed045e8a61c27f72eb595b2dd5c61">&#9670;&#160;</a></span>arg()</h2>

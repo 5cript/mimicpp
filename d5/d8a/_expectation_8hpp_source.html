@@ -130,7 +130,7 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">void</span> handle_call_match_fail(</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        call::Info&lt;Return, Params...&gt; call,</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        std::vector&lt;call::MatchResult_NoT&gt; noMatches,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        std::vector&lt;call::MatchResult_ExhaustedT&gt; partialMatches</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        std::vector&lt;call::MatchResult_NotApplicableT&gt; partialMatches</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    )</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    {</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">if</span> (!std::ranges::empty(partialMatches))</div>
@@ -258,7 +258,7 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>            <span class="keyword">static_assert</span>(3 == std::variant_size_v&lt;call::MatchResultT&gt;, <span class="stringliteral">&quot;Unexpected MatchResult alternative count.&quot;</span>);</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            std::vector&lt;call::MatchResult_NoT&gt; noMatches{};</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            std::vector&lt;call::MatchResult_ExhaustedT&gt; exhaustedMatches{};</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>            std::vector&lt;call::MatchResult_NotApplicableT&gt; exhaustedMatches{};</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>            <span class="keywordflow">for</span> (<span class="keyword">const</span> std::scoped_lock lock{m_ExpectationsMx};</div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>                <span class="keyword">auto</span>&amp; exp : m_Expectations | std::views::reverse)</div>
@@ -280,7 +280,7 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>                    }</div>
 <div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>                    <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>                    {</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                        exhaustedMatches.emplace_back(std::get&lt;call::MatchResult_ExhaustedT&gt;(*std::move(matchResult)));</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>                        exhaustedMatches.emplace_back(std::get&lt;call::MatchResult_NotApplicableT&gt;(*std::move(matchResult)));</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>                    }</div>
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>                }</div>
 <div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>            }</div>
@@ -330,7 +330,7 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>                            &amp;&amp; <span class="keyword">requires</span>(T&amp; policy)</div>
 <div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>                            {</div>
 <div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>                                { std::as_const(policy).is_satisfied() } <span class="keyword">noexcept</span> -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                                { std::as_const(policy).is_saturated() } <span class="keyword">noexcept</span> -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>                                { std::as_const(policy).is_applicable() } <span class="keyword">noexcept</span> -&gt; std::convertible_to&lt;bool&gt;;</div>
 <div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>                                policy.consume();</div>
 <div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>                            };</div>
 </div>
@@ -388,10 +388,10 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
 <div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        [[nodiscard]]</div>
 <div class="foldopen" id="foldopen00267" data-start="{" data-end="}">
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#acbed38111e7e44d4f505416b225dedac">  267</a></span>        <a class="code hl_typedef" href="../../dc/d2e/namespacemimicpp_1_1call.html#aa6c7b234ccca374ba4f2cdd43b92b373">call::MatchResultT</a> <a class="code hl_function" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#acbed38111e7e44d4f505416b225dedac">matches</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#a6d74488906f94027e51ae3941fe03010">CallInfoT</a>&amp; call)<span class="keyword"> const override</span></div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno"><a class="line" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#acbed38111e7e44d4f505416b225dedac">  267</a></span>        <a class="code hl_typedef" href="../../dc/d2e/namespacemimicpp_1_1call.html#afc044b19e3cc096628431b1a0e2dce0f">call::MatchResultT</a> <a class="code hl_function" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#acbed38111e7e44d4f505416b225dedac">matches</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#a6d74488906f94027e51ae3941fe03010">CallInfoT</a>&amp; call)<span class="keyword"> const override</span></div>
 <div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span><span class="keyword">        </span>{</div>
 <div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            <span class="keywordflow">return</span> call::detail::evaluate_sub_match_results(</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                m_Times.is_saturated(),</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>                m_Times.is_applicable(),</div>
 <div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>                std::apply(</div>
 <div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                    [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp;... policies)</div>
 <div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                    {</div>
@@ -551,7 +551,7 @@ $(function(){initNavTree('d5/d8a/_expectation_8hpp_source.html','../../'); initR
 <div class="ttc" id="aconceptmimicpp_1_1expectation__policy__for_html"><div class="ttname"><a href="../../dd/d1d/conceptmimicpp_1_1expectation__policy__for.html">mimicpp::expectation_policy_for</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:190</div></div>
 <div class="ttc" id="aconceptmimicpp_1_1finalize__policy__for_html"><div class="ttname"><a href="../../d9/d64/conceptmimicpp_1_1finalize__policy__for.html">mimicpp::finalize_policy_for</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:201</div></div>
 <div class="ttc" id="aconceptmimicpp_1_1times__policy_html"><div class="ttname"><a href="../../d1/d26/conceptmimicpp_1_1times__policy.html">mimicpp::times_policy</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:210</div></div>
-<div class="ttc" id="anamespacemimicpp_1_1call_html_aa6c7b234ccca374ba4f2cdd43b92b373"><div class="ttname"><a href="../../dc/d2e/namespacemimicpp_1_1call.html#aa6c7b234ccca374ba4f2cdd43b92b373">mimicpp::call::MatchResultT</a></div><div class="ttdeci">std::variant&lt; MatchResult_NoT, MatchResult_ExhaustedT, MatchResult_OkT &gt; MatchResultT</div><div class="ttdef"><b>Definition</b> Call.hpp:148</div></div>
+<div class="ttc" id="anamespacemimicpp_1_1call_html_afc044b19e3cc096628431b1a0e2dce0f"><div class="ttname"><a href="../../dc/d2e/namespacemimicpp_1_1call.html#afc044b19e3cc096628431b1a0e2dce0f">mimicpp::call::MatchResultT</a></div><div class="ttdeci">std::variant&lt; MatchResult_NoT, MatchResult_NotApplicableT, MatchResult_OkT &gt; MatchResultT</div><div class="ttdef"><b>Definition</b> Call.hpp:148</div></div>
 <div class="ttc" id="anamespacemimicpp_html"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html">mimicpp</a></div><div class="ttdef"><b>Definition</b> Call.hpp:25</div></div>
 <div class="ttc" id="anamespacemimicpp_html_a0033e5ce71e859dde33cb5f82cabccdc"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html#a0033e5ce71e859dde33cb5f82cabccdc">mimicpp::report_fail</a></div><div class="ttdeci">void report_fail(const call::Info&lt; Return, Params... &gt; &amp;callInfo, std::vector&lt; call::MatchResult_NoT &gt; results)</div></div>
 <div class="ttc" id="anamespacemimicpp_html_a3e4e51ec494a4e3a6816753b17dd639c"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html#a3e4e51ec494a4e3a6816753b17dd639c">mimicpp::report_ok</a></div><div class="ttdeci">void report_ok(const call::Info&lt; Return, Params... &gt; &amp;callInfo, call::MatchResult_OkT result)</div></div>

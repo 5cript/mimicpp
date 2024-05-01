@@ -7,13 +7,13 @@ var _call_8hpp =
     [ "mimicpp::call::SubMatchResult", "df/d7b/classmimicpp_1_1call_1_1_sub_match_result.html", "df/d7b/classmimicpp_1_1call_1_1_sub_match_result" ],
     [ "mimicpp::call::GenericMatchResult< category >", "dd/d61/classmimicpp_1_1call_1_1_generic_match_result.html", "dd/d61/classmimicpp_1_1call_1_1_generic_match_result" ],
     [ "info_for_signature_t", "dc/d44/_call_8hpp.html#a904a8502dffb5e669557ce1a8c4b05eb", null ],
-    [ "MatchResult_ExhaustedT", "dc/d44/_call_8hpp.html#ad67e68b88c2bfec3d3f7834531efee82", null ],
     [ "MatchResult_NoT", "dc/d44/_call_8hpp.html#a6a530fef433c8496a996a75702130490", null ],
+    [ "MatchResult_NotApplicableT", "dc/d44/_call_8hpp.html#ac67402ad362f00a87e3a9ad693a42f25", null ],
     [ "MatchResult_OkT", "dc/d44/_call_8hpp.html#a9d2d18864f7e8dc6aa7e845f4d72e9fa", null ],
-    [ "MatchResultT", "dc/d44/_call_8hpp.html#aa6c7b234ccca374ba4f2cdd43b92b373", null ],
+    [ "MatchResultT", "dc/d44/_call_8hpp.html#afc044b19e3cc096628431b1a0e2dce0f", null ],
     [ "MatchCategory", "dc/d44/_call_8hpp.html#ac826f29e99e4f7b919bc9737fba9609a", [
       [ "no", "dc/d44/_call_8hpp.html#ac826f29e99e4f7b919bc9737fba9609aa7fa3b767c460b54a2be4d49030b349c7", null ],
-      [ "exhausted", "dc/d44/_call_8hpp.html#ac826f29e99e4f7b919bc9737fba9609aae349d735a5fa5b10d9770031e669c477", null ],
+      [ "non_applicable", "dc/d44/_call_8hpp.html#ac826f29e99e4f7b919bc9737fba9609aa4caf93a1b97713c6f4bf7bd61deadfc9", null ],
       [ "ok", "dc/d44/_call_8hpp.html#ac826f29e99e4f7b919bc9737fba9609aa444bcb3a3fcf8389296c49467f27e1d6", null ]
     ] ]
 ];

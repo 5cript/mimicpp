@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ok_0',['ok',['../dc/d2e/namespacemimicpp_1_1call.html#ac826f29e99e4f7b919bc9737fba9609aa444bcb3a3fcf8389296c49467f27e1d6',1,'mimicpp::call']]]
+  ['rvalue_0',['rvalue',['../d1/d11/namespacemimicpp.html#a6076e747dc4e61ff337a809d19f4824aab5528fe69322e9e7de4c701519197fcd',1,'mimicpp']]]
 ];
