@@ -43,6 +43,5 @@ var searchData=
   ['signature_5fremove_5fnoexcept_3c_20return_28params_2e_2e_2e_2c_2e_2e_2e_29_3e_40',['signature_remove_noexcept&lt; Return(Params...,...)&gt;',['../d2/d09/structmimicpp_1_1signature__remove__noexcept_3_01_return_07_params_8_8_8_00_8_8_8_08_4.html',1,'mimicpp']]],
   ['signature_5freturn_5ftype_41',['signature_return_type',['../d4/d96/structmimicpp_1_1signature__return__type.html',1,'mimicpp']]],
   ['signature_5freturn_5ftype_3c_20return_28params_2e_2e_2e_29_3e_42',['signature_return_type&lt; Return(Params...)&gt;',['../d0/d85/structmimicpp_1_1signature__return__type_3_01_return_07_params_8_8_8_08_4.html',1,'mimicpp']]],
-  ['signature_5freturn_5ftype_3c_20return_28params_2e_2e_2e_2c_2e_2e_2e_29_3e_43',['signature_return_type&lt; Return(Params...,...)&gt;',['../d3/d9e/structmimicpp_1_1signature__return__type_3_01_return_07_params_8_8_8_00_8_8_8_08_4.html',1,'mimicpp']]],
-  ['submatchresult_44',['SubMatchResult',['../df/d7b/classmimicpp_1_1call_1_1_sub_match_result.html',1,'mimicpp::call']]]
+  ['signature_5freturn_5ftype_3c_20return_28params_2e_2e_2e_2c_2e_2e_2e_29_3e_43',['signature_return_type&lt; Return(Params...,...)&gt;',['../d3/d9e/structmimicpp_1_1signature__return__type_3_01_return_07_params_8_8_8_00_8_8_8_08_4.html',1,'mimicpp']]]
 ];

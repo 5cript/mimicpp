@@ -106,15 +106,14 @@ $(function(){initNavTree('dc/d5e/classmimicpp_1_1_predicate_matcher.html','../..
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaeb685b7fd5d4392b51fa6e7925899e4" id="r_aaeb685b7fd5d4392b51fa6e7925899e4"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeb685b7fd5d4392b51fa6e7925899e4">PredicateMatcher</a> (Predicate predicate, <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a> fmt, std::tuple&lt; AdditionalArgs... &gt; additionalArgs=std::tuple{}) noexcept(std::is_nothrow_move_constructible_v&lt; Predicate &gt; &amp;&amp;(... &amp;&amp;std::is_nothrow_move_constructible_v&lt; AdditionalArgs &gt;))</td></tr>
-<tr class="separator:aaeb685b7fd5d4392b51fa6e7925899e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6de73a93291473f9fe825a12e6bd7d1" id="r_af6de73a93291473f9fe825a12e6bd7d1"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af6de73a93291473f9fe825a12e6bd7d1">PredicateMatcher</a> (Predicate predicate, <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a> fmt, <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a> invertedFmt, std::tuple&lt; AdditionalArgs... &gt; additionalArgs=std::tuple{}) noexcept(std::is_nothrow_move_constructible_v&lt; Predicate &gt; &amp;&amp;(... &amp;&amp;std::is_nothrow_move_constructible_v&lt; AdditionalArgs &gt;))</td></tr>
+<tr class="separator:af6de73a93291473f9fe825a12e6bd7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0acf28a054e164605fff2ede5ba4c039" id="r_a0acf28a054e164605fff2ede5ba4c039"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
 requires std::predicate&lt;const Predicate&amp;, T&amp;, const AdditionalArgs&amp;...&gt;</td></tr>
 <tr class="memitem:a0acf28a054e164605fff2ede5ba4c039"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0acf28a054e164605fff2ede5ba4c039">matches</a> (T &amp;target) const noexcept(std::is_nothrow_invocable_v&lt; const Predicate &amp;, T &amp;, const AdditionalArgs &amp;... &gt;)</td></tr>
 <tr class="separator:a0acf28a054e164605fff2ede5ba4c039"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8489b91f8a88fd0603d020481795d62" id="r_af8489b91f8a88fd0603d020481795d62"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:af8489b91f8a88fd0603d020481795d62"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af8489b91f8a88fd0603d020481795d62">describe</a> (T &amp;target) const</td></tr>
-<tr class="separator:af8489b91f8a88fd0603d020481795d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ebcc6b34cf12c55177b6e5f4f9766d" id="r_aa7ebcc6b34cf12c55177b6e5f4f9766d"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa7ebcc6b34cf12c55177b6e5f4f9766d">describe</a> () const</td></tr>
+<tr class="separator:aa7ebcc6b34cf12c55177b6e5f4f9766d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae372d28e738cae4b05c4ae88090c0d8e" id="r_ae372d28e738cae4b05c4ae88090c0d8e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae372d28e738cae4b05c4ae88090c0d8e">operator!</a> () const &amp;</td></tr>
 <tr class="separator:ae372d28e738cae4b05c4ae88090c0d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7593a5bff76d08d5c35e14e629ca22a6" id="r_a7593a5bff76d08d5c35e14e629ca22a6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7593a5bff76d08d5c35e14e629ca22a6">operator!</a> () &amp;&amp;</td></tr>
@@ -132,8 +131,8 @@ class mimicpp::PredicateMatcher&lt; Predicate, AdditionalArgs &gt;</div><p>Gener
   </dd>
 </dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aaeb685b7fd5d4392b51fa6e7925899e4" name="aaeb685b7fd5d4392b51fa6e7925899e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaeb685b7fd5d4392b51fa6e7925899e4">&#9670;&#160;</a></span>PredicateMatcher()</h2>
+<a id="af6de73a93291473f9fe825a12e6bd7d1" name="af6de73a93291473f9fe825a12e6bd7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6de73a93291473f9fe825a12e6bd7d1">&#9670;&#160;</a></span>PredicateMatcher()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,6 +155,11 @@ template&lt;typename Predicate , typename... AdditionalArgs&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a></td>          <td class="paramname"><span class="paramname"><em>invertedFmt</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">std::tuple&lt; AdditionalArgs... &gt;</td>          <td class="paramname"><span class="paramname"><em>additionalArgs</em><span class="paramdefsep"> = </span><span class="paramdefval">std::tuple{}</span></span>&#160;)</td>
         </tr>
       </table>
@@ -169,15 +173,13 @@ template&lt;typename Predicate , typename... AdditionalArgs&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="af8489b91f8a88fd0603d020481795d62" name="af8489b91f8a88fd0603d020481795d62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8489b91f8a88fd0603d020481795d62">&#9670;&#160;</a></span>describe()</h2>
+<a id="aa7ebcc6b34cf12c55177b6e5f4f9766d" name="aa7ebcc6b34cf12c55177b6e5f4f9766d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ebcc6b34cf12c55177b6e5f4f9766d">&#9670;&#160;</a></span>describe()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;typename Predicate , typename... AdditionalArgs&gt; </div>
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
@@ -185,7 +187,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">constexpr <a class="el" href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">StringT</a> <a class="el" href="../../dc/d5e/classmimicpp_1_1_predicate_matcher.html">mimicpp::PredicateMatcher</a>&lt; Predicate, AdditionalArgs &gt;::describe </td>
           <td>(</td>
-          <td class="paramtype">T &amp;</td>          <td class="paramname"><span class="paramname"><em>target</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -291,7 +293,7 @@ template&lt;typename Predicate , typename... AdditionalArgs&gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d11/namespacemimicpp.html">mimicpp</a></li><li class="navelem"><a class="el" href="../../dc/d5e/classmimicpp_1_1_predicate_matcher.html">PredicateMatcher</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Tue May 7 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

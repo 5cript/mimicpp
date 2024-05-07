@@ -125,9 +125,11 @@ requires std::invocable&lt;Action&amp;, const <a class="el" href="../../d4/d44/c
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2facb535dde985897db3ac1da9f315c" id="r_ab2facb535dde985897db3ac1da9f315c"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2facb535dde985897db3ac1da9f315c">is_satisfied</a> () noexcept</td></tr>
 <tr class="separator:ab2facb535dde985897db3ac1da9f315c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab59f266a217f6266710b14352d6122d2" id="r_ab59f266a217f6266710b14352d6122d2"><td class="memTemplParams" colspan="2">template&lt;typename Return , typename... Args&gt; </td></tr>
-<tr class="memitem:ab59f266a217f6266710b14352d6122d2"><td class="memTemplItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../df/d7b/classmimicpp_1_1call_1_1_sub_match_result.html">call::SubMatchResult</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab59f266a217f6266710b14352d6122d2">matches</a> (const <a class="el" href="../../d4/d44/classmimicpp_1_1call_1_1_info.html">call::Info</a>&lt; Return, Args... &gt; &amp;) noexcept</td></tr>
-<tr class="separator:ab59f266a217f6266710b14352d6122d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bfc03a555eed8ed0126f32a858ba3ef" id="r_a0bfc03a555eed8ed0126f32a858ba3ef"><td class="memTemplParams" colspan="2">template&lt;typename Return , typename... Args&gt; </td></tr>
+<tr class="memitem:a0bfc03a555eed8ed0126f32a858ba3ef"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0bfc03a555eed8ed0126f32a858ba3ef">matches</a> (const <a class="el" href="../../d4/d44/classmimicpp_1_1call_1_1_info.html">call::Info</a>&lt; Return, Args... &gt; &amp;) noexcept</td></tr>
+<tr class="separator:a0bfc03a555eed8ed0126f32a858ba3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e58164e3c6874a5540c333ee0aff81f" id="r_a0e58164e3c6874a5540c333ee0aff81f"><td class="memItemLeft" align="right" valign="top">static std::nullopt_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0e58164e3c6874a5540c333ee0aff81f">describe</a> () noexcept</td></tr>
+<tr class="separator:a0e58164e3c6874a5540c333ee0aff81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a399903f019ce67d203a4c21a7936cad3" name="a399903f019ce67d203a4c21a7936cad3"></a>
@@ -269,6 +271,33 @@ requires std::invocable&lt;Action&amp;, const <a class="el" href="../../d4/d44/c
 
 </div>
 </div>
+<a id="a0e58164e3c6874a5540c333ee0aff81f" name="a0e58164e3c6874a5540c333ee0aff81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e58164e3c6874a5540c333ee0aff81f">&#9670;&#160;</a></span>describe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Action &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static std::nullopt_t <a class="el" href="../../d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html">mimicpp::expectation_policies::SideEffectAction</a>&lt; Action &gt;::describe </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ab2facb535dde985897db3ac1da9f315c" name="ab2facb535dde985897db3ac1da9f315c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2facb535dde985897db3ac1da9f315c">&#9670;&#160;</a></span>is_satisfied()</h2>
 
@@ -296,8 +325,8 @@ template&lt;typename Action &gt; </div>
 
 </div>
 </div>
-<a id="ab59f266a217f6266710b14352d6122d2" name="ab59f266a217f6266710b14352d6122d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab59f266a217f6266710b14352d6122d2">&#9670;&#160;</a></span>matches()</h2>
+<a id="a0bfc03a555eed8ed0126f32a858ba3ef" name="a0bfc03a555eed8ed0126f32a858ba3ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bfc03a555eed8ed0126f32a858ba3ef">&#9670;&#160;</a></span>matches()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -310,7 +339,7 @@ template&lt;typename Return , typename... Args&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static constexpr <a class="el" href="../../df/d7b/classmimicpp_1_1call_1_1_sub_match_result.html">call::SubMatchResult</a> <a class="el" href="../../d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html">mimicpp::expectation_policies::SideEffectAction</a>&lt; Action &gt;::matches </td>
+          <td class="memname">static constexpr bool <a class="el" href="../../d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html">mimicpp::expectation_policies::SideEffectAction</a>&lt; Action &gt;::matches </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="../../d4/d44/classmimicpp_1_1call_1_1_info.html">call::Info</a>&lt; Return, Args... &gt; &amp;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -388,7 +417,7 @@ template&lt;typename Action &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d11/namespacemimicpp.html">mimicpp</a></li><li class="navelem"><a class="el" href="../../d0/d91/namespacemimicpp_1_1expectation__policies.html">expectation_policies</a></li><li class="navelem"><a class="el" href="../../d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html">SideEffectAction</a></li>
-    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Tue May 7 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

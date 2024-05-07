@@ -43,7 +43,7 @@ var NAVTREE =
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
+        [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", null ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Related Symbols", "functions_rela.html", null ]
@@ -62,9 +62,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d3/d4a/classmimicpp_1_1_basic_expectation.html#af03f161e0dab617cfd812b639028997e",
-"d7/df9/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_01_6_01_4.html#a2245fc3043e212c5df14d996bf15c23d",
-"dc/d85/structmimicpp_1_1signature__decay_3_01_return_07_params_8_8_8_00_8_8_8_08_01const_01_4.html#a50b8433360516705acaa0659dfa48e93"
+"d3/d4a/classmimicpp_1_1_basic_expectation.html#a6d74488906f94027e51ae3941fe03010",
+"d6/d30/classmimicpp_1_1expectation__policies_1_1_times.html#ab7a4b3e40ac70134c8c346b8850f149b",
+"db/dc8/classmimicpp_1_1_mock_3_01_return_07_params_8_8_8_08_01const_01_6noexcept_01_4.html#adc6f3b0fedf5ce4bad25bcfdca3e757b",
+"functions_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
