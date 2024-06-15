@@ -45,12 +45,12 @@ var group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s =
       [ "timesReport", "db/d11/classmimicpp_1_1_match_report.html#a5764746cc62f297ca3ee065cbe3cfb1e", null ]
     ] ],
     [ "mimicpp::evaluate_match_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga28bf45ff6df85506325c64349d37ca85", null ],
-    [ "mimicpp::make_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c", null ],
     [ "mimicpp::call::Info::make_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c", null ],
-    [ "mimicpp::stringify_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9", null ],
+    [ "mimicpp::make_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c", null ],
     [ "mimicpp::CallReport::stringify_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9", null ],
-    [ "mimicpp::stringify_expectation_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37", null ],
+    [ "mimicpp::stringify_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9", null ],
     [ "mimicpp::ExpectationReport::stringify_expectation_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37", null ],
-    [ "mimicpp::stringify_match_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881", null ],
-    [ "mimicpp::MatchReport::stringify_match_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881", null ]
+    [ "mimicpp::stringify_expectation_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37", null ],
+    [ "mimicpp::MatchReport::stringify_match_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881", null ],
+    [ "mimicpp::stringify_match_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881", null ]
 ];
