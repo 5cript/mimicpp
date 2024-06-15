@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macro_20free_20mocking_20library_0',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]],
+  ['macro_20free_20mocking_20framework_0',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['make_5fcall_5freport_1',['make_call_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::Info::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c',1,'mimicpp::make_call_report()']]],
   ['matcher_2',['Custom Matcher',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md1',1,'']]],
   ['matcher_2ehpp_3',['Matcher.hpp',['../dd/d50/_matcher_8hpp.html',1,'']]],
@@ -9,7 +9,7 @@ var searchData=
   ['matching_20arguments_6',['Matching arguments',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md0',1,'']]],
   ['matchreport_7',['MatchReport',['../db/d11/classmimicpp_1_1_match_report.html',1,'mimicpp']]],
   ['matchresult_8',['MatchResult',['../d1/d11/namespacemimicpp.html#a0e5bd3ba3ed7ebefe6d2016ce35bbe5b',1,'mimicpp']]],
-  ['mimic_20a_20modern_20and_20mostly_20macro_20free_20mocking_20library_9',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]],
+  ['mimic_20a_20modern_20and_20mostly_20macro_20free_20mocking_20framework_9',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['mimicpp_10',['mimicpp',['../d1/d11/namespacemimicpp.html',1,'']]],
   ['mimicpp_3a_3acall_11',['call',['../dc/d2e/namespacemimicpp_1_1call.html',1,'mimicpp']]],
   ['mimicpp_3a_3acustom_12',['custom',['../d4/d84/namespacemimicpp_1_1custom.html',1,'mimicpp']]],
@@ -34,7 +34,7 @@ var searchData=
   ['mock_31',['Mock',['../d2/d48/classmimicpp_1_1_mock.html',1,'mimicpp::Mock&lt; FirstSignature, OtherSignatures &gt;'],['../d2/d48/classmimicpp_1_1_mock.html#af9600e31eb91b58b191ebf23115265c2',1,'mimicpp::Mock::Mock()=default'],['../d2/d48/classmimicpp_1_1_mock.html#a82245bdc75ad5e24fbd3ad2aab2c573f',1,'mimicpp::Mock::Mock(const Mock &amp;)=delete'],['../d2/d48/classmimicpp_1_1_mock.html#a5e7e7e0aec831b10395872380eb84de6',1,'mimicpp::Mock::Mock(Mock &amp;&amp;)=default']]],
   ['mock_32',['mock',['../d8/d12/group___m_o_c_k.html',1,'']]],
   ['mock_2ehpp_33',['Mock.hpp',['../d5/dc5/_mock_8hpp.html',1,'']]],
-  ['mocking_20library_34',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]],
-  ['modern_20and_20mostly_20macro_20free_20mocking_20library_35',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]],
-  ['mostly_20macro_20free_20mocking_20library_36',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]]
+  ['mocking_20framework_34',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
+  ['modern_20and_20mostly_20macro_20free_20mocking_20framework_35',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
+  ['mostly_20macro_20free_20mocking_20framework_36',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]]
 ];

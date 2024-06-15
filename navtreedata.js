@@ -25,7 +25,7 @@
 var NAVTREE =
 [
   [ "mimic++", "index.html", [
-    [ "mimic++, a modern and (mostly) macro free mocking library", "index.html", "index" ],
+    [ "mimic++, a modern and (mostly) macro free mocking framework", "index.html", "index" ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
