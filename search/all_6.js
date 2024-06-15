@@ -12,11 +12,12 @@ var searchData=
   ['formatter_3c_20mimicpp_3a_3aconstness_2c_20mimicpp_3a_3achart_20_3e_9',['formatter&lt; mimicpp::Constness, mimicpp::CharT &gt;',['../d4/de7/structstd_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html',1,'std']]],
   ['formatter_3c_20mimicpp_3a_3avaluecategory_2c_20mimicpp_3a_3achart_20_3e_10',['formatter&lt; mimicpp::ValueCategory, mimicpp::CharT &gt;',['../d5/df8/structstd_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html',1,'std']]],
   ['framework_20adapters_11',['test framework adapters',['../d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html',1,'']]],
-  ['from_12',['from',['../d3/d4a/classmimicpp_1_1_basic_expectation.html#af766ac8d759e8d6165cfcd3cd780b5e9',1,'mimicpp::BasicExpectation']]],
-  ['fromcategory_13',['fromCategory',['../d4/d44/classmimicpp_1_1call_1_1_info.html#a153d607922dd5ca195dc8daa23587776',1,'mimicpp::call::Info::fromCategory'],['../dc/dd0/classmimicpp_1_1_call_report.html#ad0af98e56cddb30e0074ff8dc8fd54ee',1,'mimicpp::CallReport::fromCategory']]],
-  ['fromconstness_14',['fromConstness',['../d4/d44/classmimicpp_1_1call_1_1_info.html#af90735d4d5fa4d29dae955b1660defb3',1,'mimicpp::call::Info::fromConstness'],['../dc/dd0/classmimicpp_1_1_call_report.html#a804aea975ce3fd4f4348b4cc1f51f333',1,'mimicpp::CallReport::fromConstness']]],
-  ['fromloc_15',['fromLoc',['../dc/dd0/classmimicpp_1_1_call_report.html#aeb9ed8b5928e4a5673abb5e7e34978de',1,'mimicpp::CallReport']]],
-  ['fromsourcelocation_16',['fromSourceLocation',['../d4/d44/classmimicpp_1_1call_1_1_info.html#ab13116b95585c94b57e7cbd330c122a7',1,'mimicpp::call::Info']]],
-  ['full_17',['full',['../d1/d11/namespacemimicpp.html#a0e5bd3ba3ed7ebefe6d2016ce35bbe5bae9dc924f238fa6cc29465942875fe8f0',1,'mimicpp']]],
-  ['fwd_2ehpp_18',['Fwd.hpp',['../df/dde/_fwd_8hpp.html',1,'']]]
+  ['free_20mocking_20library_12',['mimic++, a modern and (mostly) macro free mocking library',['../index.html',1,'']]],
+  ['from_13',['from',['../d3/d4a/classmimicpp_1_1_basic_expectation.html#af766ac8d759e8d6165cfcd3cd780b5e9',1,'mimicpp::BasicExpectation']]],
+  ['fromcategory_14',['fromCategory',['../d4/d44/classmimicpp_1_1call_1_1_info.html#a153d607922dd5ca195dc8daa23587776',1,'mimicpp::call::Info::fromCategory'],['../dc/dd0/classmimicpp_1_1_call_report.html#ad0af98e56cddb30e0074ff8dc8fd54ee',1,'mimicpp::CallReport::fromCategory']]],
+  ['fromconstness_15',['fromConstness',['../d4/d44/classmimicpp_1_1call_1_1_info.html#af90735d4d5fa4d29dae955b1660defb3',1,'mimicpp::call::Info::fromConstness'],['../dc/dd0/classmimicpp_1_1_call_report.html#a804aea975ce3fd4f4348b4cc1f51f333',1,'mimicpp::CallReport::fromConstness']]],
+  ['fromloc_16',['fromLoc',['../dc/dd0/classmimicpp_1_1_call_report.html#aeb9ed8b5928e4a5673abb5e7e34978de',1,'mimicpp::CallReport']]],
+  ['fromsourcelocation_17',['fromSourceLocation',['../d4/d44/classmimicpp_1_1call_1_1_info.html#ab13116b95585c94b57e7cbd330c122a7',1,'mimicpp::call::Info']]],
+  ['full_18',['full',['../d1/d11/namespacemimicpp.html#a0e5bd3ba3ed7ebefe6d2016ce35bbe5bae9dc924f238fa6cc29465942875fe8f0',1,'mimicpp']]],
+  ['fwd_2ehpp_19',['Fwd.hpp',['../df/dde/_fwd_8hpp.html',1,'']]]
 ];

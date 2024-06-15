@@ -12,7 +12,8 @@ var indexSectionsWithContent =
   9: "eo",
   10: "ms",
   11: "aefmrst",
-  12: "m"
+  12: "aflm",
+  13: "m"
 };
 
 var indexSectionNames =
@@ -29,7 +30,8 @@ var indexSectionNames =
   9: "related",
   10: "defines",
   11: "groups",
-  12: "concepts"
+  12: "pages",
+  13: "concepts"
 };
 
 var indexSectionLabels =
@@ -46,6 +48,7 @@ var indexSectionLabels =
   9: "Friends",
   10: "Macros",
   11: "Modules",
-  12: "Concepts"
+  12: "Pages",
+  13: "Concepts"
 };
 
