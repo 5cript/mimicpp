@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macos_0',['MacOs',['../index.html#autotoc_md16',1,'']]],
+  ['macos_0',['MacOs',['../index.html#autotoc_md17',1,'']]],
   ['macro_20free_20mocking_20framework_1',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['make_5fcall_5freport_2',['make_call_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::Info::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c',1,'mimicpp::make_call_report()']]],
   ['matcher_3',['Custom Matcher',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md1',1,'']]],
