@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['safety_0',['Thread-Safety',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md3',1,'']]],
+  ['safety_0',['Thread-Safety',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md2',1,'']]],
   ['scoped_5fexp_1',['SCOPED_EXP',['../d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a',1,'ExpectationBuilder.hpp']]],
   ['scopedexpectation_2',['ScopedExpectation',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html',1,'mimicpp::ScopedExpectation&lt; Signature &gt;'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a04577f897b988c0af3594838ef8f1025',1,'mimicpp::ScopedExpectation::ScopedExpectation(std::shared_ptr&lt; StorageT &gt; storage, std::shared_ptr&lt; ExpectationT &gt; expectation) noexcept'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a3a660302bb716eafa080631236cb6afb',1,'mimicpp::ScopedExpectation::ScopedExpectation(ScopedExpectation &amp;&amp;)=default'],['../d1/d11/namespacemimicpp.html#aea86b50ccc10442e45ce7f18887d2ab7',1,'mimicpp::ScopedExpectation()']]],
   ['scopedexpectationt_3',['ScopedExpectationT',['../d5/de1/classmimicpp_1_1_basic_expectation_builder.html#af6e1efedf6f067c87ff71aae1b510592',1,'mimicpp::BasicExpectationBuilder']]],
