@@ -120,16 +120,32 @@ Introduction</h1>
 <p>The one thing, that this framework does different than all other (or at least all I am aware of) mocking framework is, that mock objects explicitly are function objects, thus directly callable. It's simple and straight forward.</p>
 <p>As I'm mainly working on template or functional-style code, I wanted something simpler than always creating explicit mock types for the simplest of use cases. So, <code><a class="el" href="d2/d48/classmimicpp_1_1_mock.html" title="A Mock type, which fully supports overload sets.">mimicpp::Mock</a></code> objects can directly be used as functional objects, but they can also be used as member objects and thus serve as actual member functions. If you are curious, have a look at the documentation or directly into the examples.</p>
 <h2><a class="anchor" id="autotoc_md11"></a>
+Design Philosophy</h2>
+<p>The framework is designed with two core concepts in mind: Mocks and Expectations. Mocks can be used to define behaviour on a per test-case basis, without the necessity of creating dozens of types. The go-to example is, if you have a custom type, which somehow makes a connection to a concrete database, you do not want to setup an actual database connection during your test runs. You then simply install a database mock, which then yields the exact replies as it were defined for that particular case: the so called "Expectations".</p>
+<p>So, Mocks and Expectations are playing together hand in hand.</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+Basic Examples</h2>
+<p>Mocks themselves are very easy to create: </p><div class="fragment"><div class="line"><a class="code hl_class" href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a>&lt;void()&gt; myMock{};</div>
+<div class="ttc" id="aclassmimicpp_1_1_mock_html"><div class="ttname"><a href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a></div><div class="ttdoc">A Mock type, which fully supports overload sets.</div><div class="ttdef"><b>Definition</b> Mock.hpp:551</div></div>
+</div><!-- fragment --><p> This already is a fully functional Mock, which enables a member <code>void operator()</code> for which Expectations can be created.</p>
+<div class="fragment"><div class="line"><a class="code hl_class" href="d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a> myExpectation = myMock.expect_call();</div>
+<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html"><div class="ttname"><a href="d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:335</div></div>
+</div><!-- fragment --><p> The <code>expect_call()</code> member function initiates an expectation. Expectations are usually required to be fulfilled within the current (or deeper) scope. The <code>ScopedExpectation</code> then takes over the responsibility to check the Expectation, when that scope is left. Usually users do not need direct access to the expectations but still an unique name is required. To overcome that language limitation, an optional macro can be used: </p><div class="fragment"><div class="line"><a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> myMock.expect_call();</div>
+<div class="ttc" id="a_expectation_builder_8hpp_html_a7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:235</div></div>
+</div><!-- fragment --><p> This effectively does the same job as before, but the macro takes over the burden creating an unique name for that expectation.</p>
+<p>Given the previously created expectation, it is expected, that the call operator of <code>myMock</code> is called exactly once: </p><div class="fragment"><div class="line">myMock();</div>
+</div><!-- fragment --><p>Expectations can contain several requirements, e.g. <code>times</code> which indicates, how often an Expectation must be met. For more examples, have a look into the documentation or directly into the <code>examples</code> directory.</p>
+<h2><a class="anchor" id="autotoc_md13"></a>
 Special Acknowledgement</h2>
-<p>This framework is highly inspired by the well known <a href="https://github.com/rollbear/trompeloeil">trompeloeil</a>, which I have used myself for several years now. It's definitly not bad, but sometimwes feels a little bit dated and some macros do not play very well with formatting tools and the like. If you need a pre-c++20 mocking-framework, you should definitly give it a try.</p>
+<p>This framework is highly inspired by the well known <a href="https://github.com/rollbear/trompeloeil">trompeloeil</a>, which I have used myself for several years now. It's definitly not bad, but sometimes feels a little bit dated and some macros do not play very well with formatting tools and the like. If you need a pre-c++20 mocking-framework, you should definitly give it a try.</p>
 <p>Fun fact: <code>mimic++</code> uses <code>trompeloeil</code> for it's own test suite :D</p>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Documentation</h1>
 <p>The documenation is generated via <code>doxygen</code>. Users can do this locally by enabling both, the <code>MIMICPP_CONFIGURE_DOXYGEN</code> and <code>MIMICPP_CONFIGURE_DOXYGEN</code>, cmake options and building the target <code>mimicpp-generate-docs</code> manually.</p>
 <p>The documentation for the <code>main</code> branch is always available on the github pages; for the <code>development</code> branch it is also available on the <code>dev-gh-pages</code> branch, but unfortunatly not directly viewable on the browser. Every release has the generated documentation attached.</p>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Installation</h1>
-<p>This framework is header-only and fully power by cmake, thus the integration into a cmake project is straight-forward. </p><div class="fragment"><div class="line">target_link_libraries(</div>
+<p>This framework is header-only and completely powered by cmake, thus the integration into a cmake project is straight-forward. </p><div class="fragment"><div class="line">target_link_libraries(</div>
 <div class="line">    &lt;your_target_name&gt;</div>
 <div class="line">    PUBLIC</div>
 <div class="line">    mimicpp::mimicpp</div>
@@ -148,11 +164,11 @@ Installation</h1>
 <div class="line"> </div>
 <div class="line">CPMAddPackage(&quot;gh:DNKpp/mimicpp#&lt;any_commit_hash_or_tag&gt;&quot;)</div>
 <div class="line"># do not forget linking via target_link_libraries as shown above</div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md14"></a>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
 Testing</h1>
 <p><code>mimic++</code> utilizes a strict testing policy, thus each official feature is well tested. The effect of those test-cases are always tracked by the extensive ci, which checks the compilation success, test cases outcomes and coverage on dozens of different os, compiler and build configurations.</p>
 <p>The coverage is generated via <code>gcov</code> and evaluated by <a href="https://app.codacy.com/gh/DNKpp/mimicpp/dashboard">codacy</a>, <a href="https://app.codecov.io/gh/DNKpp/mimicpp">codecov</a> and <a href="https://coveralls.io/github/DNKpp/mimicpp">coveralls</a>.</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md17"></a>
 Windows</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -162,7 +178,7 @@ Windows</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Windows 2022   </td><td class="markdownTableBodyNone">clangCl   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Linux</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -176,7 +192,7 @@ Linux</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">gcc-14   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md19"></a>
 MacOs</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -192,7 +208,7 @@ MacOs</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jun 16 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
+    <li class="footer">Generated on Mon Jun 17 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.11.0 </li>
   </ul>
 </div>
 </body>

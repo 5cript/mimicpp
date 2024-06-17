@@ -105,7 +105,7 @@ var searchData=
   ['signature_5freturn_5ftype_3c_20signature_5fdecay_5ft_3c_20signature_20_3e_20_3e_102',['signature_return_type&lt; signature_decay_t&lt; Signature &gt; &gt;',['../d4/d96/structmimicpp_1_1signature__return__type.html',1,'mimicpp']]],
   ['signature_5freturn_5ftype_5ft_103',['signature_return_type_t',['../d1/d11/namespacemimicpp.html#ab7dbe7ae4fb93753e7e24603b98f9c5c',1,'mimicpp']]],
   ['sourcelocation_104',['sourceLocation',['../dd/d62/classmimicpp_1_1_expectation_report.html#a57b7f9b0d18c0b7e90d350c0ed3609ca',1,'mimicpp::ExpectationReport::sourceLocation'],['../db/d11/classmimicpp_1_1_match_report.html#ae54d08447ba833e1d44f000bb7a1a4c7',1,'mimicpp::MatchReport::sourceLocation']]],
-  ['special_20acknowledgement_105',['Special Acknowledgement',['../index.html#autotoc_md11',1,'']]],
+  ['special_20acknowledgement_105',['Special Acknowledgement',['../index.html#autotoc_md13',1,'']]],
   ['statestring_106',['stateString',['../dc/d03/classmimicpp_1_1_call_report_1_1_arg.html#a7e4239ebd09fd4b1fe3964408eda9c96',1,'mimicpp::CallReport::Arg']]],
   ['storaget_107',['StorageT',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a226131c027574033b7150397ec80fad1',1,'mimicpp::ScopedExpectation::StorageT'],['../d5/de1/classmimicpp_1_1_basic_expectation_builder.html#a9a33b0dba76c5a729d7c11cae783a459',1,'mimicpp::BasicExpectationBuilder::StorageT']]],
   ['string_20matchers_108',['string matchers',['../de/dd6/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r_s___s_t_r_i_n_g.html',1,'']]],

@@ -10,7 +10,7 @@ var searchData=
   ['initfinalize_7',['InitFinalize',['../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html',1,'mimicpp::expectation_policies']]],
   ['inittimes_8',['InitTimes',['../d4/d6b/classmimicpp_1_1expectation__policies_1_1_init_times.html',1,'mimicpp::expectation_policies']]],
   ['install_5freporter_9',['install_reporter',['../dd/d4f/group___r_e_p_o_r_t_i_n_g.html#ga14082268db10f80ecc210109669e626e',1,'mimicpp']]],
-  ['installation_10',['Installation',['../index.html#autotoc_md13',1,'']]],
+  ['installation_10',['Installation',['../index.html#autotoc_md15',1,'']]],
   ['introduction_11',['Introduction',['../index.html#autotoc_md10',1,'']]],
   ['invoke_12',['invoke',['../db/d71/group___e_x_p_e_c_t_a_t_i_o_n___s_i_d_e___e_f_f_e_c_t_s.html#ga96fbf72e7ef44a73904c3503a383cda4',1,'mimicpp::then']]],
   ['ireporter_13',['IReporter',['../dd/df0/classmimicpp_1_1_i_reporter.html',1,'mimicpp::IReporter'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a2d64e19d9351cf0f5d7c654c9c3b9e7b',1,'mimicpp::IReporter::IReporter()=default'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a0efd2638c465fc97fa0e4c85bdc1a683',1,'mimicpp::IReporter::IReporter(const IReporter &amp;)=default'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a5933d377de8a9e67bbcc874091b31585',1,'mimicpp::IReporter::IReporter(IReporter &amp;&amp;)=default']]],
