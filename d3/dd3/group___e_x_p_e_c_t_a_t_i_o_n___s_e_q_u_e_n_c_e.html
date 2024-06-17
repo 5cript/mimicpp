@@ -188,10 +188,10 @@ Functions</h2></td></tr>
 <div class="line">    mock(42); <span class="comment">// matches (5). The sequence is now fulfilled.</span></div>
 <div class="line">    mock(1337); <span class="comment">// finally matches (2)</span></div>
 </div><!-- fragment --><p>It's totally fine to attach expectations to sequences, which are already queried for matches. Sequences do not have to be setup in one go.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md3"></a>
 Thread-Safety</h1>
 <p>Sequences are not thread-safe and are never intended to be. If one attempts to enforce a strong ordering between multiple threads without any explicit synchronisation, that attempt is doomed to fail.</p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md4"></a>
 Afterthoughts</h1>
 <p><a class="el" href="../../d5/d54/classmimicpp_1_1_sequence.html" title="The user level sequence object.">Sequence</a> policies are treated as <code><a class="el" href="../../d1/d26/conceptmimicpp_1_1times__policy.html">times_policy</a></code> and therefore can not be mixed with e.g. <code>Times</code>. At a first glance this seems rather unintuitive, as a sequence does not actually mind how often an expectation is matched, but rather if one expectation has been matched before another. This being true, there is still a huge intersection between those cases, because a sequence still must know how often an expectation is expected to match. This would lead to higher coupling between two rather unrelated domains, but isn't the actual deal-breaker. The actual reason is, that both, <code>Times</code> and <code>RuntimeTimes</code> are rather permissive designed and thus allow for a wide range of valid configurations. Especially the cases, where a range of possible calls is configured (like <code>at_least</code>), makes it very hard for a sequence to reliably determine, whether an expectation shall match or not. When users define expectations not precise enough, this quickly leads to ambiguities between multiple expectations which may and will result in surprising outcomes. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>

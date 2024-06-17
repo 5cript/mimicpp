@@ -2,7 +2,7 @@ var searchData=
 [
   ['test_20framework_20adapters_0',['test framework adapters',['../d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html',1,'']]],
   ['testing_1',['Testing',['../index.html#autotoc_md16',1,'']]],
-  ['thread_20safety_2',['Thread-Safety',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md2',1,'']]],
+  ['thread_20safety_2',['Thread-Safety',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md3',1,'']]],
   ['throws_3',['Throws',['../d8/d34/classmimicpp_1_1expectation__policies_1_1_throws.html',1,'mimicpp::expectation_policies::Throws&lt; Exception &gt;'],['../d8/d34/classmimicpp_1_1expectation__policies_1_1_throws.html#a62d215740e01c6d31848df90575679d8',1,'mimicpp::expectation_policies::Throws::Throws()']]],
   ['throws_4',['throws',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#gab4f67d2c48ef5ebaf25e31e2ac59c5c1',1,'mimicpp::finally']]],
   ['times_5',['Times',['../d6/d30/classmimicpp_1_1expectation__policies_1_1_times.html',1,'mimicpp::expectation_policies::Times&lt; min, max &gt;'],['../d5/db1/classmimicpp_1_1_match_report_1_1_times.html',1,'mimicpp::MatchReport::Times']]],
