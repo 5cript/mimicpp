@@ -123,6 +123,7 @@ Introduction</h1>
 Design Philosophy</h2>
 <p>The framework is designed with two core concepts in mind: Mocks and Expectations. Mocks can be used to define behaviour on a per test-case basis, without the necessity of creating dozens of types. The go-to example is, if you have a custom type, which somehow makes a connection to a concrete database, you do not want to setup an actual database connection during your test runs. You then simply install a database mock, which then yields the exact replies as it were defined for that particular case: the so called "Expectations".</p>
 <p>So, Mocks and Expectations are playing together hand in hand.</p>
+<p>Additionally, users are able to create their own expectations easily and integrate them seamless into the rest of the framework. Be creative!</p>
 <h2><a class="anchor" id="autotoc_md12"></a>
 Basic Examples</h2>
 <p>Mocks themselves are very easy to create: </p><div class="fragment"><div class="line"><a class="code hl_class" href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a>&lt;void()&gt; myMock{};</div>
@@ -154,8 +155,8 @@ Installation</h1>
 <div class="line"> </div>
 <div class="line">FetchContent_Declare(</div>
 <div class="line">    mimicpp</div>
-<div class="line">    GIT_REPOSITORY  https://github.com/DNKpp/mimicpp</div>
-<div class="line">    GIT_TAG     &lt;any_commit_hash_or_tag&gt;</div>
+<div class="line">    GIT_REPOSITORY https://github.com/DNKpp/mimicpp</div>
+<div class="line">    GIT_TAG        &lt;any_commit_hash_or_tag&gt;</div>
 <div class="line">)</div>
 <div class="line"> </div>
 <div class="line">FetchContent_MakeAvailable(mimicpp)</div>
