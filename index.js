@@ -14,10 +14,13 @@ var index =
       [ "Special Acknowledgement", "index.html#autotoc_md17", null ]
     ] ],
     [ "Documentation", "index.html#autotoc_md18", null ],
-    [ "Installation", "index.html#autotoc_md19", null ],
-    [ "Testing", "index.html#autotoc_md20", [
-      [ "Windows", "index.html#autotoc_md21", null ],
-      [ "Linux", "index.html#autotoc_md22", null ],
-      [ "MacOs", "index.html#autotoc_md23", null ]
+    [ "Installation", "index.html#autotoc_md19", [
+      [ "CMake", "index.html#autotoc_md20", null ],
+      [ "Single-Header", "index.html#autotoc_md21", null ]
+    ] ],
+    [ "Testing", "index.html#autotoc_md22", [
+      [ "Windows", "index.html#autotoc_md23", null ],
+      [ "Linux", "index.html#autotoc_md24", null ],
+      [ "MacOs", "index.html#autotoc_md25", null ]
     ] ]
 ];
