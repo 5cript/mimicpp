@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['finalizert_0',['FinalizerT',['../d3/d4a/classmimicpp_1_1_basic_expectation.html#a801c463321c16f879eb745cdbcf7d09c',1,'mimicpp::BasicExpectation']]]
+  ['expectationt_0',['ExpectationT',['../d5/d86/classmimicpp_1_1_expectation_collection.html#af18bb4e89420aa03fb38362c165e3642',1,'mimicpp::ExpectationCollection::ExpectationT'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#ae6b35c8771be7ae487716a44f2368587',1,'mimicpp::ScopedExpectation::ExpectationT']]]
 ];

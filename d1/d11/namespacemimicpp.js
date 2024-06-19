@@ -146,6 +146,7 @@ var namespacemimicpp =
     [ "print_iterator", "d3/d26/conceptmimicpp_1_1print__iterator.html", null ],
     [ "explicitly_convertible_to", "d0/d3a/conceptmimicpp_1_1explicitly__convertible__to.html", null ],
     [ "nothrow_explicitly_convertible_to", "d7/d51/conceptmimicpp_1_1nothrow__explicitly__convertible__to.html", null ],
+    [ "BoostTestReporterT", "d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html#gaf1a3d3c6e282b67df4347f523ea43e2e", null ],
     [ "Catch2ReporterT", "d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html#ga02aa72d6aaace0343113c757d4235aa8", null ],
     [ "CharT", "d1/d11/namespacemimicpp.html#a3cca43cdbdd561d88dddf4ceec9839fc", null ],
     [ "CharTraitsT", "d1/d11/namespacemimicpp.html#a460564a0d4038b990b5938ab0ab2b4ad", null ],
