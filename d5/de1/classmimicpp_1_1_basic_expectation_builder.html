@@ -134,19 +134,19 @@ requires std::constructible_from&lt;FinalizePolicy, FinalizePolicyArg&gt; &amp;&
 <tr class="separator:a1972372a9dee2539cc9f1c63beb3c6c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ca17d7ed0b8cc8a78f9637b74953d1" id="r_a28ca17d7ed0b8cc8a78f9637b74953d1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">BasicExpectationBuilder</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ca17d7ed0b8cc8a78f9637b74953d1">operator=</a> (<a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">BasicExpectationBuilder</a> &amp;&amp;)=default</td></tr>
 <tr class="separator:a28ca17d7ed0b8cc8a78f9637b74953d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a299f29d9ce2fed448bb0caeb91c1ceab" id="r_a299f29d9ce2fed448bb0caeb91c1ceab"><td class="memTemplParams" colspan="2">template&lt;typename Policy &gt; <br />
+<tr class="memitem:adb85ec3491dfcd429a6c07d5fd3de3be" id="r_adb85ec3491dfcd429a6c07d5fd3de3be"><td class="memTemplParams" colspan="2">template&lt;typename Policy &gt; <br />
 requires std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, FinalizePolicy&gt; &amp;&amp; (!std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, std::remove_cvref_t&lt;Policy&gt;&gt;) &amp;&amp; finalize_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</td></tr>
-<tr class="memitem:a299f29d9ce2fed448bb0caeb91c1ceab"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a299f29d9ce2fed448bb0caeb91c1ceab">operator|</a> (Policy &amp;&amp;policy) &amp;&amp;</td></tr>
-<tr class="separator:a299f29d9ce2fed448bb0caeb91c1ceab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0944956ef7e9e23b7665018a402b96c6" id="r_a0944956ef7e9e23b7665018a402b96c6"><td class="memTemplParams" colspan="2">template&lt;typename Policy &gt; <br />
+<tr class="memitem:adb85ec3491dfcd429a6c07d5fd3de3be"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adb85ec3491dfcd429a6c07d5fd3de3be">operator&amp;&amp;</a> (Policy &amp;&amp;policy) &amp;&amp;</td></tr>
+<tr class="separator:adb85ec3491dfcd429a6c07d5fd3de3be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc41cde0ac3432cffcaf1577659607b0" id="r_acc41cde0ac3432cffcaf1577659607b0"><td class="memTemplParams" colspan="2">template&lt;typename Policy &gt; <br />
 requires expectation_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</td></tr>
-<tr class="memitem:a0944956ef7e9e23b7665018a402b96c6"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0944956ef7e9e23b7665018a402b96c6">operator|</a> (Policy &amp;&amp;policy) &amp;&amp;</td></tr>
-<tr class="separator:a0944956ef7e9e23b7665018a402b96c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82545577324aa2f3a2cb175424132cc7" id="r_a82545577324aa2f3a2cb175424132cc7"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a82545577324aa2f3a2cb175424132cc7">operator|</a> (detail::TimesConfig &amp;&amp;config) &amp;&amp;</td></tr>
-<tr class="separator:a82545577324aa2f3a2cb175424132cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a48665bd29b898b282db964981bba50b3" id="r_a48665bd29b898b282db964981bba50b3"><td class="memTemplParams" colspan="2">template&lt;typename... Sequences&gt; </td></tr>
-<tr class="memitem:a48665bd29b898b282db964981bba50b3"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a48665bd29b898b282db964981bba50b3">operator|</a> (sequence::detail::Config&lt; Sequences... &gt; &amp;&amp;config) &amp;&amp;</td></tr>
-<tr class="separator:a48665bd29b898b282db964981bba50b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc41cde0ac3432cffcaf1577659607b0"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#acc41cde0ac3432cffcaf1577659607b0">operator&amp;&amp;</a> (Policy &amp;&amp;policy) &amp;&amp;</td></tr>
+<tr class="separator:acc41cde0ac3432cffcaf1577659607b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8399196efb0766518eb19f5406dba48" id="r_af8399196efb0766518eb19f5406dba48"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8399196efb0766518eb19f5406dba48">operator&amp;&amp;</a> (detail::TimesConfig &amp;&amp;config) &amp;&amp;</td></tr>
+<tr class="separator:af8399196efb0766518eb19f5406dba48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a633d038da374fdf564dfe105c3756228" id="r_a633d038da374fdf564dfe105c3756228"><td class="memTemplParams" colspan="2">template&lt;typename... Sequences&gt; </td></tr>
+<tr class="memitem:a633d038da374fdf564dfe105c3756228"><td class="memTemplItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a633d038da374fdf564dfe105c3756228">operator&amp;&amp;</a> (sequence::detail::Config&lt; Sequences... &gt; &amp;&amp;config) &amp;&amp;</td></tr>
+<tr class="separator:a633d038da374fdf564dfe105c3756228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e69196bc6254bf4a5b54ec82b56747e" id="r_a7e69196bc6254bf4a5b54ec82b56747e"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#aeb6c0c233511f85f057183586de135f2">ScopedExpectationT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e69196bc6254bf4a5b54ec82b56747e">finalize</a> (const std::source_location &amp;sourceLocation) &amp;&amp;</td></tr>
 <tr class="separator:a7e69196bc6254bf4a5b54ec82b56747e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -374,6 +374,122 @@ template&lt;bool timesConfigured, typename SequenceConfig , typename Signature ,
 
 </div>
 </div>
+<a id="af8399196efb0766518eb19f5406dba48" name="af8399196efb0766518eb19f5406dba48"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8399196efb0766518eb19f5406dba48">&#9670;&#160;</a></span>operator&amp;&amp;() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramtype">detail::TimesConfig &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb85ec3491dfcd429a6c07d5fd3de3be" name="adb85ec3491dfcd429a6c07d5fd3de3be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb85ec3491dfcd429a6c07d5fd3de3be">&#9670;&#160;</a></span>operator&amp;&amp;() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
+<div class="memtemplate">
+template&lt;typename Policy &gt; <br />
+requires std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, FinalizePolicy&gt; &amp;&amp; (!std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, std::remove_cvref_t&lt;Policy&gt;&gt;) &amp;&amp; finalize_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramtype">Policy &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>policy</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc41cde0ac3432cffcaf1577659607b0" name="acc41cde0ac3432cffcaf1577659607b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc41cde0ac3432cffcaf1577659607b0">&#9670;&#160;</a></span>operator&amp;&amp;() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
+<div class="memtemplate">
+template&lt;typename Policy &gt; <br />
+requires expectation_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramtype">Policy &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>policy</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a633d038da374fdf564dfe105c3756228" name="a633d038da374fdf564dfe105c3756228"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a633d038da374fdf564dfe105c3756228">&#9670;&#160;</a></span>operator&amp;&amp;() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
+<div class="memtemplate">
+template&lt;typename... Sequences&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator&amp;&amp; </td>
+          <td>(</td>
+          <td class="paramtype">sequence::detail::Config&lt; Sequences... &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
+          <td> &amp;&amp;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a28ca17d7ed0b8cc8a78f9637b74953d1" name="a28ca17d7ed0b8cc8a78f9637b74953d1"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a28ca17d7ed0b8cc8a78f9637b74953d1">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
@@ -422,122 +538,6 @@ template&lt;bool timesConfigured, typename SequenceConfig , typename Signature ,
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">delete</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a82545577324aa2f3a2cb175424132cc7" name="a82545577324aa2f3a2cb175424132cc7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82545577324aa2f3a2cb175424132cc7">&#9670;&#160;</a></span>operator|() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator| </td>
-          <td>(</td>
-          <td class="paramtype">detail::TimesConfig &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
-          <td> &amp;&amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a299f29d9ce2fed448bb0caeb91c1ceab" name="a299f29d9ce2fed448bb0caeb91c1ceab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a299f29d9ce2fed448bb0caeb91c1ceab">&#9670;&#160;</a></span>operator|() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
-<div class="memtemplate">
-template&lt;typename Policy &gt; <br />
-requires std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, FinalizePolicy&gt; &amp;&amp; (!std::same_as&lt;<a class="el" href="../../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html">expectation_policies::InitFinalize</a>, std::remove_cvref_t&lt;Policy&gt;&gt;) &amp;&amp; finalize_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator| </td>
-          <td>(</td>
-          <td class="paramtype">Policy &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>policy</em></span></td><td>)</td>
-          <td> &amp;&amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0944956ef7e9e23b7665018a402b96c6" name="a0944956ef7e9e23b7665018a402b96c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0944956ef7e9e23b7665018a402b96c6">&#9670;&#160;</a></span>operator|() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
-<div class="memtemplate">
-template&lt;typename Policy &gt; <br />
-requires expectation_policy_for&lt;std::remove_cvref_t&lt;Policy&gt;, Signature&gt;</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator| </td>
-          <td>(</td>
-          <td class="paramtype">Policy &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>policy</em></span></td><td>)</td>
-          <td> &amp;&amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a48665bd29b898b282db964981bba50b3" name="a48665bd29b898b282db964981bba50b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a48665bd29b898b282db964981bba50b3">&#9670;&#160;</a></span>operator|() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;bool timesConfigured, typename SequenceConfig , typename Signature , typename FinalizePolicy , expectation_policy_for&lt; Signature &gt;... Policies&gt; </div>
-<div class="memtemplate">
-template&lt;typename... Sequences&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d5/de1/classmimicpp_1_1_basic_expectation_builder.html">mimicpp::BasicExpectationBuilder</a>&lt; timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies &gt;::operator| </td>
-          <td>(</td>
-          <td class="paramtype">sequence::detail::Config&lt; Sequences... &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>config</em></span></td><td>)</td>
-          <td> &amp;&amp;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
