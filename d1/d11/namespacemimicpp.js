@@ -188,7 +188,6 @@ var namespacemimicpp =
     [ "is_matching", "d1/d11/namespacemimicpp.html#a4e2c65ccd4076c4ed7adac3dc1161b06", null ],
     [ "is_same_source_location", "d1/d11/namespacemimicpp.html#a572acd40fe6bf7c5ea72c9494c8caf56", null ],
     [ "make_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c", null ],
-    [ "ScopedExpectation", "d1/d11/namespacemimicpp.html#a9068151ee5dbe8e13b0c39c7f83cb5da", null ],
     [ "stringify_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9", null ],
     [ "stringify_call_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9", null ],
     [ "stringify_expectation_report", "d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37", null ],

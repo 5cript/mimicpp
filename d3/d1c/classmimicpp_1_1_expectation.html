@@ -143,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ade6f50ff0588c785589b185e9d186c40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad37db14b76d614af34a80397ccc6ffc1" id="r_ad37db14b76d614af34a80397ccc6ffc1"><td class="memItemLeft" align="right" valign="top">virtual constexpr <a class="el" href="#ab9e16aa62ad77938e224d686349d6195">ReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad37db14b76d614af34a80397ccc6ffc1">finalize_call</a> (const <a class="el" href="#a4b3acc5f294e142ca55d235e22883435">CallInfoT</a> &amp;call)=0</td></tr>
 <tr class="separator:ad37db14b76d614af34a80397ccc6ffc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8a1682ed0a214d768b28b008222e29" id="r_a6d8a1682ed0a214d768b28b008222e29"><td class="memItemLeft" align="right" valign="top">virtual constexpr const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8a1682ed0a214d768b28b008222e29">from</a> () const noexcept=0</td></tr>
+<tr class="separator:a6d8a1682ed0a214d768b28b008222e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4b3acc5f294e142ca55d235e22883435" name="a4b3acc5f294e142ca55d235e22883435"></a>
@@ -345,6 +347,35 @@ template&lt;typename Signature &gt; </div>
 
 </div>
 </div>
+<a id="a6d8a1682ed0a214d768b28b008222e29" name="a6d8a1682ed0a214d768b28b008222e29"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d8a1682ed0a214d768b28b008222e29">&#9670;&#160;</a></span>from()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Signature &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual constexpr const std::source_location &amp; <a class="el" href="../../d3/d1c/classmimicpp_1_1_expectation.html">mimicpp::Expectation</a>&lt; Signature &gt;::from </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">pure virtual</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html#af986e9b83bdd1963992dce454a7d9f59">mimicpp::BasicExpectation&lt; Signature, ControlPolicy, FinalizePolicy, Policies &gt;</a>.</p>
+
+</div>
+</div>
 <a id="a6418e14292b666c6d0fd10f8af3e5260" name="a6418e14292b666c6d0fd10f8af3e5260"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6418e14292b666c6d0fd10f8af3e5260">&#9670;&#160;</a></span>is_satisfied()</h2>
 
@@ -501,7 +532,7 @@ Here is the caller graph for this function:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d11/namespacemimicpp.html">mimicpp</a></li><li class="navelem"><a class="el" href="../../d3/d1c/classmimicpp_1_1_expectation.html">Expectation</a></li>
-    <li class="footer">Generated on Fri Sep 20 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

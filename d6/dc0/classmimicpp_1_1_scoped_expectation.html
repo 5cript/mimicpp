@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>mimic++: mimicpp::ScopedExpectation&lt; Signature &gt; Class Template Reference</title>
+<title>mimic++: mimicpp::ScopedExpectation Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -98,96 +98,54 @@ $(function(){initNavTree('d6/dc0/classmimicpp_1_1_scoped_expectation.html','../.
 
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../db/d12/classmimicpp_1_1_scoped_expectation-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">mimicpp::ScopedExpectation&lt; Signature &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">mimicpp::ScopedExpectation Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="../../d5/d8a/_expectation_8hpp_source.html">Expectation.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a226131c027574033b7150397ec80fad1" id="r_a226131c027574033b7150397ec80fad1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a226131c027574033b7150397ec80fad1">StorageT</a> = <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt;Signature&gt;</td></tr>
-<tr class="separator:a226131c027574033b7150397ec80fad1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6b35c8771be7ae487716a44f2368587" id="r_ae6b35c8771be7ae487716a44f2368587"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae6b35c8771be7ae487716a44f2368587">ExpectationT</a> = <a class="el" href="../../d3/d1c/classmimicpp_1_1_expectation.html">Expectation</a>&lt;Signature&gt;</td></tr>
-<tr class="separator:ae6b35c8771be7ae487716a44f2368587"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a90b00893837dd894e27e25118ca25933" id="r_a90b00893837dd894e27e25118ca25933"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90b00893837dd894e27e25118ca25933">~ScopedExpectation</a> () noexcept(false)</td></tr>
-<tr class="separator:a90b00893837dd894e27e25118ca25933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04577f897b988c0af3594838ef8f1025" id="r_a04577f897b988c0af3594838ef8f1025"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04577f897b988c0af3594838ef8f1025">ScopedExpectation</a> (std::shared_ptr&lt; <a class="el" href="#a226131c027574033b7150397ec80fad1">StorageT</a> &gt; storage, std::shared_ptr&lt; <a class="el" href="#ae6b35c8771be7ae487716a44f2368587">ExpectationT</a> &gt; <a class="el" href="#ab9205bdc564bb1d46a86376a008c5d39">expectation</a>) noexcept</td></tr>
-<tr class="separator:a04577f897b988c0af3594838ef8f1025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad660c1a74559e0143c49fb3e75ab71ac" id="r_ad660c1a74559e0143c49fb3e75ab71ac"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
-requires requires(const std::source_location&amp; <a class="el" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a>) { { std::declval&lt;T&amp;&amp;&gt;().finalize(<a class="el" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a>) } -&gt; std::convertible_to&lt;<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&gt;; }</td></tr>
-<tr class="memitem:ad660c1a74559e0143c49fb3e75ab71ac"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ad660c1a74559e0143c49fb3e75ab71ac">explicit</a> (false) const expr <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>(T &amp;&amp;object</td></tr>
-<tr class="separator:ad660c1a74559e0143c49fb3e75ab71ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2973432f731429371424f40168801597" id="r_a2973432f731429371424f40168801597"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2973432f731429371424f40168801597">operator=</a> (const <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;)=delete</td></tr>
-<tr class="separator:a2973432f731429371424f40168801597"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a660302bb716eafa080631236cb6afb" id="r_a3a660302bb716eafa080631236cb6afb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a660302bb716eafa080631236cb6afb">ScopedExpectation</a> (<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a3a660302bb716eafa080631236cb6afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a785350329832b9229196271d22c4f28c" id="r_a785350329832b9229196271d22c4f28c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a785350329832b9229196271d22c4f28c">operator=</a> (<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;)=default</td></tr>
-<tr class="separator:a785350329832b9229196271d22c4f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6206e466e9a1add2a52fd21d75f496d7" id="r_a6206e466e9a1add2a52fd21d75f496d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6206e466e9a1add2a52fd21d75f496d7">is_satisfied</a> () const</td></tr>
-<tr class="separator:a6206e466e9a1add2a52fd21d75f496d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9205bdc564bb1d46a86376a008c5d39" id="r_ab9205bdc564bb1d46a86376a008c5d39"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="#ae6b35c8771be7ae487716a44f2368587">ExpectationT</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab9205bdc564bb1d46a86376a008c5d39">expectation</a> () const noexcept</td></tr>
-<tr class="separator:ab9205bdc564bb1d46a86376a008c5d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad74606fce962dc55495e735c56243fe7" id="r_ad74606fce962dc55495e735c56243fe7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad74606fce962dc55495e735c56243fe7">~ScopedExpectation</a> () noexcept(false)</td></tr>
+<tr class="separator:ad74606fce962dc55495e735c56243fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88bd255c6f17c2eefc52ef96b7990dd2" id="r_a88bd255c6f17c2eefc52ef96b7990dd2"><td class="memTemplParams" colspan="2">template&lt;typename Signature &gt; </td></tr>
+<tr class="memitem:a88bd255c6f17c2eefc52ef96b7990dd2"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a88bd255c6f17c2eefc52ef96b7990dd2">ScopedExpectation</a> (std::shared_ptr&lt; <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt; Signature &gt; &gt; storage, std::shared_ptr&lt; typename <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt; Signature &gt;::ExpectationT &gt; expectation) noexcept</td></tr>
+<tr class="separator:a88bd255c6f17c2eefc52ef96b7990dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7610bd96d38f59865ef8c1f0cd4dfb64" id="r_a7610bd96d38f59865ef8c1f0cd4dfb64"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; <br />
+requires requires(const std::source_location&amp; <a class="el" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a>) { { std::declval&lt;T&amp;&amp;&gt;().finalize(<a class="el" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a>) } -&gt; std::convertible_to&lt;<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&gt;; }</td></tr>
+<tr class="memitem:a7610bd96d38f59865ef8c1f0cd4dfb64"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a7610bd96d38f59865ef8c1f0cd4dfb64">explicit</a> (false) const expr <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>(T &amp;&amp;object</td></tr>
+<tr class="separator:a7610bd96d38f59865ef8c1f0cd4dfb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3d1d989056d9ddcbb506e9158b9af8" id="r_a9b3d1d989056d9ddcbb506e9158b9af8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b3d1d989056d9ddcbb506e9158b9af8">operator=</a> (const <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;)=delete</td></tr>
+<tr class="separator:a9b3d1d989056d9ddcbb506e9158b9af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a485d6a5176d34d672b2a49616af68771" id="r_a485d6a5176d34d672b2a49616af68771"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a485d6a5176d34d672b2a49616af68771">ScopedExpectation</a> (<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:a485d6a5176d34d672b2a49616af68771"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa48fe5758101545108e89a13035b9c45" id="r_aa48fe5758101545108e89a13035b9c45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa48fe5758101545108e89a13035b9c45">operator=</a> (<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;)=default</td></tr>
+<tr class="separator:aa48fe5758101545108e89a13035b9c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c2a991b53bf9a0dae759a2233b3dfb" id="r_a03c2a991b53bf9a0dae759a2233b3dfb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a03c2a991b53bf9a0dae759a2233b3dfb">is_satisfied</a> () const</td></tr>
+<tr class="separator:a03c2a991b53bf9a0dae759a2233b3dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c2ce76f1c4172362bbb740716ba8c0" id="r_a86c2ce76f1c4172362bbb740716ba8c0"><td class="memItemLeft" align="right" valign="top">const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86c2ce76f1c4172362bbb740716ba8c0">from</a> () const noexcept</td></tr>
+<tr class="separator:a86c2ce76f1c4172362bbb740716ba8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a4ca9b4aff5375b7015ae9e0751013186" id="r_a4ca9b4aff5375b7015ae9e0751013186"><td class="memItemLeft" align="right" valign="top">const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a></td></tr>
-<tr class="separator:a4ca9b4aff5375b7015ae9e0751013186"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100b15ef4d509421ea0d5f806b0d0b6e" id="r_a100b15ef4d509421ea0d5f806b0d0b6e"><td class="memItemLeft" align="right" valign="top">const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a></td></tr>
+<tr class="separator:a100b15ef4d509421ea0d5f806b0d0b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae6b35c8771be7ae487716a44f2368587" name="ae6b35c8771be7ae487716a44f2368587"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b35c8771be7ae487716a44f2368587">&#9670;&#160;</a></span>ExpectationT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::ExpectationT = <a class="el" href="../../d3/d1c/classmimicpp_1_1_expectation.html">Expectation</a>&lt;Signature&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a226131c027574033b7150397ec80fad1" name="a226131c027574033b7150397ec80fad1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a226131c027574033b7150397ec80fad1">&#9670;&#160;</a></span>StorageT</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::StorageT = <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt;Signature&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a90b00893837dd894e27e25118ca25933" name="a90b00893837dd894e27e25118ca25933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90b00893837dd894e27e25118ca25933">&#9670;&#160;</a></span>~ScopedExpectation()</h2>
+<a id="ad74606fce962dc55495e735c56243fe7" name="ad74606fce962dc55495e735c56243fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad74606fce962dc55495e735c56243fe7">&#9670;&#160;</a></span>~ScopedExpectation()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::~<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> </td>
+          <td class="memname">mimicpp::ScopedExpectation::~ScopedExpectation </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -202,8 +160,8 @@ template&lt;typename Signature &gt; </div>
 
 </div>
 </div>
-<a id="a04577f897b988c0af3594838ef8f1025" name="a04577f897b988c0af3594838ef8f1025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04577f897b988c0af3594838ef8f1025">&#9670;&#160;</a></span>ScopedExpectation() <span class="overload">[1/2]</span></h2>
+<a id="a88bd255c6f17c2eefc52ef96b7990dd2" name="a88bd255c6f17c2eefc52ef96b7990dd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88bd255c6f17c2eefc52ef96b7990dd2">&#9670;&#160;</a></span>ScopedExpectation() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -214,14 +172,14 @@ template&lt;typename Signature &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::ScopedExpectation </td>
+          <td class="memname">mimicpp::ScopedExpectation::ScopedExpectation </td>
           <td>(</td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="#a226131c027574033b7150397ec80fad1">StorageT</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>storage</em></span>, </td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt; Signature &gt; &gt;</td>          <td class="paramname"><span class="paramname"><em>storage</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="#ae6b35c8771be7ae487716a44f2368587">ExpectationT</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>expectation</em></span>&#160;)</td>
+          <td class="paramtype">std::shared_ptr&lt; typename <a class="el" href="../../d5/d86/classmimicpp_1_1_expectation_collection.html">ExpectationCollection</a>&lt; Signature &gt;::ExpectationT &gt;</td>          <td class="paramname"><span class="paramname"><em>expectation</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -233,21 +191,19 @@ template&lt;typename Signature &gt; </div>
 
 </div>
 </div>
-<a id="a3a660302bb716eafa080631236cb6afb" name="a3a660302bb716eafa080631236cb6afb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a660302bb716eafa080631236cb6afb">&#9670;&#160;</a></span>ScopedExpectation() <span class="overload">[2/2]</span></h2>
+<a id="a485d6a5176d34d672b2a49616af68771" name="a485d6a5176d34d672b2a49616af68771"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a485d6a5176d34d672b2a49616af68771">&#9670;&#160;</a></span>ScopedExpectation() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::ScopedExpectation </td>
+          <td class="memname">mimicpp::ScopedExpectation::ScopedExpectation </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&lt; Signature &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -261,49 +217,20 @@ template&lt;typename Signature &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab9205bdc564bb1d46a86376a008c5d39" name="ab9205bdc564bb1d46a86376a008c5d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9205bdc564bb1d46a86376a008c5d39">&#9670;&#160;</a></span>expectation()</h2>
+<a id="a7610bd96d38f59865ef8c1f0cd4dfb64" name="a7610bd96d38f59865ef8c1f0cd4dfb64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7610bd96d38f59865ef8c1f0cd4dfb64">&#9670;&#160;</a></span>explicit()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="#ae6b35c8771be7ae487716a44f2368587">ExpectationT</a> &amp; <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::expectation </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad660c1a74559e0143c49fb3e75ab71ac" name="ad660c1a74559e0143c49fb3e75ab71ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad660c1a74559e0143c49fb3e75ab71ac">&#9670;&#160;</a></span>explicit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <div class="memtemplate">
 template&lt;typename T &gt; <br />
-requires requires(const std::source_location&amp; <a class="el" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a>) { { std::declval&lt;T&amp;&amp;&gt;().finalize(<a class="el" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a>) } -&gt; std::convertible_to&lt;<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&gt;; }</div>
+requires requires(const std::source_location&amp; <a class="el" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a>) { { std::declval&lt;T&amp;&amp;&gt;().finalize(<a class="el" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a>) } -&gt; std::convertible_to&lt;<a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&gt;; }</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::explicit </td>
+          <td class="memname">mimicpp::ScopedExpectation::explicit </td>
           <td>(</td>
           <td class="paramtype">false</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const &amp;&amp;</td>
@@ -318,19 +245,42 @@ requires requires(const std::source_location&amp; <a class="el" href="#a4ca9b4af
 
 </div>
 </div>
-<a id="a6206e466e9a1add2a52fd21d75f496d7" name="a6206e466e9a1add2a52fd21d75f496d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6206e466e9a1add2a52fd21d75f496d7">&#9670;&#160;</a></span>is_satisfied()</h2>
+<a id="a86c2ce76f1c4172362bbb740716ba8c0" name="a86c2ce76f1c4172362bbb740716ba8c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86c2ce76f1c4172362bbb740716ba8c0">&#9670;&#160;</a></span>from()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::is_satisfied </td>
+          <td class="memname">const std::source_location &amp; mimicpp::ScopedExpectation::from </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03c2a991b53bf9a0dae759a2233b3dfb" name="a03c2a991b53bf9a0dae759a2233b3dfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c2a991b53bf9a0dae759a2233b3dfb">&#9670;&#160;</a></span>is_satisfied()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mimicpp::ScopedExpectation::is_satisfied </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td> const</td>
@@ -345,21 +295,19 @@ template&lt;typename Signature &gt; </div>
 
 </div>
 </div>
-<a id="a2973432f731429371424f40168801597" name="a2973432f731429371424f40168801597"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2973432f731429371424f40168801597">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+<a id="a9b3d1d989056d9ddcbb506e9158b9af8" name="a9b3d1d989056d9ddcbb506e9158b9af8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b3d1d989056d9ddcbb506e9158b9af8">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp; <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::operator= </td>
+          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp; mimicpp::ScopedExpectation::operator= </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&lt; Signature &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -372,21 +320,19 @@ template&lt;typename Signature &gt; </div>
 
 </div>
 </div>
-<a id="a785350329832b9229196271d22c4f28c" name="a785350329832b9229196271d22c4f28c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a785350329832b9229196271d22c4f28c">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+<a id="aa48fe5758101545108e89a13035b9c45" name="aa48fe5758101545108e89a13035b9c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa48fe5758101545108e89a13035b9c45">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp; <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::operator= </td>
+          <td class="memname"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp; mimicpp::ScopedExpectation::operator= </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&lt; Signature &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -400,28 +346,26 @@ template&lt;typename Signature &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4ca9b4aff5375b7015ae9e0751013186" name="a4ca9b4aff5375b7015ae9e0751013186"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ca9b4aff5375b7015ae9e0751013186">&#9670;&#160;</a></span>loc</h2>
+<a id="a100b15ef4d509421ea0d5f806b0d0b6e" name="a100b15ef4d509421ea0d5f806b0d0b6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100b15ef4d509421ea0d5f806b0d0b6e">&#9670;&#160;</a></span>loc</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename Signature &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const std::source_location&amp; <a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a>&lt; Signature &gt;::loc</td>
+          <td class="memname">const std::source_location&amp; mimicpp::ScopedExpectation::loc</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">= std::source_location::current())</div>
-<div class="line">            : <a class="code hl_function" href="#a04577f897b988c0af3594838ef8f1025">ScopedExpectation</a>{std::forward&lt;T&gt;(object).finalize(<a class="code hl_variable" href="#a4ca9b4aff5375b7015ae9e0751013186">loc</a>)}</div>
+<div class="line">            : <a class="code hl_function" href="#a88bd255c6f17c2eefc52ef96b7990dd2">ScopedExpectation</a>{std::forward&lt;T&gt;(object).finalize(<a class="code hl_variable" href="#a100b15ef4d509421ea0d5f806b0d0b6e">loc</a>)}</div>
 <div class="line">        {</div>
 <div class="line">        }</div>
 <div class="line"> </div>
-<div class="line">        <a class="code hl_function" href="#a04577f897b988c0af3594838ef8f1025">ScopedExpectation</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&amp;) = <span class="keyword">delete</span></div>
-<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html"><div class="ttname"><a href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:366</div></div>
-<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html_a04577f897b988c0af3594838ef8f1025"><div class="ttname"><a href="#a04577f897b988c0af3594838ef8f1025">mimicpp::ScopedExpectation::ScopedExpectation</a></div><div class="ttdeci">ScopedExpectation(std::shared_ptr&lt; StorageT &gt; storage, std::shared_ptr&lt; ExpectationT &gt; expectation) noexcept</div><div class="ttdef"><b>Definition</b> Expectation.hpp:381</div></div>
-<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html_a4ca9b4aff5375b7015ae9e0751013186"><div class="ttname"><a href="#a4ca9b4aff5375b7015ae9e0751013186">mimicpp::ScopedExpectation::loc</a></div><div class="ttdeci">const std::source_location &amp; loc</div><div class="ttdef"><b>Definition</b> Expectation.hpp:400</div></div>
+<div class="line">        <a class="code hl_function" href="#a88bd255c6f17c2eefc52ef96b7990dd2">ScopedExpectation</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a>&amp;) = <span class="keyword">delete</span></div>
+<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html"><div class="ttname"><a href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:367</div></div>
+<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html_a100b15ef4d509421ea0d5f806b0d0b6e"><div class="ttname"><a href="#a100b15ef4d509421ea0d5f806b0d0b6e">mimicpp::ScopedExpectation::loc</a></div><div class="ttdeci">const std::source_location &amp; loc</div><div class="ttdef"><b>Definition</b> Expectation.hpp:462</div></div>
+<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html_a88bd255c6f17c2eefc52ef96b7990dd2"><div class="ttname"><a href="#a88bd255c6f17c2eefc52ef96b7990dd2">mimicpp::ScopedExpectation::ScopedExpectation</a></div><div class="ttdeci">ScopedExpectation(std::shared_ptr&lt; ExpectationCollection&lt; Signature &gt; &gt; storage, std::shared_ptr&lt; typename ExpectationCollection&lt; Signature &gt;::ExpectationT &gt; expectation) noexcept</div><div class="ttdef"><b>Definition</b> Expectation.hpp:444</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -434,7 +378,7 @@ template&lt;typename Signature &gt; </div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d11/namespacemimicpp.html">mimicpp</a></li><li class="navelem"><a class="el" href="../../d6/dc0/classmimicpp_1_1_scoped_expectation.html">ScopedExpectation</a></li>
-    <li class="footer">Generated on Fri Sep 20 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

@@ -146,8 +146,8 @@ requires std::constructible_from&lt;<a class="el" href="#a5b653058d636abf3ed1613
 <tr class="separator:a39959de78d392d5eba200bbcac9500ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76f17839b261d2635a537d95e266e0f2" id="r_a76f17839b261d2635a537d95e266e0f2"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="#a72deb1105e293a672eb6231199c9833d">ReturnT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76f17839b261d2635a537d95e266e0f2">finalize_call</a> (const <a class="el" href="#a84d09556c63c2f75992fd6e377db3567">CallInfoT</a> &amp;call) override</td></tr>
 <tr class="separator:a76f17839b261d2635a537d95e266e0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56eeecfbc97a95ce291334896cea44bb" id="r_a56eeecfbc97a95ce291334896cea44bb"><td class="memItemLeft" align="right" valign="top">constexpr const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a56eeecfbc97a95ce291334896cea44bb">from</a> () const noexcept</td></tr>
-<tr class="separator:a56eeecfbc97a95ce291334896cea44bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af986e9b83bdd1963992dce454a7d9f59" id="r_af986e9b83bdd1963992dce454a7d9f59"><td class="memItemLeft" align="right" valign="top">constexpr const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af986e9b83bdd1963992dce454a7d9f59">from</a> () const noexcept override</td></tr>
+<tr class="separator:af986e9b83bdd1963992dce454a7d9f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a84d09556c63c2f75992fd6e377db3567" name="a84d09556c63c2f75992fd6e377db3567"></a>
@@ -334,8 +334,8 @@ template&lt;typename Signature , control_policy ControlPolicy, finalize_policy_f
 
 </div>
 </div>
-<a id="a56eeecfbc97a95ce291334896cea44bb" name="a56eeecfbc97a95ce291334896cea44bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a56eeecfbc97a95ce291334896cea44bb">&#9670;&#160;</a></span>from()</h2>
+<a id="af986e9b83bdd1963992dce454a7d9f59" name="af986e9b83bdd1963992dce454a7d9f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af986e9b83bdd1963992dce454a7d9f59">&#9670;&#160;</a></span>from()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -354,10 +354,12 @@ template&lt;typename Signature , control_policy ControlPolicy, finalize_policy_f
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">nodiscard</span><span class="mlabel">constexpr</span><span class="mlabel">override</span><span class="mlabel">virtual</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Implements <a class="el" href="../../d3/d1c/classmimicpp_1_1_expectation.html#a6d8a1682ed0a214d768b28b008222e29">mimicpp::Expectation&lt; Signature &gt;</a>.</p>
 
 </div>
 </div>
@@ -457,7 +459,7 @@ template&lt;typename Signature , control_policy ControlPolicy, finalize_policy_f
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../d1/d11/namespacemimicpp.html">mimicpp</a></li><li class="navelem"><a class="el" href="../../d3/d4a/classmimicpp_1_1_basic_expectation.html">BasicExpectation</a></li>
-    <li class="footer">Generated on Fri Sep 20 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sat Sep 21 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>

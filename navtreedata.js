@@ -64,8 +64,8 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d4/d44/classmimicpp_1_1call_1_1_info.html#ab13116b95585c94b57e7cbd330c122a7",
-"d7/dd2/structmimicpp_1_1state__inapplicable.html#ab11df76666122ed1422be10f15a42d16",
-"dc/db2/classmimicpp_1_1_control_policy.html#ab1649a77ea47e1f4651c8c9eed3fecd0"
+"d8/d12/group___m_o_c_k.html",
+"dc/dd0/classmimicpp_1_1_call_report.html#a804aea975ce3fd4f4348b4cc1f51f333"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

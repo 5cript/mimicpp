@@ -4,6 +4,5 @@ var _expectation_builder_8hpp =
     [ "MIMICPP_SCOPED_EXPECTATION", "d2/d4f/_expectation_builder_8hpp.html#a77b154196ed19c6ad4649b0a604f7601", null ],
     [ "MIMICPP_SCOPED_EXPECTATION_IMPL", "d2/d4f/_expectation_builder_8hpp.html#a807cf1b1ebf47cbe688896c95e0d7199", null ],
     [ "MIMICPP_UNIQUE_NAME", "d2/d4f/_expectation_builder_8hpp.html#ade5892344babbd9960878567a4a8dbdf", null ],
-    [ "SCOPED_EXP", "d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a", null ],
-    [ "ScopedExpectation", "d2/d4f/_expectation_builder_8hpp.html#a9068151ee5dbe8e13b0c39c7f83cb5da", null ]
+    [ "SCOPED_EXP", "d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a", null ]
 ];
