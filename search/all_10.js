@@ -119,10 +119,7 @@ var searchData=
   ['string_20matchers_116',['string matchers',['../de/dd6/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r_s___s_t_r_i_n_g.html',1,'']]],
   ['stringification_117',['Stringification',['../index.html#autotoc_md13',1,'']]],
   ['stringification_118',['stringification',['../de/dd2/group___s_t_r_i_n_g_i_f_i_c_a_t_i_o_n.html',1,'']]],
-  ['stringify_5fcall_5freport_119',['stringify_call_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9',1,'mimicpp::CallReport::stringify_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9',1,'mimicpp::stringify_call_report(const CallReport &amp;report)'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gace23a37529ab03b8b0adc7039fd2f5a9',1,'mimicpp::stringify_call_report(const CallReport &amp;report)']]],
-  ['stringify_5fexpectation_5freport_120',['stringify_expectation_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37',1,'mimicpp::ExpectationReport::stringify_expectation_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37',1,'mimicpp::stringify_expectation_report(const ExpectationReport &amp;report)'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga3d0f29cc124d145f3cfe0b4b923e1b37',1,'mimicpp::stringify_expectation_report(const ExpectationReport &amp;report)']]],
-  ['stringify_5fmatch_5freport_121',['stringify_match_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881',1,'mimicpp::MatchReport::stringify_match_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881',1,'mimicpp::stringify_match_report(const MatchReport &amp;report)'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gab9836143852b964997e311d8b2e5d881',1,'mimicpp::stringify_match_report(const MatchReport &amp;report)']]],
-  ['stringstreamt_122',['StringStreamT',['../d1/d11/namespacemimicpp.html#a6b761dc4fb4f361e95dd3ec37da4a8a8',1,'mimicpp']]],
-  ['stringt_123',['StringT',['../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1',1,'mimicpp']]],
-  ['stringviewt_124',['StringViewT',['../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6',1,'mimicpp']]]
+  ['stringstreamt_119',['StringStreamT',['../d1/d11/namespacemimicpp.html#a6b761dc4fb4f361e95dd3ec37da4a8a8',1,'mimicpp']]],
+  ['stringt_120',['StringT',['../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1',1,'mimicpp']]],
+  ['stringviewt_121',['StringViewT',['../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6',1,'mimicpp']]]
 ];

@@ -151,7 +151,7 @@ Basic Examples</h2>
 <div class="ttc" id="aclassmimicpp_1_1_mock_html"><div class="ttname"><a href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a></div><div class="ttdoc">A Mock type, which fully supports overload sets.</div><div class="ttdef"><b>Definition</b> Mock.hpp:551</div></div>
 </div><!-- fragment --><p> This already is a fully functional Mock, which enables a member <code>void operator()</code> for which Expectations can be created.</p>
 <div class="fragment"><div class="line"><a class="code hl_class" href="d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a> myExpectation = myMock.expect_call();</div>
-<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html"><div class="ttname"><a href="d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:367</div></div>
+<div class="ttc" id="aclassmimicpp_1_1_scoped_expectation_html"><div class="ttname"><a href="d6/dc0/classmimicpp_1_1_scoped_expectation.html">mimicpp::ScopedExpectation</a></div><div class="ttdef"><b>Definition</b> Expectation.hpp:375</div></div>
 </div><!-- fragment --><p> The <code>expect_call()</code> member function initiates an expectation. Expectations are usually required to be fulfilled within the current (or deeper) scope. The <code>ScopedExpectation</code> then takes over the responsibility to check the Expectation, when that scope is left. Usually users do not need direct access to the expectations but still an unique name is required. To overcome that language limitation, an optional macro can be used: </p><div class="fragment"><div class="line"><a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> myMock.expect_call();</div>
 <div class="ttc" id="a_expectation_builder_8hpp_html_a7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:276</div></div>
 </div><!-- fragment --><p> This effectively does the same job as before, but the macro takes over the burden creating an unique name for that expectation.</p>
@@ -237,7 +237,7 @@ MacOs</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Sep 21 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Mon Sep 23 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
