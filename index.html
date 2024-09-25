@@ -229,7 +229,12 @@ MacOs</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">AppleClang-18.1.6   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<p>As new compilers become available, they will be added to the workflow, but older compilers will probably never be supported. </p>
+<p>As new compilers become available, they will be added to the workflow, but older compilers will probably never be supported.</p>
+<h1><a class="anchor" id="autotoc_md26"></a>
+Known Issues</h1>
+<ul>
+<li>Clang-18.1 introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail. Clang-17 and Clang-19 do not suffer from this issue. </li>
+</ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->

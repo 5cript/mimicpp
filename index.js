@@ -22,5 +22,6 @@ var index =
       [ "Windows", "index.html#autotoc_md23", null ],
       [ "Linux", "index.html#autotoc_md24", null ],
       [ "MacOs", "index.html#autotoc_md25", null ]
-    ] ]
+    ] ],
+    [ "Known Issues", "index.html#autotoc_md26", null ]
 ];
