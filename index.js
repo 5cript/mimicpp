@@ -23,5 +23,7 @@ var index =
       [ "Linux", "index.html#autotoc_md24", null ],
       [ "MacOs", "index.html#autotoc_md25", null ]
     ] ],
-    [ "Known Issues", "index.html#autotoc_md26", null ]
+    [ "Known Issues", "index.html#autotoc_md26", [
+      [ "Clang-18.1 + libc++", "index.html#autotoc_md27", null ]
+    ] ]
 ];

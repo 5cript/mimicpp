@@ -232,9 +232,11 @@ MacOs</h2>
 <p>As new compilers become available, they will be added to the workflow, but older compilers will probably never be supported.</p>
 <h1><a class="anchor" id="autotoc_md26"></a>
 Known Issues</h1>
-<ul>
-<li>Clang-18.1 introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail. Clang-17 and Clang-19 do not suffer from this issue. </li>
-</ul>
+<h2><a class="anchor" id="autotoc_md27"></a>
+Clang-18.1 + libc++</h2>
+<p>Date: 25.09.2024</p>
+<p>This combination introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail, but the <code>std::is_invocable</code> trait still works as expected. Unfortunatly this can not solved easily by this lib, sorry for that.</p>
+<p>Clang-17 and Clang-19 do not suffer from this issue. For more information have a look at: <a href="https://github.com/llvm/llvm-project/issues/106428">https://github.com/llvm/llvm-project/issues/106428</a> </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
