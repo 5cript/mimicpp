@@ -186,10 +186,10 @@ Examples</h2>
 <div class="line">                and expect::once()                                      <span class="comment">// once() is the default, but you can state that explicitly</span></div>
 <div class="line">                and finally::throws(std::runtime_error{<span class="stringliteral">&quot;some error&quot;</span>});  <span class="comment">// when matches, throws an exception</span></div>
 <div class="line"> </div>
-<div class="line">    REQUIRE_THROWS(mock(<span class="stringliteral">&quot;Test&quot;</span>, 42));                       <span class="comment">// ok, matched</span></div>
+<div class="line">    REQUIRE_THROWS(mock(<span class="stringliteral">&quot;Test&quot;</span>, 42));                           <span class="comment">// ok, matched</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// still a pending expectation for void() overload</span></div>
-<div class="line">    std::as_const(mock)();                                          <span class="comment">// explicitly call from a const object</span></div>
+<div class="line">    std::as_const(mock)();                                      <span class="comment">// explicitly call from a const object</span></div>
 <div class="line">}</div>
 <div class="ttc" id="a_expectation_builder_8hpp_html_a7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:276</div></div>
 <div class="ttc" id="aclassmimicpp_1_1_mock_html"><div class="ttname"><a href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a></div><div class="ttdoc">A Mock type, which fully supports overload sets.</div><div class="ttdef"><b>Definition</b> Mock.hpp:551</div></div>
@@ -308,7 +308,7 @@ Known Issues</h1>
 Clang-18.1 + libc++</h2>
 <p>Date: 25.09.2024</p>
 <p>This combination introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail, but the <code>std::is_invocable</code> trait still works as expected. Unfortunatly this can not solved easily by this lib, sorry for that.</p>
-<p>Clang-17 and Clang-19 do not suffer from this issue. For more information have a look at: <a href="https://github.com/llvm/llvm-project/issues/106428">https://github.com/llvm/llvm-project/issues/106428</a> </p>
+<p>Clang-17 and Clang-19 do not suffer from this issue. For more information have a look <a href="https://github.com/llvm/llvm-project/issues/106428">here</a>. </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"></a>
 </div><!-- contents -->
