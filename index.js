@@ -27,5 +27,7 @@ var index =
       [ "macOS", "index.html#autotoc_md27", null ]
     ] ],
     [ "License", "index.html#autotoc_md28", null ],
-    [ "Known Issues", "index.html#autotoc_md30", null ]
+    [ "Known Issues", "index.html#autotoc_md30", [
+      [ "Clang-18.1 + libc++", "index.html#autotoc_md31", null ]
+    ] ]
 ];

@@ -131,12 +131,7 @@ Table of Contents</h1>
 </ul>
 </li>
 <li>Documentation</li>
-<li>Testing<ul>
-<li>Windows</li>
-<li>Linux</li>
-<li>macOS</li>
-</ul>
-</li>
+<li>Testing</li>
 <li>License</li>
 <li>Known Issues</li>
 </ul>
@@ -309,8 +304,8 @@ License</h1>
 </div><!-- fragment --><hr  />
 <h1><a class="anchor" id="autotoc_md30"></a>
 Known Issues</h1>
-<h3><a class="anchor" id="autotoc_md31"></a>
-Clang-18.1 + libc++</h3>
+<h2><a class="anchor" id="autotoc_md31"></a>
+Clang-18.1 + libc++</h2>
 <p>Date: 25.09.2024</p>
 <p>This combination introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail, but the <code>std::is_invocable</code> trait still works as expected. Unfortunatly this can not solved easily by this lib, sorry for that.</p>
 <p>Clang-17 and Clang-19 do not suffer from this issue. For more information have a look at: <a href="https://github.com/llvm/llvm-project/issues/106428">https://github.com/llvm/llvm-project/issues/106428</a> </p>
