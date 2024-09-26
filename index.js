@@ -1,29 +1,31 @@
 var index =
 [
     [ "Author", "index.html#autotoc_md7", null ],
-    [ "License", "index.html#autotoc_md8", null ],
+    [ "Table of Contents", "index.html#autotoc_md8", null ],
     [ "Introduction", "index.html#autotoc_md10", [
-      [ "Design Philosophy", "index.html#autotoc_md11", [
-        [ "Extensibility", "index.html#autotoc_md12", [
-          [ "Stringification", "index.html#autotoc_md13", null ],
-          [ "Test Framework Integration", "index.html#autotoc_md14", null ]
-        ] ],
-        [ "Always Stay Within The Language Definition", "index.html#autotoc_md15", null ]
+      [ "Core Design", "index.html#autotoc_md11", null ],
+      [ "Examples", "index.html#autotoc_md12", null ],
+      [ "Other Choices", "index.html#autotoc_md13", [
+        [ "Always Stay Within The Language Definition", "index.html#autotoc_md14", null ]
       ] ],
-      [ "Basic Examples", "index.html#autotoc_md16", null ],
-      [ "Special Acknowledgement", "index.html#autotoc_md17", null ]
+      [ "Special Acknowledgement", "index.html#autotoc_md15", null ]
     ] ],
-    [ "Documentation", "index.html#autotoc_md18", null ],
-    [ "Installation", "index.html#autotoc_md19", [
-      [ "CMake", "index.html#autotoc_md20", null ],
-      [ "Single-Header", "index.html#autotoc_md21", null ]
+    [ "Customizability", "index.html#autotoc_md16", [
+      [ "Stringification", "index.html#autotoc_md17", null ],
+      [ "Documentation", "index.html#autotoc_md18", null ]
     ] ],
-    [ "Testing", "index.html#autotoc_md22", [
-      [ "Windows", "index.html#autotoc_md23", null ],
-      [ "Linux", "index.html#autotoc_md24", null ],
-      [ "MacOs", "index.html#autotoc_md25", null ]
+    [ "Integration", "index.html#autotoc_md19", [
+      [ "Installation", "index.html#autotoc_md20", [
+        [ "CMake", "index.html#autotoc_md21", null ],
+        [ "Single-Header", "index.html#autotoc_md22", null ]
+      ] ],
+      [ "Test Framework", "index.html#autotoc_md23", null ]
     ] ],
-    [ "Known Issues", "index.html#autotoc_md26", [
-      [ "Clang-18.1 + libc++", "index.html#autotoc_md27", null ]
-    ] ]
+    [ "Testing", "index.html#autotoc_md24", [
+      [ "Windows", "index.html#autotoc_md25", null ],
+      [ "Linux", "index.html#autotoc_md26", null ],
+      [ "macOS", "index.html#autotoc_md27", null ]
+    ] ],
+    [ "License", "index.html#autotoc_md28", null ],
+    [ "Known Issues", "index.html#autotoc_md30", null ]
 ];

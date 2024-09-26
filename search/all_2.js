@@ -2,10 +2,10 @@ var searchData=
 [
   ['a_20modern_20and_20mostly_20macro_20free_20mocking_20framework_0',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['a_20word_20on_20sequences_20with_20times_1',['A word on sequences with times',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md4',1,'']]],
-  ['acknowledgement_2',['Special Acknowledgement',['../index.html#autotoc_md17',1,'']]],
+  ['acknowledgement_2',['Special Acknowledgement',['../index.html#autotoc_md15',1,'']]],
   ['adapters_3',['test framework adapters',['../d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html',1,'']]],
   ['add_5foverload_4',['ADD_OVERLOAD',['../de/dcd/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s.html#gaf7eca902448118eaf4359c12be4ed098',1,'InterfaceMock.hpp']]],
-  ['always_20stay_20within_20the_20language_20definition_5',['Always Stay Within The Language Definition',['../index.html#autotoc_md15',1,'']]],
+  ['always_20stay_20within_20the_20language_20definition_5',['Always Stay Within The Language Definition',['../index.html#autotoc_md14',1,'']]],
   ['always_5ffalse_6',['always_false',['../d5/d8e/structmimicpp_1_1always__false.html',1,'mimicpp']]],
   ['and_20mostly_20macro_20free_20mocking_20framework_7',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['any_8',['any',['../d1/d11/namespacemimicpp.html#a96efa41dafaf424bc936fc152467feb1a100b8cad7cf2a56f6df78f171f97a1ec',1,'mimicpp::any'],['../d1/d11/namespacemimicpp.html#a6076e747dc4e61ff337a809d19f4824aa100b8cad7cf2a56f6df78f171f97a1ec',1,'mimicpp::any']]],
