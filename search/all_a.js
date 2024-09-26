@@ -11,10 +11,10 @@ var searchData=
   ['info_5ffor_5fsignature_5ft_8',['info_for_signature_t',['../dc/d2e/namespacemimicpp_1_1call.html#a904a8502dffb5e669557ce1a8c4b05eb',1,'mimicpp::call']]],
   ['initfinalize_9',['InitFinalize',['../d2/d77/classmimicpp_1_1expectation__policies_1_1_init_finalize.html',1,'mimicpp::expectation_policies']]],
   ['install_5freporter_10',['install_reporter',['../dd/d4f/group___r_e_p_o_r_t_i_n_g.html#ga14082268db10f80ecc210109669e626e',1,'mimicpp']]],
-  ['installation_11',['Installation',['../index.html#autotoc_md20',1,'']]],
-  ['integration_12',['Integration',['../index.html#autotoc_md19',1,'']]],
+  ['installation_11',['Installation',['../index.html#autotoc_md25',1,'']]],
+  ['integration_12',['Integration',['../index.html#autotoc_md24',1,'']]],
   ['interfacemock_2ehpp_13',['InterfaceMock.hpp',['../d9/dc3/_interface_mock_8hpp.html',1,'']]],
-  ['interfaces_14',['interfaces',['../de/dcd/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s.html',1,'']]],
+  ['interfaces_14',['interfaces',['../de/dcd/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s.html',1,'interfaces'],['../index.html#autotoc_md15',1,'Mocking interfaces']]],
   ['introduction_15',['Introduction',['../index.html#autotoc_md10',1,'']]],
   ['invoke_16',['invoke',['../db/d71/group___e_x_p_e_c_t_a_t_i_o_n___s_i_d_e___e_f_f_e_c_t_s.html#ga96fbf72e7ef44a73904c3503a383cda4',1,'mimicpp::then']]],
   ['ireporter_17',['IReporter',['../dd/df0/classmimicpp_1_1_i_reporter.html',1,'mimicpp::IReporter'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a2d64e19d9351cf0f5d7c654c9c3b9e7b',1,'mimicpp::IReporter::IReporter()=default'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a0efd2638c465fc97fa0e4c85bdc1a683',1,'mimicpp::IReporter::IReporter(const IReporter &amp;)=default'],['../dd/df0/classmimicpp_1_1_i_reporter.html#a5933d377de8a9e67bbcc874091b31585',1,'mimicpp::IReporter::IReporter(IReporter &amp;&amp;)=default']]],
@@ -32,5 +32,5 @@ var searchData=
   ['is_5fsaturated_29',['is_saturated',['../dc/db2/classmimicpp_1_1_control_policy.html#ab1649a77ea47e1f4651c8c9eed3fecd0',1,'mimicpp::ControlPolicy']]],
   ['is_5fsorted_30',['is_sorted',['../db/d8a/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e.html#gacad6ed764831afec6ecf3668beebee4f',1,'mimicpp::matches::range']]],
   ['ismatching_31',['isMatching',['../da/d15/classmimicpp_1_1_match_report_1_1_expectation.html#aa49a27c0f7623851fab2054dfae07678',1,'mimicpp::MatchReport::Expectation']]],
-  ['issues_32',['Known Issues',['../index.html#autotoc_md30',1,'']]]
+  ['issues_32',['Known Issues',['../index.html#autotoc_md35',1,'']]]
 ];

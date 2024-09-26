@@ -148,12 +148,18 @@ Core Design</h2>
 <p>So, Mocks and Expectations are going together hand in hand.</p>
 <h2><a class="anchor" id="autotoc_md12"></a>
 Examples</h2>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Mocks as function objects</h3>
+<p>As already said, <code>mimicpp::mock</code>s are already function objects.</p>
 <div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="d0/db9/mimic_09_09_8hpp.html">mimic++/mimic++.hpp</a>&gt;</span></div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">namespace </span>matches = <a class="code hl_namespace" href="dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a>;</div>
-<div class="line"><span class="keyword">using </span>matches::_;</div>
+<div class="line"><span class="comment">// it&#39;s recommended to pull these sub-namespaces out, because then the expectation setup becomes much more readable</span></div>
 <div class="line"><span class="keyword">namespace </span>expect = <a class="code hl_namespace" href="d3/d18/namespacemimicpp_1_1expect.html">mimicpp::expect</a>;</div>
+<div class="line"><span class="keyword">namespace </span>matches = <a class="code hl_namespace" href="dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a>;</div>
 <div class="line"><span class="keyword">namespace </span>finally = <a class="code hl_namespace" href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a>;</div>
+<div class="line"><span class="keyword">namespace </span>then = <a class="code hl_namespace" href="d9/d4c/namespacemimicpp_1_1then.html">mimicpp::then</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">using </span>matches::_;   <span class="comment">// That&#39;s the wildcard matcher, which matches everything</span></div>
 <div class="line"> </div>
 <div class="line">TEST_CASE(<span class="stringliteral">&quot;Mocks are function objects.&quot;</span>)</div>
 <div class="line">{</div>
@@ -162,14 +168,16 @@ Examples</h2>
 <div class="line">                and expect::at_least(1)                             <span class="comment">// controls, how often the whole expectation must be matched</span></div>
 <div class="line">                and expect::arg&lt;0&gt;(!matches::range::is_empty())     <span class="comment">// addtionally requires the first argument to be not empty (note the preceeding !)</span></div>
 <div class="line">                and expect::arg&lt;1&gt;(matches::ne(std::nullopt))       <span class="comment">// requires the second argument to compare unequal to &quot;std::nullopt&quot;</span></div>
-<div class="line">                and expect::arg&lt;1&gt;(matches::lt(1337))               <span class="comment">// and to be less than 1337</span></div>
+<div class="line">                and expect::arg&lt;1&gt;(matches::lt(1337))               <span class="comment">// and eventually to be less than 1337</span></div>
+<div class="line">                and then::apply_arg&lt;0&gt;(                             <span class="comment">// That&#39;s a side-effect, which get&#39;s executed, when a match has been made.</span></div>
+<div class="line">                    [](std::string_view str) { std::cout &lt;&lt; str; }) <span class="comment">//  This one writes the content of the first argument to std::cout.</span></div>
 <div class="line">                and finally::returns(42);                           <span class="comment">// And, when matches, returns 42</span></div>
 <div class="line"> </div>
-<div class="line">    <span class="keywordtype">int</span> result = mock(&quot;Hello, World&quot;, 1336);                        <span class="comment">// matches</span></div>
-<div class="line">    REQUIRES(42 == result);</div>
+<div class="line">    <span class="keywordtype">int</span> result = mock(<span class="stringliteral">&quot;Hello, World&quot;</span>, 1336);                        <span class="comment">// matches</span></div>
+<div class="line">    REQUIRE(42 == result);</div>
 <div class="line">}</div>
 <div class="line"> </div>
-<div class="line">TEST_CASE(&quot;Mocks can be overloaded.&quot;)</div>
+<div class="line">TEST_CASE(<span class="stringliteral">&quot;Mocks can be overloaded.&quot;</span>)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_class" href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a>&lt;</div>
 <div class="line">        int(std::string, std::optional&lt;int&gt;),                   <span class="comment">// same as previous test</span></div>
@@ -197,32 +205,106 @@ Examples</h2>
 <div class="ttc" id="anamespacemimicpp_1_1expect_html"><div class="ttname"><a href="d3/d18/namespacemimicpp_1_1expect.html">mimicpp::expect</a></div><div class="ttdef"><b>Definition</b> ControlPolicy.hpp:267</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1finally_html"><div class="ttname"><a href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a></div><div class="ttdef"><b>Definition</b> ExpectationPolicies.hpp:445</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1matches_html"><div class="ttname"><a href="dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:165</div></div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md13"></a>
+<div class="ttc" id="anamespacemimicpp_1_1then_html"><div class="ttname"><a href="d9/d4c/namespacemimicpp_1_1then.html">mimicpp::then</a></div><div class="ttdef"><b>Definition</b> ExpectationPolicies.hpp:630</div></div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
+Mocks as member functions</h3>
+<p><code>mimicpp::mock</code>s can also be used as member functions.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="d0/db9/mimic_09_09_8hpp.html">mimic++/mimic++.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>finally = <a class="code hl_namespace" href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// let&#39;s build a functions, which actually expects an object, which has a .get() member function,</span></div>
+<div class="line"><span class="comment">// which returns something printable</span></div>
+<div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> foo(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; obj)</div>
+<div class="line">{</div>
+<div class="line">    std::cout &lt;&lt; obj.get();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">TEST_CASE(<span class="stringliteral">&quot;Mocks can be used as member functions.&quot;</span>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">struct </span>Mock</div>
+<div class="line">    {</div>
+<div class="line">        <a class="code hl_class" href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a>&lt;int() const&gt; get{}; <span class="comment">// that serves as the .get() member function</span></div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    Mock mock{};</div>
+<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get.expect_call()</div>
+<div class="line">                and finally::returns(42);</div>
+<div class="line"> </div>
+<div class="line">    foo(mock);      <span class="comment">// fine, foo calls the get() member-function</span></div>
+<div class="line">}</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
+Mocking interfaces</h3>
+<p><code>mimicpp</code> also provides helpers for interface mocking.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="d0/db9/mimic_09_09_8hpp.html">mimic++/mimic++.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">namespace </span>finally = <a class="code hl_namespace" href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a>;</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// let&#39;s say, we have the following interface</span></div>
+<div class="line"><span class="keyword">class </span>Interface</div>
+<div class="line">{</div>
+<div class="line"><span class="keyword">public</span>:</div>
+<div class="line">    <span class="keyword">virtual</span> ~Interface() = <span class="keywordflow">default</span>;</div>
+<div class="line">    <span class="keyword">virtual</span> <span class="keywordtype">int</span> get() <span class="keyword">const</span> = 0;</div>
+<div class="line">};</div>
+<div class="line"> </div>
+<div class="line"><span class="comment">// and a functions, which this time actually requires an interface.</span></div>
+<div class="line"><span class="keyword">inline</span> <span class="keywordtype">void</span> foo(<span class="keyword">const</span> Interface&amp; obj)</div>
+<div class="line">{</div>
+<div class="line">    std::cout &lt;&lt; obj.get();</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">TEST_CASE(<span class="stringliteral">&quot;Interface can be mocked.&quot;</span>)</div>
+<div class="line">{</div>
+<div class="line">    <span class="keyword">class </span>Derived</div>
+<div class="line">        : <span class="keyword">public</span> Interface</div>
+<div class="line">    {</div>
+<div class="line">    <span class="keyword">public</span>:</div>
+<div class="line">        ~Derived() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"> </div>
+<div class="line">        <span class="comment">// this generates the override method and a mock object named foo_</span></div>
+<div class="line">        <a class="code hl_define" href="de/dcd/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s.html#ga6d5cb660367ff702eb85c0257b8d474b">MOCK_METHOD</a>(get, <span class="keywordtype">int</span>, (), <span class="keyword">const</span>);</div>
+<div class="line">    };</div>
+<div class="line"> </div>
+<div class="line">    Derived mock{};</div>
+<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get_.expect_call()      <span class="comment">// note the _ suffix. That&#39;s the name of the mock object.</span></div>
+<div class="line">                and finally::returns(42);</div>
+<div class="line"> </div>
+<div class="line">    foo(mock);        <span class="comment">// fine, foo calls the get() member-function, which forwards the call to the foo_ member.</span></div>
+<div class="line">}</div>
+<div class="ttc" id="agroup___m_o_c_k___i_n_t_e_r_f_a_c_e_s_html_ga6d5cb660367ff702eb85c0257b8d474b"><div class="ttname"><a href="de/dcd/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s.html#ga6d5cb660367ff702eb85c0257b8d474b">MOCK_METHOD</a></div><div class="ttdeci">#define MOCK_METHOD</div><div class="ttdoc">Shorthand variant of MIMICPP_MOCK_METHOD.</div><div class="ttdef"><b>Definition</b> InterfaceMock.hpp:421</div></div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md16"></a>
 Other Choices</h2>
-<h3><a class="anchor" id="autotoc_md14"></a>
+<h3><a class="anchor" id="autotoc_md17"></a>
 Always Stay Within The Language Definition</h3>
 <p>There are a lot of mocking frameworks, which utilize clever tricks and apply some compiler specific instructions to make the work more enjoyable. <code>mimic++</code> does not! This framework will never touch the ground of undefined behaviour or tricks, which will only work under some circumstances, as this is nothing I want to support and maintain over a set of compilers or configurations. Unfortunatle this often leads to a less elegant syntax for users. If you need that, than this framework is probably not the right for you. Pick your poison :)</p>
-<h2><a class="anchor" id="autotoc_md15"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Special Acknowledgement</h2>
 <p>This framework is highly inspired by the well known <a href="https://github.com/rollbear/trompeloeil">trompeloeil</a>, which I have used myself for several years now. It's definitly not bad, but sometimes feels a little bit dated and some macros do not play very well with formatting tools and the like. If you need a pre-c++20 mocking-framework, you should definitly give it a try.</p>
 <p>Fun fact: <code>mimic++</code> uses <code>trompeloeil</code> for it's own test suite :D</p>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Customizability</h1>
 <p>A framework should be a useful tool that can be used in a variety of ways. However, it should not be a foundation that limits the house to be built on it. For this reason <code>mimic++</code> offers various ways for customization: E.g. users may create their own expectation policies and integrate them seamlessly, without changing any line of the <code>mimic++</code> code-base.</p>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Stringification</h2>
 <p><code>mimic++</code> can not provide stringification for any type out there, but it's often very useful to see a proper textual reprensentation of an object, when a test fails. <code>mimic++</code> will use <code>std::format</code> for <code>formattable</code> types, but sometimes that is not, what we want, as users for example want to have an alternative stringification just for testing purposes. Users can therefore add their specializations of the <code><a class="el" href="da/d68/classmimicpp_1_1custom_1_1_printer.html" title="User may add specializations, which will then be used during print calls.">mimicpp::custom::Printer</a></code> type and thus tell <code>mimic++</code> how a given type shall be printed.</p>
 <p>Custom specializations will always be prefered over any pre-existing printing methods, thus users may even override the stringification of the internal report types.</p>
-<h2><a class="anchor" id="autotoc_md18"></a>
+<h2><a class="anchor" id="autotoc_md21"></a>
+Matchers</h2>
+<p>Matchers are used to check, whether arguements satisfy some requirements. There are already many existing matchers available, but users often have special needs. <code>mimic++</code> provides a very generic <code><a class="el" href="dc/d5e/classmimicpp_1_1_predicate_matcher.html" title="Generic matcher and the basic building block of most of the built-in matchers.">mimicpp::PredicateMatcher</a></code>, which is often already sufficient. But, if one needs full control, just start with a fresh type (without any inheritance) and start building your own. They just have to match the <code><a class="el" href="df/d23/conceptmimicpp_1_1matcher__for.html">mimicpp::matcher_for</a></code> concept. For more information, head to the documentation.</p>
+<h2><a class="anchor" id="autotoc_md22"></a>
+Policies</h2>
+<p>There are multiple types of policie, depending on the task they shall fulfill. The expectation policy has full control, whether a match can be made or shall be rejected, while the finalize policy determines, what a mock shall do, when it actually matched (like returning a value or throwing an exception). They can implement arbitrary logic, so feel free to experiment. There is no base type requirement, they simply have to satisfy either the <code><a class="el" href="dd/d1d/conceptmimicpp_1_1expectation__policy__for.html">mimicpp::expectation_policy_for</a></code>, <code><a class="el" href="d4/df8/conceptmimicpp_1_1control__policy.html">mimicpp::control_policy</a></code> or <code>mimicpp::finalize_policy_for_</code>.</p>
+<h2><a class="anchor" id="autotoc_md23"></a>
 Documentation</h2>
 <p>The documenation is generated via <code>doxygen</code>. Users can do this locally by enabling both, the <code>MIMICPP_CONFIGURE_DOXYGEN</code> and <code>MIMICPP_ENABLE_GENERATE_DOCS</code>, cmake options and building the target <code>mimicpp-generate-docs</code> manually.</p>
 <p>The documentation for the <code>main</code> branch is always available on the <a href="https://dnkpp.github.io/mimicpp/">github-pages</a>; for the <code>development</code> branch it is also available on the <code>dev-gh-pages</code> branch, but unfortunatly not directly viewable on the browser. Every release has the generated documentation attached.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 Integration</h1>
 <p><code>mimic++</code> is a head-only library. Users can easily enjoy all features by simply including the <code>mimic++/mimic++.hpp</code> header. Of course one can be more granular and include just what's necessary. The choice is yours.</p>
-<h2><a class="anchor" id="autotoc_md20"></a>
+<h2><a class="anchor" id="autotoc_md25"></a>
 Installation</h2>
-<h3><a class="anchor" id="autotoc_md21"></a>
+<h3><a class="anchor" id="autotoc_md26"></a>
 CMake</h3>
 <p>This framework is header-only and completely powered by cmake, thus the integration into a cmake project is straight-forward. </p><div class="fragment"><div class="line">target_link_libraries(</div>
 <div class="line">    &lt;your_target_name&gt;</div>
@@ -243,10 +325,10 @@ CMake</h3>
 <div class="line"> </div>
 <div class="line">CPMAddPackage(&quot;gh:DNKpp/mimicpp#&lt;any_commit_hash_or_tag&gt;&quot;)</div>
 <div class="line"># do not forget linking via target_link_libraries as shown above</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md22"></a>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md27"></a>
 Single-Header</h3>
 <p>As an alternative each release has a header file named <code>mimic++-amalgamated.hpp</code> attached, which contains all definitions (except for the specific test-framework adapters) and can be simply dropped into any c++20 project (or used on <a href="https://godbolt.org">godbolt.org</a>. After that, users may also just pick the appropriate adapter header for their desired test-framework and put that into their project aswell.</p>
-<h2><a class="anchor" id="autotoc_md23"></a>
+<h2><a class="anchor" id="autotoc_md28"></a>
 Test Framework</h2>
 <p>Mocking frameworks usually do not exist for their own, as they are in fact just an advanced technice for creating tests. Instead, they should work together with any existing test framework out there. <code>mimic++</code> provides the <code>IReporter</code> interface, which in fact serves as a bridge from <code>mimic++</code> into the utilized test framework. <code>mimic++</code> provides some concrete reporter implementations for well known test frameworks, but users may create custom adapters for any test framework or simply use the default reporter. For more details have a look into the <code>reporting</code> section in the documentation.</p>
 <p>Official adapters exist for the following frameworks:</p>
@@ -255,11 +337,11 @@ Test Framework</h2>
 <li><a href="https://github.com/catchorg">Catch2</a></li>
 <li><a href="https://github.com/google/googletest">GTest</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md29"></a>
 Testing</h1>
 <p><code>mimic++</code> utilizes a strict testing policy, thus each official feature is well tested. The effect of those test-cases are always tracked by the extensive ci, which checks the compilation success, test cases outcomes and coverage on dozens of different os, compiler and build configurations.</p>
 <p>The coverage is generated via <code>gcov</code> and evaluated by <a href="https://app.codacy.com/gh/DNKpp/mimicpp">codacy</a>, <a href="https://codecov.io/gh/DNKpp/mimicpp">codecov</a> and <a href="https://coveralls.io/github/DNKpp/mimicpp">coveralls</a>.</p>
-<h2><a class="anchor" id="autotoc_md25"></a>
+<h2><a class="anchor" id="autotoc_md30"></a>
 Windows</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -269,7 +351,7 @@ Windows</h2>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">Windows 2022   </td><td class="markdownTableBodyNone">clangCl   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md26"></a>
+<h2><a class="anchor" id="autotoc_md31"></a>
 Linux</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
@@ -277,24 +359,24 @@ Linux</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">clang-17   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">clang-18   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
+<td class="markdownTableBodyNone">clang-18   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x (with caveats)   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">gcc-13   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
+<td class="markdownTableBodyNone">gcc-13   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">not tested   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">gcc-14   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
+<td class="markdownTableBodyNone">gcc-14   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">not tested   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<h2><a class="anchor" id="autotoc_md27"></a>
+<h2><a class="anchor" id="autotoc_md32"></a>
 macOS</h2>
 <table class="markdownTable">
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Compiler   </th><th class="markdownTableHeadCenter">libstdc++   </th><th class="markdownTableHeadCenter">libc++   </th><th class="markdownTableHeadCenter">c++-20   </th><th class="markdownTableHeadCenter">c++-23    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">AppleClang-17.0.6   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
+<td class="markdownTableBodyNone">AppleClang-17.0.6   </td><td class="markdownTableBodyCenter">not tested   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">AppleClang-18.1.6   </td><td class="markdownTableBodyCenter">-   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
+<td class="markdownTableBodyNone">AppleClang-18.1.6   </td><td class="markdownTableBodyCenter">not tested   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
 <p>As new compilers become available, they will be added to the workflow, but older compilers will probably never be supported.</p>
-<h1><a class="anchor" id="autotoc_md28"></a>
+<h1><a class="anchor" id="autotoc_md33"></a>
 License</h1>
 <p><a href="LICENSE_1_0.txt">BSL-1.0</a> (free, open source)</p>
 <div class="fragment"><div class="line">         Copyright Dominic &quot;DNKpp&quot; Koepke 2024 - 2024</div>
@@ -302,9 +384,9 @@ License</h1>
 <div class="line">   (See accompanying file LICENSE_1_0.txt or copy at</div>
 <div class="line">         https://www.boost.org/LICENSE_1_0.txt)</div>
 </div><!-- fragment --><hr  />
-<h1><a class="anchor" id="autotoc_md30"></a>
+<h1><a class="anchor" id="autotoc_md35"></a>
 Known Issues</h1>
-<h2><a class="anchor" id="autotoc_md31"></a>
+<h2><a class="anchor" id="autotoc_md36"></a>
 Clang-18.1 + libc++</h2>
 <p>Date: 25.09.2024</p>
 <p>This combination introduced a regression regarding the <code>std::invocable</code> concept and a default parameter of type <code>std::source_location</code>. On this version, all invocable checks will fail, but the <code>std::is_invocable</code> trait still works as expected. Unfortunatly this can not solved easily by this lib, sorry for that.</p>
