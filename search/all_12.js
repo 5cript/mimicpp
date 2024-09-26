@@ -121,5 +121,6 @@ var searchData=
   ['stringification_118',['stringification',['../de/dd2/group___s_t_r_i_n_g_i_f_i_c_a_t_i_o_n.html',1,'']]],
   ['stringstreamt_119',['StringStreamT',['../d1/d11/namespacemimicpp.html#a6b761dc4fb4f361e95dd3ec37da4a8a8',1,'mimicpp']]],
   ['stringt_120',['StringT',['../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1',1,'mimicpp']]],
-  ['stringviewt_121',['StringViewT',['../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6',1,'mimicpp']]]
+  ['stringviewt_121',['StringViewT',['../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6',1,'mimicpp']]],
+  ['strip_5fparens_122',['strip_parens',['../dd/d06/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___s_t_r_i_p___p_a_r_e_n_s.html',1,'']]]
 ];

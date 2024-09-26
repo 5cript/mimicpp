@@ -1,12 +1,14 @@
 <map id="mimic++/ExpectationPolicies.hpp" name="mimic++/ExpectationPolicies.hpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="24,5,237,31"/>
-<area shape="rect" id="Node000002" href="$d2/d4f/_expectation_builder_8hpp.html" title=" " alt="" coords="26,79,234,105"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,46,133,79,128,79,128,46"/>
-<area shape="rect" id="Node000003" href="$d5/dc5/_mock_8hpp.html" title=" " alt="" coords="5,153,138,178"/>
-<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="68,39,39,56,16,80,13,90,13,99,22,118,37,136,55,150,52,154,34,140,17,121,8,100,8,89,12,78,36,52,66,35"/>
-<area shape="rect" id="Node000004" href="$d0/db9/mimic_09_09_8hpp.html" title=" " alt="" coords="100,226,251,252"/>
-<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="195,35,225,52,248,78,257,98,257,120,252,142,242,163,216,200,191,228,187,224,212,197,237,160,247,140,252,120,251,99,244,80,221,56,192,39"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="113,118,83,154,79,150,109,115"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="142,119,153,152,175,225,170,227,148,153,137,120"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="103,185,159,224,156,228,100,189"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="81,5,294,31"/>
+<area shape="rect" id="Node000002" href="$d2/d4f/_expectation_builder_8hpp.html" title=" " alt="" coords="84,79,291,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="190,46,190,79,185,79,185,46"/>
+<area shape="rect" id="Node000003" href="$d5/dc5/_mock_8hpp.html" title=" " alt="" coords="50,153,182,178"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="126,39,97,56,74,80,70,99,76,118,89,136,104,150,100,154,85,139,72,120,65,99,69,78,93,52,123,35"/>
+<area shape="rect" id="Node000005" href="$d0/db9/mimic_09_09_8hpp.html" title=" " alt="" coords="213,226,365,252"/>
+<area shape="poly" id="edge7_Node000001_Node000005" title=" " alt="" coords="252,35,282,52,306,78,315,97,319,118,317,160,308,199,297,227,292,225,303,197,312,160,314,118,310,99,301,80,279,56,249,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="167,117,130,154,126,150,163,114"/>
+<area shape="poly" id="edge5_Node000002_Node000005" title=" " alt="" coords="207,116,283,224,278,227,202,119"/>
+<area shape="rect" id="Node000004" href="$d9/dc3/_interface_mock_8hpp.html" title=" " alt="" coords="5,226,189,252"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="111,194,103,227,98,225,106,192"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="160,182,260,223,258,228,158,187"/>
 </map>

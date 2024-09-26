@@ -3,7 +3,7 @@ var indexSectionsWithContent =
   0: "1_abcdefghiklmnoprstuvw~",
   1: "abcdefgilmprstw",
   2: "m",
-  3: "bcefgmprstu",
+  3: "bcefgimprstu",
   4: "abcdefghilmnoprstuw~",
   5: "_acdefilmprst",
   6: "abcefgiprstuv",
@@ -11,7 +11,7 @@ var indexSectionsWithContent =
   8: "afilnr",
   9: "o",
   10: "ms",
-  11: "aefmrst",
+  11: "adefimrst",
   12: "afm",
   13: "m"
 };

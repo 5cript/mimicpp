@@ -7,6 +7,7 @@ var dir_607a8dc80affae740d596a5a905f4489 =
     [ "ExpectationBuilder.hpp", "d2/d4f/_expectation_builder_8hpp.html", "d2/d4f/_expectation_builder_8hpp" ],
     [ "ExpectationPolicies.hpp", "d8/de5/_expectation_policies_8hpp.html", "d8/de5/_expectation_policies_8hpp" ],
     [ "Fwd.hpp", "df/dde/_fwd_8hpp.html", "df/dde/_fwd_8hpp" ],
+    [ "InterfaceMock.hpp", "d9/dc3/_interface_mock_8hpp.html", "d9/dc3/_interface_mock_8hpp" ],
     [ "Matcher.hpp", "dd/d50/_matcher_8hpp.html", "dd/d50/_matcher_8hpp" ],
     [ "mimic++.hpp", "d0/db9/mimic_09_09_8hpp.html", null ],
     [ "Mock.hpp", "d5/dc5/_mock_8hpp.html", null ],
