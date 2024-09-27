@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['macos_0',['macOS',['../index.html#autotoc_md32',1,'']]],
+  ['macos_0',['macOS',['../index.html#autotoc_md36',1,'']]],
   ['macro_20free_20mocking_20framework_1',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['make_5fcall_5freport_2',['make_call_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::Info::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c',1,'mimicpp::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::make_call_report()']]],
   ['make_5fmethod_5foverrides_3',['make_method_overrides',['../db/db9/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___m_a_k_e___m_e_t_h_o_d___o_v_e_r_r_i_d_e_s.html',1,'']]],
@@ -9,7 +9,7 @@ var searchData=
   ['make_5fsignature_5flist_6',['make_signature_list',['../d7/d9a/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___m_a_k_e___s_i_g_n_a_t_u_r_e___l_i_s_t.html',1,'']]],
   ['matcher_7',['Custom Matcher',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md2',1,'']]],
   ['matcher_2ehpp_8',['Matcher.hpp',['../dd/d50/_matcher_8hpp.html',1,'']]],
-  ['matchers_9',['Matchers',['../index.html#autotoc_md21',1,'']]],
+  ['matchers_9',['Matchers',['../index.html#autotoc_md22',1,'']]],
   ['matchers_10',['matchers',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html',1,'matchers'],['../db/d8a/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e.html',1,'range matchers'],['../de/dd6/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r_s___s_t_r_i_n_g.html',1,'string matchers']]],
   ['matches_11',['matches',['../d3/d1c/classmimicpp_1_1_expectation.html#ab030189070f8b4ad118a49f6a82ebff7',1,'mimicpp::Expectation::matches()'],['../d3/d4a/classmimicpp_1_1_basic_expectation.html#ac27966d7b0cd77e74f6970a6e56638d2',1,'mimicpp::BasicExpectation::matches()'],['../d4/d44/classmimicpp_1_1expectation__policies_1_1_category.html#afdbfde04d2e9d7785ee959873be8d650',1,'mimicpp::expectation_policies::Category::matches()'],['../db/dbc/classmimicpp_1_1expectation__policies_1_1_constness.html#ad9252963b4826e2fa76b3d9e64c9b07f',1,'mimicpp::expectation_policies::Constness::matches()'],['../d1/dde/classmimicpp_1_1expectation__policies_1_1_requirement.html#a5dfdfbcac13ce47bc480fd6802b35c77',1,'mimicpp::expectation_policies::Requirement::matches()'],['../d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html#a0bfc03a555eed8ed0126f32a858ba3ef',1,'mimicpp::expectation_policies::SideEffectAction::matches()'],['../dc/d5e/classmimicpp_1_1_predicate_matcher.html#a0acf28a054e164605fff2ede5ba4c039',1,'mimicpp::PredicateMatcher::matches()'],['../db/de6/classmimicpp_1_1_wildcard_matcher.html#a571616d6f4b1cba443c870143b7f6bcc',1,'mimicpp::WildcardMatcher::matches()']]],
   ['matching_20arguments_12',['Matching arguments',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md1',1,'']]],

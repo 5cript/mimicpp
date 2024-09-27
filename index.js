@@ -14,26 +14,26 @@ var index =
       ] ],
       [ "Special Acknowledgement", "index.html#autotoc_md18", null ]
     ] ],
-    [ "Customizability", "index.html#autotoc_md19", [
-      [ "Stringification", "index.html#autotoc_md20", null ],
-      [ "Matchers", "index.html#autotoc_md21", null ],
-      [ "Policies", "index.html#autotoc_md22", null ],
-      [ "Documentation", "index.html#autotoc_md23", null ]
+    [ "Customizability", "index.html#autotoc_md20", [
+      [ "Stringification", "index.html#autotoc_md21", null ],
+      [ "Matchers", "index.html#autotoc_md22", null ],
+      [ "Policies", "index.html#autotoc_md23", null ]
     ] ],
-    [ "Integration", "index.html#autotoc_md24", [
-      [ "Installation", "index.html#autotoc_md25", [
-        [ "CMake", "index.html#autotoc_md26", null ],
-        [ "Single-Header", "index.html#autotoc_md27", null ]
+    [ "Documentation", "index.html#autotoc_md25", null ],
+    [ "Integration", "index.html#autotoc_md27", [
+      [ "Installation", "index.html#autotoc_md28", [
+        [ "CMake", "index.html#autotoc_md29", null ],
+        [ "Single-Header", "index.html#autotoc_md30", null ]
       ] ],
-      [ "Test Framework", "index.html#autotoc_md28", null ]
+      [ "Test Framework", "index.html#autotoc_md31", null ]
     ] ],
-    [ "Testing", "index.html#autotoc_md29", [
-      [ "Windows", "index.html#autotoc_md30", null ],
-      [ "Linux", "index.html#autotoc_md31", null ],
-      [ "macOS", "index.html#autotoc_md32", null ]
+    [ "Testing", "index.html#autotoc_md33", [
+      [ "Windows", "index.html#autotoc_md34", null ],
+      [ "Linux", "index.html#autotoc_md35", null ],
+      [ "macOS", "index.html#autotoc_md36", null ]
     ] ],
-    [ "License", "index.html#autotoc_md33", null ],
-    [ "Known Issues", "index.html#autotoc_md35", [
-      [ "Clang-18.1 + libc++", "index.html#autotoc_md36", null ]
+    [ "License", "index.html#autotoc_md38", null ],
+    [ "Known Issues", "index.html#autotoc_md40", [
+      [ "Clang-18.1 + libc++", "index.html#autotoc_md41", null ]
     ] ]
 ];
