@@ -164,7 +164,7 @@ Mocks as function objects</h3>
 <div class="line">TEST_CASE(<span class="stringliteral">&quot;Mocks are function objects.&quot;</span>)</div>
 <div class="line">{</div>
 <div class="line">    <a class="code hl_class" href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a>&lt;int(std::string, std::optional&lt;int&gt;)&gt; mock{};     <span class="comment">// actually enables just `int operator ()(std::string, std::optional&lt;int&gt;)`</span></div>
-<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call(<span class="stringliteral">&quot;Hello, World&quot;</span>, _)                  <span class="comment">// requires the first argument to match the string &quot;Hello, World&quot;; the second has no restrictions</span></div>
+<div class="line">    <a class="code hl_define" href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call(<span class="stringliteral">&quot;Hello, World&quot;</span>, _)                  <span class="comment">// requires the first argument to match the string &quot;Hello, World&quot;; the second has no restrictions</span></div>
 <div class="line">                and expect::at_least(1)                             <span class="comment">// controls, how often the whole expectation must be matched</span></div>
 <div class="line">                and expect::arg&lt;0&gt;(!matches::range::is_empty())     <span class="comment">// addtionally requires the first argument to be not empty (note the preceeding !)</span></div>
 <div class="line">                and expect::arg&lt;1&gt;(matches::ne(std::nullopt))       <span class="comment">// requires the second argument to compare unequal to &quot;std::nullopt&quot;</span></div>
@@ -184,13 +184,13 @@ Mocks as function objects</h3>
 <div class="line">        void() const                                            <span class="comment">// enables `void operator ()() const` (note the const specification)</span></div>
 <div class="line">    &gt; mock{};</div>
 <div class="line"> </div>
-<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call()                               <span class="comment">// setup an expectation for the void() overload</span></div>
+<div class="line">    <a class="code hl_define" href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call()                               <span class="comment">// setup an expectation for the void() overload</span></div>
 <div class="line">                and expect::twice();                            <span class="comment">// should be matched twice</span></div>
 <div class="line"> </div>
 <div class="line">    mock();                                                     <span class="comment">// first match</span></div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// you can always create new expectations as you need them, even if the object is already in use</span></div>
-<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call(!matches::range::is_empty(), 42)        <span class="comment">// you can always apply matches directly; if just a value is provided, defaults to matches::eq</span></div>
+<div class="line">    <a class="code hl_define" href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.expect_call(!matches::range::is_empty(), 42)        <span class="comment">// you can always apply matches directly; if just a value is provided, defaults to matches::eq</span></div>
 <div class="line">                and expect::once()                                      <span class="comment">// once() is the default, but you can state that explicitly</span></div>
 <div class="line">                and finally::throws(std::runtime_error{<span class="stringliteral">&quot;some error&quot;</span>});  <span class="comment">// when matches, throws an exception</span></div>
 <div class="line"> </div>
@@ -199,8 +199,8 @@ Mocks as function objects</h3>
 <div class="line">    <span class="comment">// still a pending expectation for void() overload</span></div>
 <div class="line">    std::as_const(mock)();                                      <span class="comment">// explicitly call from a const object</span></div>
 <div class="line">}</div>
-<div class="ttc" id="a_expectation_builder_8hpp_html_a7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:276</div></div>
 <div class="ttc" id="aclassmimicpp_1_1_mock_html"><div class="ttname"><a href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a></div><div class="ttdoc">A Mock type, which fully supports overload sets.</div><div class="ttdef"><b>Definition</b> Mock.hpp:551</div></div>
+<div class="ttc" id="agroup___m_o_c_k_html_ga7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdoc">Shorthand variant of MIMICPP_SCOPED_EXPECTATION.</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:287</div></div>
 <div class="ttc" id="amimic_09_09_8hpp_html"><div class="ttname"><a href="d0/db9/mimic_09_09_8hpp.html">mimic++.hpp</a></div></div>
 <div class="ttc" id="anamespacemimicpp_1_1expect_html"><div class="ttname"><a href="d3/d18/namespacemimicpp_1_1expect.html">mimicpp::expect</a></div><div class="ttdef"><b>Definition</b> ControlPolicy.hpp:267</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1finally_html"><div class="ttname"><a href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a></div><div class="ttdef"><b>Definition</b> ExpectationPolicies.hpp:445</div></div>
@@ -228,7 +228,7 @@ Mocks as member functions</h3>
 <div class="line">    };</div>
 <div class="line"> </div>
 <div class="line">    Mock mock{};</div>
-<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get.expect_call()</div>
+<div class="line">    <a class="code hl_define" href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get.expect_call()</div>
 <div class="line">                and finally::returns(42);</div>
 <div class="line"> </div>
 <div class="line">    foo(mock);      <span class="comment">// fine, foo calls the get() member-function</span></div>
@@ -267,7 +267,7 @@ Mocking interfaces</h3>
 <div class="line">    };</div>
 <div class="line"> </div>
 <div class="line">    Derived mock{};</div>
-<div class="line">    <a class="code hl_define" href="d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get_.expect_call()      <span class="comment">// note the _ suffix. That&#39;s the name of the mock object.</span></div>
+<div class="line">    <a class="code hl_define" href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a> mock.get_.expect_call()      <span class="comment">// note the _ suffix. That&#39;s the name of the mock object.</span></div>
 <div class="line">                and finally::returns(42);</div>
 <div class="line"> </div>
 <div class="line">    foo(mock);        <span class="comment">// fine, foo calls the get() member-function, which forwards the call to the mock object get_.</span></div>

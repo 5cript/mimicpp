@@ -11,7 +11,7 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="d6/dc0/classmimicpp_1_1_scoped_expectation.html" target="_top" xlink:title=" ">
+<g id="a_Node000000"><a xlink:href="d6/dc0/classmimicpp_1_1_scoped_expectation.html" target="_top" xlink:title="Takes the ownership of an expectation and check whether it&#39;s satisfied during destruction.">
 <polygon fill="white" stroke="#666666" points="140.5,-19.25 0,-19.25 0,0 140.5,0 140.5,-19.25"/>
 <text text-anchor="middle" x="70.25" y="-5.75" font-family="Helvetica,sans-Serif" font-size="10.00">mimicpp::ScopedExpectation</text>
 </a>

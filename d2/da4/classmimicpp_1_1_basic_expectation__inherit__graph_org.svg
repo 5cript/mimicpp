@@ -22,7 +22,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="../../d3/d1c/classmimicpp_1_1_expectation.html" target="_top" xlink:title=" ">
+<g id="a_Node000002"><a xlink:href="../../d3/d1c/classmimicpp_1_1_expectation.html" target="_top" xlink:title="The base interface for expectations.">
 <polygon fill="white" stroke="#666666" points="119.88,-108.25 12.38,-108.25 12.38,-77.75 119.88,-77.75 119.88,-108.25"/>
 <text text-anchor="start" x="20.38" y="-94.75" font-family="Helvetica,sans-Serif" font-size="10.00">mimicpp::Expectation</text>
 <text text-anchor="middle" x="66.12" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">&lt; Signature &gt;</text>

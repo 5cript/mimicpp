@@ -1,8 +1,8 @@
 var searchData=
 [
   ['safety_0',['Thread-Safety',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html#autotoc_md3',1,'']]],
-  ['scoped_5fexp_1',['SCOPED_EXP',['../d2/d4f/_expectation_builder_8hpp.html#a7e7d68eefb8f3cba28422f62bcf2f90a',1,'ExpectationBuilder.hpp']]],
-  ['scopedexpectation_2',['ScopedExpectation',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html',1,'mimicpp::ScopedExpectation'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a88bd255c6f17c2eefc52ef96b7990dd2',1,'mimicpp::ScopedExpectation::ScopedExpectation(std::shared_ptr&lt; ExpectationCollection&lt; Signature &gt; &gt; storage, std::shared_ptr&lt; typename ExpectationCollection&lt; Signature &gt;::ExpectationT &gt; expectation) noexcept'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a485d6a5176d34d672b2a49616af68771',1,'mimicpp::ScopedExpectation::ScopedExpectation(ScopedExpectation &amp;&amp;)=default']]],
+  ['scoped_5fexp_1',['SCOPED_EXP',['../d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a',1,'ExpectationBuilder.hpp']]],
+  ['scopedexpectation_2',['ScopedExpectation',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html',1,'mimicpp::ScopedExpectation'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a8a1e5f6dd65ccb47cdc7349de63e1265',1,'mimicpp::ScopedExpectation::ScopedExpectation(std::shared_ptr&lt; ExpectationCollection&lt; Signature &gt; &gt; collection, std::shared_ptr&lt; typename ExpectationCollection&lt; Signature &gt;::ExpectationT &gt; expectation) noexcept'],['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a485d6a5176d34d672b2a49616af68771',1,'mimicpp::ScopedExpectation::ScopedExpectation(ScopedExpectation &amp;&amp;)=default']]],
   ['sequence_3',['sequence',['../d3/dd3/group___e_x_p_e_c_t_a_t_i_o_n___s_e_q_u_e_n_c_e.html',1,'']]],
   ['sequence_2ehpp_4',['Sequence.hpp',['../d8/de4/_sequence_8hpp.html',1,'']]],
   ['sequencecount_5',['sequenceCount',['../dc/db2/classmimicpp_1_1_control_policy.html#aac53c9562c5f612042a72926f871aaef',1,'mimicpp::ControlPolicy']]],

@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "cimtv",
   8: "afilnr",
   9: "o",
-  10: "ms",
+  10: "m",
   11: "adefimrst",
   12: "afm",
   13: "m"

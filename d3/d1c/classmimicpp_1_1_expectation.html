@@ -101,9 +101,12 @@ $(function(){initNavTree('d3/d1c/classmimicpp_1_1_expectation.html','../../'); i
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../df/d2f/classmimicpp_1_1_expectation-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">mimicpp::Expectation&lt; Signature &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div></div>
+  <div class="headertitle"><div class="title">mimicpp::Expectation&lt; Signature &gt; Class Template Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="../../da/dbc/group___e_x_p_e_c_t_a_t_i_o_n.html">expectation</a></div></div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>The base interface for expectations.  
+ <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d5/d8a/_expectation_8hpp_source.html">Expectation.hpp</a>&gt;</code></p>
 <div class="dynheader">
@@ -146,7 +149,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d8a1682ed0a214d768b28b008222e29" id="r_a6d8a1682ed0a214d768b28b008222e29"><td class="memItemLeft" align="right" valign="top">virtual constexpr const std::source_location &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8a1682ed0a214d768b28b008222e29">from</a> () const noexcept=0</td></tr>
 <tr class="separator:a6d8a1682ed0a214d768b28b008222e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename Signature&gt;<br />
+requires std::same_as&lt;Signature, <a class="el" href="../../d1/d11/namespacemimicpp.html#ae85f02e3becd1c96735ae9bbcade1212">signature_decay_t</a>&lt;Signature&gt;&gt;<br />
+class mimicpp::Expectation&lt; Signature &gt;</div><p>The base interface for expectations. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Signature</td><td>The decayed signature. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a4b3acc5f294e142ca55d235e22883435" name="a4b3acc5f294e142ca55d235e22883435"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4b3acc5f294e142ca55d235e22883435">&#9670;&#160;</a></span>CallInfoT</h2>
 

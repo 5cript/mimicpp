@@ -6,13 +6,14 @@ var searchData=
   ['evaluate_5fmatch_5freport_3',['evaluate_match_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga28bf45ff6df85506325c64349d37ca85',1,'mimicpp']]],
   ['examples_4',['Examples',['../index.html#autotoc_md12',1,'']]],
   ['expectation_5',['Expectation',['../d3/d1c/classmimicpp_1_1_expectation.html',1,'mimicpp::Expectation&lt; Signature &gt;'],['../da/d15/classmimicpp_1_1_match_report_1_1_expectation.html',1,'mimicpp::MatchReport::Expectation'],['../d3/d1c/classmimicpp_1_1_expectation.html#ac58cc9bcb1a8af7452200d9a41932003',1,'mimicpp::Expectation::Expectation()=default'],['../d3/d1c/classmimicpp_1_1_expectation.html#ac99436e494b6e1902b8293e4bdcd5254',1,'mimicpp::Expectation::Expectation(const Expectation &amp;)=delete'],['../d3/d1c/classmimicpp_1_1_expectation.html#a3ffc7b5fa9454e7c052abdea70fdc7ec',1,'mimicpp::Expectation::Expectation(Expectation &amp;&amp;)=delete']]],
-  ['expectation_2ehpp_6',['Expectation.hpp',['../d5/d8a/_expectation_8hpp.html',1,'']]],
-  ['expectationbuilder_2ehpp_7',['ExpectationBuilder.hpp',['../d2/d4f/_expectation_builder_8hpp.html',1,'']]],
-  ['expectationcollection_8',['ExpectationCollection',['../d5/d86/classmimicpp_1_1_expectation_collection.html',1,'mimicpp::ExpectationCollection&lt; Signature &gt;'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a8efff1247c04d6b09e0425e57d208149',1,'mimicpp::ExpectationCollection::ExpectationCollection()=default'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a0a7e136b22ea0244df639e35ae7d0e02',1,'mimicpp::ExpectationCollection::ExpectationCollection(const ExpectationCollection &amp;)=delete'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a64813a973e31aeb6f6f18bca555fecba',1,'mimicpp::ExpectationCollection::ExpectationCollection(ExpectationCollection &amp;&amp;)=default']]],
-  ['expectationdescriptions_9',['expectationDescriptions',['../dd/d62/classmimicpp_1_1_expectation_report.html#a58c124daff3201aa82c755e7ebafbe34',1,'mimicpp::ExpectationReport']]],
-  ['expectationpolicies_2ehpp_10',['ExpectationPolicies.hpp',['../d8/de5/_expectation_policies_8hpp.html',1,'']]],
-  ['expectationreport_11',['ExpectationReport',['../dd/d62/classmimicpp_1_1_expectation_report.html',1,'mimicpp']]],
-  ['expectationreports_12',['expectationReports',['../db/d11/classmimicpp_1_1_match_report.html#a4a0f546bbd6d5cdc94aaf8ce753c55ae',1,'mimicpp::MatchReport']]],
-  ['expectationt_13',['ExpectationT',['../d5/d86/classmimicpp_1_1_expectation_collection.html#af18bb4e89420aa03fb38362c165e3642',1,'mimicpp::ExpectationCollection']]],
-  ['explicit_14',['explicit',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a7610bd96d38f59865ef8c1f0cd4dfb64',1,'mimicpp::ScopedExpectation']]]
+  ['expectation_6',['expectation',['../da/dbc/group___e_x_p_e_c_t_a_t_i_o_n.html',1,'']]],
+  ['expectation_2ehpp_7',['Expectation.hpp',['../d5/d8a/_expectation_8hpp.html',1,'']]],
+  ['expectationbuilder_2ehpp_8',['ExpectationBuilder.hpp',['../d2/d4f/_expectation_builder_8hpp.html',1,'']]],
+  ['expectationcollection_9',['ExpectationCollection',['../d5/d86/classmimicpp_1_1_expectation_collection.html',1,'mimicpp::ExpectationCollection&lt; Signature &gt;'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a8efff1247c04d6b09e0425e57d208149',1,'mimicpp::ExpectationCollection::ExpectationCollection()=default'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a0a7e136b22ea0244df639e35ae7d0e02',1,'mimicpp::ExpectationCollection::ExpectationCollection(const ExpectationCollection &amp;)=delete'],['../d5/d86/classmimicpp_1_1_expectation_collection.html#a64813a973e31aeb6f6f18bca555fecba',1,'mimicpp::ExpectationCollection::ExpectationCollection(ExpectationCollection &amp;&amp;)=default']]],
+  ['expectationdescriptions_10',['expectationDescriptions',['../dd/d62/classmimicpp_1_1_expectation_report.html#a58c124daff3201aa82c755e7ebafbe34',1,'mimicpp::ExpectationReport']]],
+  ['expectationpolicies_2ehpp_11',['ExpectationPolicies.hpp',['../d8/de5/_expectation_policies_8hpp.html',1,'']]],
+  ['expectationreport_12',['ExpectationReport',['../dd/d62/classmimicpp_1_1_expectation_report.html',1,'mimicpp']]],
+  ['expectationreports_13',['expectationReports',['../db/d11/classmimicpp_1_1_match_report.html#a4a0f546bbd6d5cdc94aaf8ce753c55ae',1,'mimicpp::MatchReport']]],
+  ['expectationt_14',['ExpectationT',['../d5/d86/classmimicpp_1_1_expectation_collection.html#af18bb4e89420aa03fb38362c165e3642',1,'mimicpp::ExpectationCollection']]],
+  ['explicit_15',['explicit',['../d6/dc0/classmimicpp_1_1_scoped_expectation.html#a7610bd96d38f59865ef8c1f0cd4dfb64',1,'mimicpp::ScopedExpectation']]]
 ];

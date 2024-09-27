@@ -3,7 +3,7 @@ var dir_607a8dc80affae740d596a5a905f4489 =
     [ "adapters", "dir_577549b8d6a2ee9114aaf83a129b8107.html", "dir_577549b8d6a2ee9114aaf83a129b8107" ],
     [ "Call.hpp", "dc/d44/_call_8hpp.html", "dc/d44/_call_8hpp" ],
     [ "ControlPolicy.hpp", "d6/d17/_control_policy_8hpp.html", "d6/d17/_control_policy_8hpp" ],
-    [ "Expectation.hpp", "d5/d8a/_expectation_8hpp.html", "d5/d8a/_expectation_8hpp" ],
+    [ "Expectation.hpp", "d5/d8a/_expectation_8hpp.html", null ],
     [ "ExpectationBuilder.hpp", "d2/d4f/_expectation_builder_8hpp.html", "d2/d4f/_expectation_builder_8hpp" ],
     [ "ExpectationPolicies.hpp", "d8/de5/_expectation_policies_8hpp.html", "d8/de5/_expectation_policies_8hpp" ],
     [ "Fwd.hpp", "df/dde/_fwd_8hpp.html", "df/dde/_fwd_8hpp" ],
