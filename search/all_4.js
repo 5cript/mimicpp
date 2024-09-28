@@ -22,7 +22,7 @@ var searchData=
   ['controlreport_19',['controlReport',['../db/d11/classmimicpp_1_1_match_report.html#ad9c88790ba56c6ef4e4339cb1212f9bd',1,'mimicpp::MatchReport']]],
   ['core_20design_20',['Core Design',['../index.html#autotoc_md11',1,'']]],
   ['count_21',['count',['../d7/dd2/structmimicpp_1_1state__inapplicable.html#a4842914d211afe5f1e18df79947026fe',1,'mimicpp::state_inapplicable::count'],['../d0/d12/structmimicpp_1_1state__applicable.html#a2d29022d757fe0d91c340cfcb5eade6b',1,'mimicpp::state_applicable::count'],['../de/d68/structmimicpp_1_1state__saturated.html#a728e616eb8bfe48a3f9dfeeeadbc05c3',1,'mimicpp::state_saturated::count']]],
-  ['custom_20finalizers_22',['Custom Finalizers',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#autotoc_md2',1,'']]],
-  ['custom_20matcher_23',['Custom Matcher',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md1',1,'']]],
+  ['custom_20finalizers_22',['Custom Finalizers',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#autotoc_md0',1,'']]],
+  ['custom_20matcher_23',['Custom Matcher',['../dc/d99/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r.html#autotoc_md2',1,'']]],
   ['customizability_24',['Customizability',['../index.html#autotoc_md20',1,'']]]
 ];
