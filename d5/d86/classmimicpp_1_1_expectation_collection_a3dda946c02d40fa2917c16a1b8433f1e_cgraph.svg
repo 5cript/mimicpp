@@ -22,7 +22,7 @@
 <!-- Node1 -->
 <g id="Node000001" class="node">
 <title>Node1</title>
-<g id="a_Node000001"><a xlink:title=" ">
+<g id="a_Node000001"><a xlink:title="Handles the incoming call.">
 <polygon fill="#999999" stroke="#666666" points="150.25,-91.88 0,-91.88 0,-61.38 150.25,-61.38 150.25,-91.88"/>
 <text text-anchor="start" x="8" y="-78.38" font-family="Helvetica,sans-Serif" font-size="10.00">mimicpp::ExpectationCollection</text>
 <text text-anchor="middle" x="75.12" y="-67.12" font-family="Helvetica,sans-Serif" font-size="10.00">::handle_call</text>
@@ -70,7 +70,7 @@
 <!-- Node4 -->
 <g id="Node000004" class="node">
 <title>Node4</title>
-<g id="a_Node000004"><a xlink:href="../../d3/d1c/classmimicpp_1_1_expectation.html#a73093b259b40576b1c0b00eeff5a2f0b" target="_top" xlink:title=" ">
+<g id="a_Node000004"><a xlink:href="../../d3/d1c/classmimicpp_1_1_expectation.html#a73093b259b40576b1c0b00eeff5a2f0b" target="_top" xlink:title="Creates a report of the internal state.">
 <polygon fill="white" stroke="#666666" points="303.12,-67.88 195.62,-67.88 195.62,-37.38 303.12,-37.38 303.12,-67.88"/>
 <text text-anchor="start" x="203.62" y="-54.38" font-family="Helvetica,sans-Serif" font-size="10.00">mimicpp::Expectation</text>
 <text text-anchor="middle" x="249.38" y="-43.12" font-family="Helvetica,sans-Serif" font-size="10.00">::report</text>
