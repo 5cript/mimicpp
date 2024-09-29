@@ -140,7 +140,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="keyword">public</span>:</div>
 <div class="line">    <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_variable" href="#ga67aaa7bdf2da1595ab1b25059119242c">print</a>(<span class="keyword">auto</span> outIter, <span class="keyword">const</span> my_type&amp; <span class="keywordtype">object</span>)</div>
 <div class="line">    {</div>
-<div class="line">        <span class="keywordflow">return</span> std::format_to(</div>
+<div class="line">        <span class="keywordflow">return</span> format::format_to(</div>
 <div class="line">            outIter,</div>
 <div class="line">            <span class="stringliteral">&quot;Object of my_type has value: {}&quot;</span>,</div>
 <div class="line">            <span class="keywordtype">object</span>.data);</div>
