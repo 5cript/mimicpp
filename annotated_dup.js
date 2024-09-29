@@ -20,6 +20,10 @@ var annotated_dup =
         [ "SideEffectAction", "d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action.html", "d5/d8f/classmimicpp_1_1expectation__policies_1_1_side_effect_action" ],
         [ "Throws", "d8/d34/classmimicpp_1_1expectation__policies_1_1_throws.html", "d8/d34/classmimicpp_1_1expectation__policies_1_1_throws" ]
       ] ],
+      [ "format", "d3/d54/namespacemimicpp_1_1format.html", [
+        [ "formatter< mimicpp::Constness, mimicpp::CharT >", "d2/d9b/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html", "d2/d9b/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4" ],
+        [ "formatter< mimicpp::ValueCategory, mimicpp::CharT >", "db/dc9/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html", "db/dc9/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4" ]
+      ] ],
       [ "sequence", "d8/dce/namespacemimicpp_1_1sequence.html", [
         [ "rating", "de/d81/structmimicpp_1_1sequence_1_1rating.html", "de/d81/structmimicpp_1_1sequence_1_1rating" ]
       ] ],
@@ -134,9 +138,5 @@ var annotated_dup =
       [ "state_inapplicable", "d7/dd2/structmimicpp_1_1state__inapplicable.html", "d7/dd2/structmimicpp_1_1state__inapplicable" ],
       [ "state_saturated", "de/d68/structmimicpp_1_1state__saturated.html", "de/d68/structmimicpp_1_1state__saturated" ],
       [ "WildcardMatcher", "db/de6/classmimicpp_1_1_wildcard_matcher.html", "db/de6/classmimicpp_1_1_wildcard_matcher" ]
-    ] ],
-    [ "std", null, [
-      [ "formatter< mimicpp::Constness, mimicpp::CharT >", "d4/de7/structstd_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html", "d4/de7/structstd_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4" ],
-      [ "formatter< mimicpp::ValueCategory, mimicpp::CharT >", "d5/df8/structstd_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html", "d5/df8/structstd_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4" ]
     ] ]
 ];

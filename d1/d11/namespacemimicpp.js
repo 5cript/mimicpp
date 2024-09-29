@@ -22,7 +22,7 @@ var namespacemimicpp =
       [ "returns_result_of", "db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#gafe0fc1d77a4122b05f60d49183ce0106", null ],
       [ "throws", "db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#gab4f67d2c48ef5ebaf25e31e2ac59c5c1", null ]
     ] ],
-    [ "format", "d3/d54/namespacemimicpp_1_1format.html", null ],
+    [ "format", "d3/d54/namespacemimicpp_1_1format.html", "d3/d54/namespacemimicpp_1_1format" ],
     [ "matches", "dd/d7b/namespacemimicpp_1_1matches.html", "dd/d7b/namespacemimicpp_1_1matches" ],
     [ "sequence", "d8/dce/namespacemimicpp_1_1sequence.html", "d8/dce/namespacemimicpp_1_1sequence" ],
     [ "then", "d9/d4c/namespacemimicpp_1_1then.html", [

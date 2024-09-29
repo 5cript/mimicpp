@@ -37,10 +37,6 @@ var hierarchy =
     [ "mimicpp::ExpectationCollection< Signature >", "d5/d86/classmimicpp_1_1_expectation_collection.html", null ],
     [ "mimicpp::ExpectationReport", "dd/d62/classmimicpp_1_1_expectation_report.html", null ],
     [ "mimicpp::MatchReport::Finalize", "d5/d36/classmimicpp_1_1_match_report_1_1_finalize.html", null ],
-    [ "std::formatter", null, [
-      [ "std::formatter< mimicpp::Constness, mimicpp::CharT >", "d4/de7/structstd_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html", null ],
-      [ "std::formatter< mimicpp::ValueCategory, mimicpp::CharT >", "d5/df8/structstd_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html", null ]
-    ] ],
     [ "mimicpp::call::Info< Return, Args >", "d4/d44/classmimicpp_1_1call_1_1_info.html", null ],
     [ "mimicpp::call::info_for_signature< Signature >", "d8/d5b/structmimicpp_1_1call_1_1info__for__signature.html", null ],
     [ "mimicpp::call::info_for_signature< Return(Args...)>", "d9/df4/structmimicpp_1_1call_1_1info__for__signature_3_01_return_07_args_8_8_8_08_4.html", null ],
@@ -164,5 +160,9 @@ var hierarchy =
     [ "std::tuple_element", null, [
       [ "mimicpp::signature_param_type< index, Return(Params...)>", "d0/d24/structmimicpp_1_1signature__param__type_3_01index_00_01_return_07_params_8_8_8_08_4.html", null ]
     ] ],
-    [ "mimicpp::WildcardMatcher", "db/de6/classmimicpp_1_1_wildcard_matcher.html", null ]
+    [ "mimicpp::WildcardMatcher", "db/de6/classmimicpp_1_1_wildcard_matcher.html", null ],
+    [ "formatter", null, [
+      [ "mimicpp::format::formatter< mimicpp::Constness, mimicpp::CharT >", "d2/d9b/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html", null ],
+      [ "mimicpp::format::formatter< mimicpp::ValueCategory, mimicpp::CharT >", "db/dc9/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html", null ]
+    ] ]
 ];
