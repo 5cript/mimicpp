@@ -131,7 +131,7 @@ $(function(){initNavTree('dd/d50/_matcher_8hpp_source.html','../../'); initResiz
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                        &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> T&amp; matcher, Target&amp; target)</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                        {</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                            { matcher.matches(target) } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                            { matcher.describe() } -&gt; std::convertible_to&lt;std::optional&lt;StringT&gt;&gt;;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                            { matcher.describe() } -&gt; std::convertible_to&lt;StringViewT&gt;;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                        };</div>
 </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
@@ -261,9 +261,9 @@ $(function(){initNavTree('dd/d50/_matcher_8hpp_source.html','../../'); initResiz
 </div>
 <div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
 <div class="foldopen" id="foldopen00157" data-start="{" data-end="}">
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#a650fb20b5ba02c58f8e54b3f6b1e0b77">  157</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::nullopt_t <a class="code hl_function" href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#a650fb20b5ba02c58f8e54b3f6b1e0b77">describe</a>() noexcept</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno"><a class="line" href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#aa705931636d906bbec4d900e41ee7984">  157</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> <a class="code hl_typedef" href="../../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6">StringViewT</a> <a class="code hl_function" href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#aa705931636d906bbec4d900e41ee7984">describe</a>() noexcept</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        {</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> std::nullopt;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            <span class="keywordflow">return</span> <span class="stringliteral">&quot;has no constraints&quot;</span>;</div>
 <div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>        }</div>
 </div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    };</div>
@@ -533,7 +533,7 @@ $(function(){initNavTree('dd/d50/_matcher_8hpp_source.html','../../'); initResiz
 <div class="ttc" id="aclassmimicpp_1_1_predicate_matcher_html_af6de73a93291473f9fe825a12e6bd7d1"><div class="ttname"><a href="../../dc/d5e/classmimicpp_1_1_predicate_matcher.html#af6de73a93291473f9fe825a12e6bd7d1">mimicpp::PredicateMatcher::PredicateMatcher</a></div><div class="ttdeci">constexpr PredicateMatcher(Predicate predicate, StringT fmt, StringT invertedFmt, std::tuple&lt; AdditionalArgs... &gt; additionalArgs=std::tuple{}) noexcept(std::is_nothrow_move_constructible_v&lt; Predicate &gt; &amp;&amp;(... &amp;&amp;std::is_nothrow_move_constructible_v&lt; AdditionalArgs &gt;))</div><div class="ttdef"><b>Definition</b> Matcher.hpp:48</div></div>
 <div class="ttc" id="aclassmimicpp_1_1_wildcard_matcher_html"><div class="ttname"><a href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html">mimicpp::WildcardMatcher</a></div><div class="ttdoc">Matcher, which never fails.</div><div class="ttdef"><b>Definition</b> Matcher.hpp:150</div></div>
 <div class="ttc" id="aclassmimicpp_1_1_wildcard_matcher_html_a571616d6f4b1cba443c870143b7f6bcc"><div class="ttname"><a href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#a571616d6f4b1cba443c870143b7f6bcc">mimicpp::WildcardMatcher::matches</a></div><div class="ttdeci">static constexpr bool matches(auto &amp;&amp;target) noexcept</div><div class="ttdef"><b>Definition</b> Matcher.hpp:152</div></div>
-<div class="ttc" id="aclassmimicpp_1_1_wildcard_matcher_html_a650fb20b5ba02c58f8e54b3f6b1e0b77"><div class="ttname"><a href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#a650fb20b5ba02c58f8e54b3f6b1e0b77">mimicpp::WildcardMatcher::describe</a></div><div class="ttdeci">static constexpr std::nullopt_t describe() noexcept</div><div class="ttdef"><b>Definition</b> Matcher.hpp:157</div></div>
+<div class="ttc" id="aclassmimicpp_1_1_wildcard_matcher_html_aa705931636d906bbec4d900e41ee7984"><div class="ttname"><a href="../../db/de6/classmimicpp_1_1_wildcard_matcher.html#aa705931636d906bbec4d900e41ee7984">mimicpp::WildcardMatcher::describe</a></div><div class="ttdeci">static constexpr StringViewT describe() noexcept</div><div class="ttdef"><b>Definition</b> Matcher.hpp:157</div></div>
 <div class="ttc" id="aconceptmimicpp_1_1matcher__for_html"><div class="ttname"><a href="../../df/d23/conceptmimicpp_1_1matcher__for.html">mimicpp::matcher_for</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:25</div></div>
 <div class="ttc" id="agroup___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e_html_ga2d8c4b5a400645611fb8b4374fc6a564"><div class="ttname"><a href="../../db/d8a/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e.html#ga2d8c4b5a400645611fb8b4374fc6a564">mimicpp::matches::range::eq</a></div><div class="ttdeci">constexpr auto eq(Range &amp;&amp;expected, Comparator comparator=Comparator{})</div><div class="ttdoc">Tests, whether the target range compares equal to the expected range, by comparing them element-wise.</div><div class="ttdef"><b>Definition</b> Matcher.hpp:407</div></div>
 <div class="ttc" id="agroup___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e_html_ga8df6332ce4e7f78809fe8c1f900e9e34"><div class="ttname"><a href="../../db/d8a/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r___r_a_n_g_e.html#ga8df6332ce4e7f78809fe8c1f900e9e34">mimicpp::matches::range::unordered_eq</a></div><div class="ttdeci">constexpr auto unordered_eq(Range &amp;&amp;expected, Comparator comparator=Comparator{})</div><div class="ttdoc">Tests, whether the target range is a permutation of the expected range, by comparing them element-wis...</div><div class="ttdef"><b>Definition</b> Matcher.hpp:437</div></div>
@@ -554,6 +554,7 @@ $(function(){initNavTree('dd/d50/_matcher_8hpp_source.html','../../'); initResiz
 <div class="ttc" id="anamespacemimicpp_1_1matches_1_1str_html"><div class="ttname"><a href="../../dc/d7d/namespacemimicpp_1_1matches_1_1str.html">mimicpp::matches::str</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:336</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1matches_html"><div class="ttname"><a href="../../dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:165</div></div>
 <div class="ttc" id="anamespacemimicpp_html"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html">mimicpp</a></div><div class="ttdef"><b>Definition</b> BoostTest.hpp:20</div></div>
+<div class="ttc" id="anamespacemimicpp_html_afa212d98f2d4a7016c05d3e9171431c6"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html#afa212d98f2d4a7016c05d3e9171431c6">mimicpp::StringViewT</a></div><div class="ttdeci">std::basic_string_view&lt; CharT, CharTraitsT &gt; StringViewT</div><div class="ttdef"><b>Definition</b> Printer.hpp:35</div></div>
 <div class="ttc" id="anamespacemimicpp_html_afd8074742a9c25b893fcdfe534b912e1"><div class="ttname"><a href="../../d1/d11/namespacemimicpp.html#afd8074742a9c25b893fcdfe534b912e1">mimicpp::StringT</a></div><div class="ttdeci">std::basic_string&lt; CharT, CharTraitsT &gt; StringT</div><div class="ttdef"><b>Definition</b> Fwd.hpp:106</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -561,7 +562,7 @@ $(function(){initNavTree('dd/d50/_matcher_8hpp_source.html','../../'); initResiz
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_d1aac795712c1a80b032d3d2760385d8.html">mimic++</a></li><li class="navelem"><a class="el" href="../../dd/d50/_matcher_8hpp.html">Matcher.hpp</a></li>
-    <li class="footer">Generated on Mon Sep 30 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Tue Oct 1 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
