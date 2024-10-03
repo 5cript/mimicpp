@@ -46,6 +46,7 @@ var hierarchy =
       [ "mimicpp::DefaultReporter", "d3/d32/classmimicpp_1_1_default_reporter.html", null ]
     ] ],
     [ "mimicpp::is_overload_set< First, Others >", "dd/df5/structmimicpp_1_1is__overload__set.html", null ],
+    [ "mimicpp::custom::matcher_traits< Matcher >", "d5/d5a/structmimicpp_1_1custom_1_1matcher__traits.html", null ],
     [ "mimicpp::MatchReport", "db/d11/classmimicpp_1_1_match_report.html", null ],
     [ "mimicpp::detail::MockFrontend< FirstSignature >", null, [
       [ "mimicpp::Mock< FirstSignature, OtherSignatures >", "d2/d48/classmimicpp_1_1_mock.html", null ]
@@ -55,6 +56,8 @@ var hierarchy =
     ] ],
     [ "mimicpp::PredicateMatcher< Predicate, AdditionalArgs >", "dc/d5e/classmimicpp_1_1_predicate_matcher.html", null ],
     [ "mimicpp::custom::Printer< typename >", "da/d68/classmimicpp_1_1custom_1_1_printer.html", null ],
+    [ "mimicpp::priority_tag< priority >", "d1/d9f/structmimicpp_1_1priority__tag.html", null ],
+    [ "mimicpp::priority_tag< 0 >", "d9/d94/structmimicpp_1_1priority__tag_3_010_01_4.html", null ],
     [ "mimicpp::sequence::rating", "de/d81/structmimicpp_1_1sequence_1_1rating.html", null ],
     [ "mimicpp::expectation_policies::Requirement< Matcher, Projection, Describer >", "d1/dde/classmimicpp_1_1expectation__policies_1_1_requirement.html", null ],
     [ "mimicpp::expectation_policies::ReturnsResultOf< Action >", "dd/d59/classmimicpp_1_1expectation__policies_1_1_returns_result_of.html", null ],
