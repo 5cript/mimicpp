@@ -14,6 +14,7 @@ var hierarchy =
       [ "mimicpp::always_false<... >", "d5/d8e/structmimicpp_1_1always__false.html", null ]
     ] ],
     [ "mimicpp::CallReport", "dc/dd0/classmimicpp_1_1_call_report.html", null ],
+    [ "mimicpp::case_insensitive_t", "d2/dd4/structmimicpp_1_1case__insensitive__t.html", null ],
     [ "mimicpp::expectation_policies::Category< expected >", "d4/d44/classmimicpp_1_1expectation__policies_1_1_category.html", null ],
     [ "std::conditional_t", null, [
       [ "mimicpp::detail::is_overloadable_with< signature_remove_noexcept_t< First >, signature_remove_noexcept_t< Second > >", null, [
@@ -36,6 +37,9 @@ var hierarchy =
     [ "mimicpp::MatchReport::Expectation", "da/d15/classmimicpp_1_1_match_report_1_1_expectation.html", null ],
     [ "mimicpp::ExpectationCollection< Signature >", "d5/d86/classmimicpp_1_1_expectation_collection.html", null ],
     [ "mimicpp::ExpectationReport", "dd/d62/classmimicpp_1_1_expectation_report.html", null ],
+    [ "std::false_type", null, [
+      [ "mimicpp::is_character< T >", "d2/d73/structmimicpp_1_1is__character.html", null ]
+    ] ],
     [ "mimicpp::MatchReport::Finalize", "d5/d36/classmimicpp_1_1_match_report_1_1_finalize.html", null ],
     [ "mimicpp::call::Info< Return, Args >", "d4/d44/classmimicpp_1_1call_1_1_info.html", null ],
     [ "mimicpp::call::info_for_signature< Signature >", "d8/d5b/structmimicpp_1_1call_1_1info__for__signature.html", null ],
@@ -156,8 +160,23 @@ var hierarchy =
     [ "mimicpp::state_applicable", "d0/d12/structmimicpp_1_1state__applicable.html", null ],
     [ "mimicpp::state_inapplicable", "d7/dd2/structmimicpp_1_1state__inapplicable.html", null ],
     [ "mimicpp::state_saturated", "de/d68/structmimicpp_1_1state__saturated.html", null ],
+    [ "mimicpp::string_case_fold_converter< Char >", "d4/d2d/structmimicpp_1_1string__case__fold__converter.html", null ],
+    [ "mimicpp::string_case_fold_converter< char >", "de/d08/structmimicpp_1_1string__case__fold__converter_3_01char_01_4.html", null ],
+    [ "mimicpp::string_traits< T >", "d1/dee/structmimicpp_1_1string__traits.html", null ],
+    [ "mimicpp::string_traits< std::basic_string< Char, Traits, Allocator > >", "d3/deb/structmimicpp_1_1string__traits_3_01std_1_1basic__string_3_01_char_00_01_traits_00_01_allocator_01_4_01_4.html", null ],
+    [ "mimicpp::string_traits< std::basic_string_view< Char, Traits > >", "d7/da1/structmimicpp_1_1string__traits_3_01std_1_1basic__string__view_3_01_char_00_01_traits_01_4_01_4.html", null ],
+    [ "mimicpp::string_traits< std::remove_extent_t< T > * >", "d1/dee/structmimicpp_1_1string__traits.html", [
+      [ "mimicpp::string_traits< T >", "d8/db2/structmimicpp_1_1string__traits_3_01_t_01_4.html", null ]
+    ] ],
     [ "mimicpp::expectation_policies::Throws< Exception >", "d8/d34/classmimicpp_1_1expectation__policies_1_1_throws.html", null ],
     [ "std::true_type", null, [
+      [ "mimicpp::is_character< char >", "d2/dad/structmimicpp_1_1is__character_3_01char_01_4.html", null ],
+      [ "mimicpp::is_character< char16_t >", "dc/d7a/structmimicpp_1_1is__character_3_01char16__t_01_4.html", null ],
+      [ "mimicpp::is_character< char32_t >", "d4/df1/structmimicpp_1_1is__character_3_01char32__t_01_4.html", null ],
+      [ "mimicpp::is_character< char8_t >", "d6/da5/structmimicpp_1_1is__character_3_01char8__t_01_4.html", null ],
+      [ "mimicpp::is_character< signed char >", "de/da5/structmimicpp_1_1is__character_3_01signed_01char_01_4.html", null ],
+      [ "mimicpp::is_character< unsigned char >", "d8/d39/structmimicpp_1_1is__character_3_01unsigned_01char_01_4.html", null ],
+      [ "mimicpp::is_character< wchar_t >", "df/d35/structmimicpp_1_1is__character_3_01wchar__t_01_4.html", null ],
       [ "mimicpp::is_overload_set< First >", "d5/d31/structmimicpp_1_1is__overload__set_3_01_first_01_4.html", null ]
     ] ],
     [ "std::tuple_element", null, [
