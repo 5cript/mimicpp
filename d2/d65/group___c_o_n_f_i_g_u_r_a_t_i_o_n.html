@@ -123,7 +123,7 @@ Use <code>fmt</code> as formatting backend</h2>
 <h2><a class="anchor" id="autotoc_md20"></a>
 Enable experimental catch2-matcher integration</h2>
 <p>Name: <code>MIMICPP_CONFIG_EXPERIMENTAL_CATCH2_MATCHER_INTEGRATION</code></p>
-<p>If enabled, all matchers from the <code>Catch::Matcher</code> namespaces can be directly used everywhere, where <code>mimic++</code>-matchers are suitable. This is an experimental feature, and may be removed during any release.</p>
+<p>If enabled, all matchers from the <code>Catch::Matcher</code> namespaces can be directly used everywhere, where <code>mimic++</code>-matchers are suitable. </p><dl class="section attention"><dt>Attention</dt><dd>This is an experimental feature, and may be removed during any release.</dd></dl>
 <h3><a class="anchor" id="autotoc_md21"></a>
 Why is it an experimental feature?</h3>
 <p>Unfortunatly <code>catch2</code> matchers are desgined to be used in-place. Every combination you do, like negation via <code>operator !</code> or <code>operator &amp;&amp;</code>, just takes a const-reference to the source-matcher. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/catchorg/Catch2/blob/devel/docs/matchers.md#combining-operators-and-lifetimes">https://github.com/catchorg/Catch2/blob/devel/docs/matchers.md#combining-operators-and-lifetimes</a></dd></dl>
@@ -133,10 +133,13 @@ Why is it an experimental feature?</h3>
 <h2><a class="anchor" id="autotoc_md23"></a>
 Enable experimental string-matcher unicode support</h2>
 <p>Name: <code>MIMICPP_CONFIG_EXPERIMENTAL_UNICODE_STR_MATCHER</code></p>
-<p>If enabled, all string-matchers get full unicode support. This is relevant, when comparing case-insensitively. It's not required for the base-version of string-matchers. This is an experimental feature, and may be removed during any release.</p>
+<p>If enabled, all string-matchers get full unicode support. This is relevant, when comparing case-insensitively. It's not required for the base-version of string-matchers.</p>
+<p>This will require the rather light-weight library <code>uni-algo</code>, which can be found on github. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/uni-algo/uni-algo">https://github.com/uni-algo/uni-algo</a></dd></dl>
+<p><code>mimic++</code> first tries to find the dependency via <code>find_package</code>, but will fetch it from github if not available.</p>
+<dl class="section attention"><dt>Attention</dt><dd>This is an experimental feature, and may be removed during any release.</dd></dl>
 <h3><a class="anchor" id="autotoc_md24"></a>
 Why is it an experimental feature?</h3>
-<p>This will pull the rather light-weight library <code>cpp-unicodelib</code> from github. <code>mimic++</code> won't check whether it can already find the library, because it has very poor cmake support. This library is currently chosen, because it's very easy to integrate and offers the necessary algorithm (<code>to_case_fold</code>), but it's in no way an optimal solution. It comes also with a quite heavy runtime-cost, as we have to do many conversions back and forth, to get that working. If there is a better &ndash; but similar light-weight &ndash; option available, please tell me. </p><dl class="section see"><dt>See also</dt><dd><a href="https://github.com/yhirose/cpp-unicodelib">https://github.com/yhirose/cpp-unicodelib</a> </dd></dl>
+<p>I recently switched from <code>cpp-unicodelib</code>, which I didn't like very much for several reasons. <code>uni-algo</code> seems more mature, but I would like to get some feedback, before I'll declare this as a stable feature. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
