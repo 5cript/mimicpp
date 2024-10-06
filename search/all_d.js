@@ -2,7 +2,7 @@ var searchData=
 [
   ['macos_0',['macOS',['../index.html#autotoc_md56',1,'']]],
   ['macro_20free_20mocking_20framework_1',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
-  ['macros_2',['Disable unprefixed macros',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md16',1,'']]],
+  ['macros_2',['Disable unprefixed macros',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md15',1,'']]],
   ['make_5fcall_5freport_3',['make_call_report',['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::Info::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#gac15b3bfd4b2baf807baa26875e5b888c',1,'mimicpp::make_call_report()'],['../d5/d3f/group___r_e_p_o_r_t_i_n_g___r_e_p_o_r_t_s.html#ga2c27e9e8df2ddd35c1d1c5977652247c',1,'mimicpp::call::make_call_report()']]],
   ['make_5fmethod_5foverrides_4',['make_method_overrides',['../db/db9/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___m_a_k_e___m_e_t_h_o_d___o_v_e_r_r_i_d_e_s.html',1,'']]],
   ['make_5foverload_5finfos_5',['make_overload_infos',['../d0/dd9/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___m_a_k_e___o_v_e_r_l_o_a_d___i_n_f_o_s.html',1,'']]],
