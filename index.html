@@ -143,7 +143,7 @@ Introduction</h1>
 <p><code>mimic++</code> is a c++20 mocking framework, which aims to offer a natural end expressive syntax, without constantly resorting to macros. To be honest, macros cannot be completely avoided, but they can at least be reduced to a very minimum.</p>
 <p>The one thing, that this framework does different than all other (or at least all I am aware of) mocking framework is, that mock objects explicitly are function objects, thus directly callable. It's simple and straight forward.</p>
 <p>As I'm mainly working on template or functional-style code, I wanted something simpler than always creating explicit mock types for the simplest of use cases. So, <code><a class="el" href="d2/d48/classmimicpp_1_1_mock.html" title="A Mock type, which fully supports overload sets.">mimicpp::Mock</a></code> objects can directly be used as functional objects, but they can also be used as member objects and thus serve as actual member functions.</p>
-<p>If you are curious, have a look at the <a href="https://dnkpp.github.io/mimicpp/">documentation</a>, investigate the examples folder or play around online at <a href="https://godbolt.org/z/71GGbeYzq">godbolt.org</a>.</p>
+<p>If you are curious, have a look at the <a href="https://dnkpp.github.io/mimicpp/">documentation</a>, investigate the examples folder or play around online at <a href="https://godbolt.org/z/nfhT9xa4E">godbolt.org</a>.</p>
 <h2><a class="anchor" id="autotoc_md30"></a>
 Core Design</h2>
 <p>The framework is designed with two core concepts in mind: Mocks and Expectations. Mocks can be used to define behaviour on a per test-case basis, without the necessity of creating dozens of types. The go-to example is, if you have a custom type, which somehow makes a connection to a concrete database, you do not want to setup an actual database connection during your test runs. You then simply install a database mock, which then yields the exact replies as it were defined for that particular case: the so called "Expectations".</p>
@@ -440,13 +440,13 @@ macOS</h3>
 <tr class="markdownTableHead">
 <th class="markdownTableHeadNone">Compiler   </th><th class="markdownTableHeadCenter">libstdc++   </th><th class="markdownTableHeadCenter">libc++   </th><th class="markdownTableHeadCenter">c++-20   </th><th class="markdownTableHeadCenter">c++-23   </th><th class="markdownTableHeadCenter">std-format   </th><th class="markdownTableHeadCenter">fmt    </th></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">AppleClang-16.0.6<sup>1</sup>   </td><td class="markdownTableBodyCenter">?   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
+<td class="markdownTableBodyNone">AppleClang-16.0.6^1^   </td><td class="markdownTableBodyCenter">?   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowEven">
 <td class="markdownTableBodyNone">AppleClang-17.0.6   </td><td class="markdownTableBodyCenter">?   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x    </td></tr>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">AppleClang-18.1.6   </td><td class="markdownTableBodyCenter">?   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td><td class="markdownTableBodyCenter">x   </td></tr>
 </table>
-<p><sup>1</sup> There is an issue with AppleClang-16 and <code>boost::filesystem</code> on the current <code>macos-latest</code>, but this is just for the boost-test-adapter. Everything else works fine.</p>
+<p>^1^ There is an issue with AppleClang-16 and <code>boost::filesystem</code> on the current <code>macos-latest</code>, but this is just for the boost-test-adapter. Everything else works fine.</p>
 <hr  />
 <h1><a class="anchor" id="autotoc_md58"></a>
 License</h1>
@@ -470,7 +470,7 @@ Clang-18.1 + libc++</h2>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sat Oct 5 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
+    <li class="footer">Generated on Sun Oct 6 2024 for mimic++ by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0 </li>
   </ul>
 </div>
 </body>
