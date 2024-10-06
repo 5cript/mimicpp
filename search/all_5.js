@@ -7,6 +7,6 @@ var searchData=
   ['description_4',['description',['../d5/d36/classmimicpp_1_1_match_report_1_1_finalize.html#a5af31dceb9d8e2f4402cbe08c588f533',1,'mimicpp::MatchReport::Finalize::description'],['../da/d15/classmimicpp_1_1_match_report_1_1_expectation.html#a5b458853bab8c0864ac327997ee7c021',1,'mimicpp::MatchReport::Expectation::description']]],
   ['design_5',['Core Design',['../index.html#autotoc_md30',1,'']]],
   ['detail_6',['detail',['../d0/d48/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l.html',1,'']]],
-  ['disable_20unprefixed_20macros_7',['Disable unprefixed macros',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md15',1,'']]],
+  ['disable_20unprefixed_20macros_7',['Disable unprefixed macros',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md16',1,'']]],
   ['documentation_8',['Documentation',['../index.html#autotoc_md44',1,'']]]
 ];
