@@ -1,7 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" title=" " alt="" coords="5,60,79,86"/>
-<area shape="rect" id="Node000001" href="$d2/d9b/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_constness_00_01mimicpp_1_1_char_t_01_4.html" title=" " alt="" coords="127,5,332,61"/>
-<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="93,60,125,53,127,58,94,65"/>
-<area shape="rect" id="Node000002" href="$db/dc9/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html" title=" " alt="" coords="142,85,317,141"/>
-<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="94,81,142,92,141,97,93,87"/>
+<area shape="rect" id="Node000000" title=" " alt="" coords="22,5,74,31"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="139,23,336,64"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="90,21,139,28,138,33,89,26"/>
+<area shape="rect" id="Node000002" href="$d3/d5d/classmimicpp_1_1_watched.html" title="CRTP&#45;type, inheriting first from Base and then all Watchers, thus effectively couple them all togethe..." alt="" coords="384,23,556,64"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="352,41,383,41,383,46,352,46"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,55,91,80"/>
+<area shape="poly" id="edge3_Node000003_Node000001" title=" " alt="" coords="106,58,138,53,139,59,106,63"/>
 </map>

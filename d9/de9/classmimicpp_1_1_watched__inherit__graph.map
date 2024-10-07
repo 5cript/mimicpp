@@ -1,0 +1,9 @@
+<map id="mimicpp::Watched&lt; Base, Watchers &gt;" name="mimicpp::Watched&lt; Base, Watchers &gt;">
+<area shape="rect" id="Node000001" title="CRTP&#45;type, inheriting first from Base and then all Watchers, thus effectively couple them all togethe..." alt="" coords="18,168,190,208"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,203,120"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,135,107,167,101,167,101,135"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="33,5,84,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="75,43,95,77,91,80,71,46"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="108,5,193,31"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="138,46,118,80,113,77,133,43"/>
+</map>

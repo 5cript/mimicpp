@@ -4,6 +4,7 @@ var concepts =
       [ "expectation_policy_for", "dd/d1d/conceptmimicpp_1_1expectation__policy__for.html", null ],
       [ "finalize_policy_for", "d9/d64/conceptmimicpp_1_1finalize__policy__for.html", null ],
       [ "control_policy", "d4/df8/conceptmimicpp_1_1control__policy.html", null ],
+      [ "object_watcher", "d9/d52/conceptmimicpp_1_1object__watcher.html", null ],
       [ "matcher_for", "df/d23/conceptmimicpp_1_1matcher__for.html", null ],
       [ "print_iterator", "d3/d26/conceptmimicpp_1_1print__iterator.html", null ],
       [ "printer_for", "de/dfc/conceptmimicpp_1_1printer__for.html", null ],

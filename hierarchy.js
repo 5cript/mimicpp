@@ -3,6 +3,11 @@ var hierarchy =
     [ "mimicpp::expectation_policies::ApplyAllArgsAction< Action, Projection >", "de/d9e/classmimicpp_1_1expectation__policies_1_1_apply_all_args_action.html", null ],
     [ "mimicpp::expectation_policies::ApplyArgsAction< Action, Projection, indices >", "de/da9/classmimicpp_1_1expectation__policies_1_1_apply_args_action.html", null ],
     [ "mimicpp::CallReport::Arg", "dc/d03/classmimicpp_1_1_call_report_1_1_arg.html", null ],
+    [ "Base", null, [
+      [ "mimicpp::detail::BasicWatched< Base, Watchers... >", null, [
+        [ "mimicpp::Watched< Base, Watchers >", "d3/d5d/classmimicpp_1_1_watched.html", null ]
+      ] ]
+    ] ],
     [ "mimicpp::BasicExpectationBuilder< timesConfigured, SequenceConfig, Signature, FinalizePolicy, Policies >", "d5/de1/classmimicpp_1_1_basic_expectation_builder.html", null ],
     [ "mimicpp::sequence::detail::BasicSequenceInterface< sequence::Id, sequence::detail::GreedyStrategy{}>", null, [
       [ "mimicpp::GreedySequence", "db/d43/classmimicpp_1_1_greedy_sequence.html", null ]
@@ -50,13 +55,18 @@ var hierarchy =
       [ "mimicpp::DefaultReporter", "d3/d32/classmimicpp_1_1_default_reporter.html", null ]
     ] ],
     [ "mimicpp::is_overload_set< First, Others >", "dd/df5/structmimicpp_1_1is__overload__set.html", null ],
+    [ "mimicpp::LifetimeWatcher", "db/d98/classmimicpp_1_1_lifetime_watcher.html", null ],
     [ "mimicpp::custom::matcher_traits< Matcher >", "d5/d5a/structmimicpp_1_1custom_1_1matcher__traits.html", null ],
     [ "mimicpp::MatchReport", "db/d11/classmimicpp_1_1_match_report.html", null ],
     [ "mimicpp::detail::MockFrontend< FirstSignature >", null, [
       [ "mimicpp::Mock< FirstSignature, OtherSignatures >", "d2/d48/classmimicpp_1_1_mock.html", null ]
     ] ],
     [ "mimicpp::detail::MockFrontend< OtherSignatures >", null, [
+      [ "mimicpp::Mock< void()>", "d2/d48/classmimicpp_1_1_mock.html", null ],
       [ "mimicpp::Mock< FirstSignature, OtherSignatures >", "d2/d48/classmimicpp_1_1_mock.html", null ]
+    ] ],
+    [ "mimicpp::detail::MockFrontend< void() >", null, [
+      [ "mimicpp::Mock< void()>", "d2/d48/classmimicpp_1_1_mock.html", null ]
     ] ],
     [ "mimicpp::PredicateMatcher< Predicate, AdditionalArgs >", "dc/d5e/classmimicpp_1_1_predicate_matcher.html", null ],
     [ "mimicpp::custom::Printer< typename >", "da/d68/classmimicpp_1_1custom_1_1_printer.html", null ],
@@ -181,6 +191,9 @@ var hierarchy =
     ] ],
     [ "std::tuple_element", null, [
       [ "mimicpp::signature_param_type< index, Return(Params...)>", "d0/d24/structmimicpp_1_1signature__param__type_3_01index_00_01_return_07_params_8_8_8_08_4.html", null ]
+    ] ],
+    [ "Watchers...", null, [
+      [ "mimicpp::detail::BasicWatched< Base, Watchers... >", null, null ]
     ] ],
     [ "mimicpp::WildcardMatcher", "db/de6/classmimicpp_1_1_wildcard_matcher.html", null ],
     [ "formatter", null, [
