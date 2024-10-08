@@ -7,7 +7,7 @@ var searchData=
   ['finalizer_4',['finalizer',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html',1,'']]],
   ['finalizerdescription_5',['finalizerDescription',['../dd/d62/classmimicpp_1_1_expectation_report.html#a4170deeff1bba26b0357f710e1378cb1',1,'mimicpp::ExpectationReport']]],
   ['finalizereport_6',['finalizeReport',['../db/d11/classmimicpp_1_1_match_report.html#a96bc13493c977acf05ecf6eb216d212a',1,'mimicpp::MatchReport']]],
-  ['finalizers_7',['Custom Finalizers',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#autotoc_md4',1,'']]],
+  ['finalizers_7',['Custom Finalizers',['../db/d7a/group___e_x_p_e_c_t_a_t_i_o_n___f_i_n_a_l_i_z_e_r.html#autotoc_md2',1,'']]],
   ['finalizert_8',['FinalizerT',['../d3/d4a/classmimicpp_1_1_basic_expectation.html#a116870181a5b6c9638979f0abc69b3c2',1,'mimicpp::BasicExpectation']]],
   ['fmt_20tt_20as_20formatting_20backend_9',['Use &lt;tt&gt;fmt&lt;/tt&gt; as formatting backend',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md21',1,'']]],
   ['folding_10',['Case-Folding',['../de/dd6/group___e_x_p_e_c_t_a_t_i_o_n___m_a_t_c_h_e_r_s___s_t_r_i_n_g.html#autotoc_md10',1,'']]],
@@ -17,7 +17,7 @@ var searchData=
   ['formatter_3c_20mimicpp_3a_3avaluecategory_2c_20mimicpp_3a_3achart_20_3e_14',['formatter&lt; mimicpp::ValueCategory, mimicpp::CharT &gt;',['../db/dc9/structmimicpp_1_1format_1_1formatter_3_01mimicpp_1_1_value_category_00_01mimicpp_1_1_char_t_01_4.html',1,'mimicpp::format']]],
   ['formatting_20backend_15',['Use &lt;tt&gt;fmt&lt;/tt&gt; as formatting backend',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html#autotoc_md21',1,'']]],
   ['forward_5fargs_16',['forward_args',['../d5/d28/group___m_o_c_k___i_n_t_e_r_f_a_c_e_s___d_e_t_a_i_l___f_o_r_w_a_r_d___a_r_g_s.html',1,'']]],
-  ['framework_17',['Test Framework',['../index.html#autotoc_md53',1,'']]],
+  ['framework_17',['Test Framework',['../index.html#autotoc_md50',1,'']]],
   ['framework_18',['mimic++, a modern and (mostly) macro free mocking framework',['../index.html',1,'']]],
   ['framework_20adapters_19',['test framework adapters',['../d4/d5c/group___r_e_p_o_r_t_i_n_g___a_d_a_p_t_e_r_s.html',1,'']]],
   ['framework_20configuration_20',['framework configuration',['../d2/d65/group___c_o_n_f_i_g_u_r_a_t_i_o_n.html',1,'']]],
@@ -29,7 +29,5 @@ var searchData=
   ['fromloc_26',['fromLoc',['../dc/dd0/classmimicpp_1_1_call_report.html#aeb9ed8b5928e4a5673abb5e7e34978de',1,'mimicpp::CallReport']]],
   ['fromsourcelocation_27',['fromSourceLocation',['../d4/d44/classmimicpp_1_1call_1_1_info.html#ab13116b95585c94b57e7cbd330c122a7',1,'mimicpp::call::Info']]],
   ['full_28',['full',['../d1/d11/namespacemimicpp.html#a0e5bd3ba3ed7ebefe6d2016ce35bbe5bae9dc924f238fa6cc29465942875fe8f0',1,'mimicpp']]],
-  ['function_20objects_29',['Mocks as function objects',['../index.html#autotoc_md35',1,'']]],
-  ['functions_30',['Mocks as member functions',['../index.html#autotoc_md36',1,'']]],
-  ['fwd_2ehpp_31',['Fwd.hpp',['../df/dde/_fwd_8hpp.html',1,'']]]
+  ['fwd_2ehpp_29',['Fwd.hpp',['../df/dde/_fwd_8hpp.html',1,'']]]
 ];
