@@ -206,9 +206,9 @@ Mocks as function objects</summary>
 <div class="ttc" id="aclassmimicpp_1_1_mock_html"><div class="ttname"><a href="d2/d48/classmimicpp_1_1_mock.html">mimicpp::Mock</a></div><div class="ttdoc">A Mock type, which fully supports overload sets.</div><div class="ttdef"><b>Definition</b> Mock.hpp:600</div></div>
 <div class="ttc" id="agroup___m_o_c_k_html_ga7e7d68eefb8f3cba28422f62bcf2f90a"><div class="ttname"><a href="d8/d12/group___m_o_c_k.html#ga7e7d68eefb8f3cba28422f62bcf2f90a">SCOPED_EXP</a></div><div class="ttdeci">#define SCOPED_EXP</div><div class="ttdoc">Shorthand variant of MIMICPP_SCOPED_EXPECTATION.</div><div class="ttdef"><b>Definition</b> ExpectationBuilder.hpp:307</div></div>
 <div class="ttc" id="amimic_09_09_8hpp_html"><div class="ttname"><a href="d0/db9/mimic_09_09_8hpp.html">mimic++.hpp</a></div></div>
-<div class="ttc" id="anamespacemimicpp_1_1expect_html"><div class="ttname"><a href="d3/d18/namespacemimicpp_1_1expect.html">mimicpp::expect</a></div><div class="ttdef"><b>Definition</b> ControlPolicy.hpp:267</div></div>
+<div class="ttc" id="anamespacemimicpp_1_1expect_html"><div class="ttname"><a href="d3/d18/namespacemimicpp_1_1expect.html">mimicpp::expect</a></div><div class="ttdef"><b>Definition</b> ControlPolicy.hpp:266</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1finally_html"><div class="ttname"><a href="d2/d8d/namespacemimicpp_1_1finally.html">mimicpp::finally</a></div><div class="ttdef"><b>Definition</b> ExpectationPolicies.hpp:433</div></div>
-<div class="ttc" id="anamespacemimicpp_1_1matches_html"><div class="ttname"><a href="dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:256</div></div>
+<div class="ttc" id="anamespacemimicpp_1_1matches_html"><div class="ttname"><a href="dd/d7b/namespacemimicpp_1_1matches.html">mimicpp::matches</a></div><div class="ttdef"><b>Definition</b> Matcher.hpp:258</div></div>
 <div class="ttc" id="anamespacemimicpp_1_1then_html"><div class="ttname"><a href="d9/d4c/namespacemimicpp_1_1then.html">mimicpp::then</a></div><div class="ttdef"><b>Definition</b> ExpectationPolicies.hpp:618</div></div>
 </div><!-- fragment --><p></p>
 </details>
@@ -400,6 +400,7 @@ Test Framework</h2>
 <h1><a class="anchor" id="autotoc_md52"></a>
 Testing</h1>
 <p><code>mimic++</code> utilizes a strict testing policy, thus each official feature is well tested. The effect of those test-cases are always tracked by the extensive ci, which checks the compilation success, test cases outcomes and coverage on dozens of different os, compiler and build configurations.</p>
+<p>For the test builds the flags <code>-Wall -Wextra -Wpedantic -Werror</code> (on MSVC <code>/W4 /WX</code>) are set. This is done to make sure, that <code>mimic++</code> won't flood your build output with endless warnings (or even worse: break your builds), if you enable these flags in your own projects.</p>
 <p>The coverage is generated via <code>gcov</code> and evaluated by <a href="https://app.codacy.com/gh/DNKpp/mimicpp">codacy</a>, <a href="https://codecov.io/gh/DNKpp/mimicpp">codecov</a> and <a href="https://coveralls.io/github/DNKpp/mimicpp">coveralls</a>.</p>
 <p>Nevertheless, even with very high effort, the 100% code-coverage is without reach. I do my best to cover each branch, but even now the coverage percentage varies between the individual tools. The goal is to be close to 100% as possible.</p>
 <p>On the other hand-side, there is a whole range of code which doesn't even get investigated by these tools: templates (and macros). <code>mimic++</code> has <b>a lot</b> of templating code at the very heart, which is at least of equal effort to get right (and tested). So, treat the coverage percentage with a grain of salt.</p>
